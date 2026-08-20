@@ -1361,6 +1361,1273 @@
    "kind": "file",
    "size": 254,
    "hosting": "inline"
+  },
+  {
+   "name": "provenance",
+   "path": "provenance",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "5_2_0_10",
+     "path": "provenance/5_2_0_10",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/5_2_0_10/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_10/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 2503,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_0_10/EnfGuard/trace.monpoly",
+         "kind": "file",
+         "size": 65073,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_0_10/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_10/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2461,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_0_10/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 65073,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/5_2_0_10/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_10/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/5_2_0_10/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_10/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_0_10/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_10/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2476,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_0_10/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 65073,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_0_10/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_0_10/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 109,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_10/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2818,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_0_10/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 65073,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_1_10",
+     "path": "provenance/5_2_1_10",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/5_2_1_10/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_10/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 2503,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_1_10/EnfGuard/trace.monpoly",
+         "kind": "file",
+         "size": 133705,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_1_10/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_10/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2461,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_1_10/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 133705,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/5_2_1_10/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_10/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/5_2_1_10/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_10/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_1_10/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_10/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2476,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_1_10/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 133705,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_1_10/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_1_10/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 114,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_10/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2818,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_1_10/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 133705,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_2_10",
+     "path": "provenance/5_2_2_10",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/5_2_2_10/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_10/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 2503,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_2_10/EnfGuard/trace.monpoly",
+         "kind": "file",
+         "size": 137800,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_2_10/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_10/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2461,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_2_10/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 137800,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/5_2_2_10/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_10/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/5_2_2_10/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_10/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_2_10/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_10/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2476,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_2_10/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 137800,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_2_10/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_2_10/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 76,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_10/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2818,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_2_10/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 137800,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_3_10",
+     "path": "provenance/5_2_3_10",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/5_2_3_10/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_10/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 2503,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_3_10/EnfGuard/trace.monpoly",
+         "kind": "file",
+         "size": 133022,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_3_10/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_10/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2461,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_3_10/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 133022,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/5_2_3_10/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_10/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/5_2_3_10/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_10/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_3_10/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_10/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2476,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_3_10/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 133022,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_3_10/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_3_10/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 111,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_10/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2818,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_3_10/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 133022,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_4_10",
+     "path": "provenance/5_2_4_10",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/5_2_4_10/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_10/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 2503,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_4_10/EnfGuard/trace.monpoly",
+         "kind": "file",
+         "size": 90764,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_4_10/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_10/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2461,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_4_10/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 90764,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/5_2_4_10/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_10/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/5_2_4_10/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_10/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_4_10/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_10/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2476,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_4_10/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 90764,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_4_10/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_4_10/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 87,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_10/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2818,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_4_10/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 90764,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_5_10",
+     "path": "provenance/5_2_5_10",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/5_2_5_10/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_10/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 2503,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_5_10/EnfGuard/trace.monpoly",
+         "kind": "file",
+         "size": 110848,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_5_10/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_10/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2461,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_5_10/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 110848,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/5_2_5_10/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_10/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/5_2_5_10/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_10/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_5_10/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_10/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2476,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_5_10/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 110848,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_5_10/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_5_10/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 102,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_10/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2818,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_5_10/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 110848,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_6_10",
+     "path": "provenance/5_2_6_10",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/5_2_6_10/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_10/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 2503,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_6_10/EnfGuard/trace.monpoly",
+         "kind": "file",
+         "size": 162815,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_6_10/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_10/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2461,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_6_10/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 162815,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/5_2_6_10/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_10/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/5_2_6_10/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_10/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_6_10/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_10/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2476,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_6_10/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 162815,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_6_10/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_6_10/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 83,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_10/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2818,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_6_10/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 162815,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_7_10",
+     "path": "provenance/5_2_7_10",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/5_2_7_10/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_10/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 2503,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_7_10/EnfGuard/trace.monpoly",
+         "kind": "file",
+         "size": 63570,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_7_10/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_10/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2461,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_7_10/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 63570,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/5_2_7_10/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_10/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/5_2_7_10/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_10/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_7_10/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_10/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2476,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_7_10/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 63570,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_7_10/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_7_10/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 106,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_10/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2818,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_7_10/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 63570,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_8_10",
+     "path": "provenance/5_2_8_10",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/5_2_8_10/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_10/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 2503,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_8_10/EnfGuard/trace.monpoly",
+         "kind": "file",
+         "size": 89314,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_8_10/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_10/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2461,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_8_10/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 89314,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/5_2_8_10/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_10/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/5_2_8_10/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_10/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_8_10/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_10/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2476,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_8_10/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 89314,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_8_10/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_8_10/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 94,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_10/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2818,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_8_10/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 89314,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_9_10",
+     "path": "provenance/5_2_9_10",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/5_2_9_10/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_10/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 2503,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_9_10/EnfGuard/trace.monpoly",
+         "kind": "file",
+         "size": 112226,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_9_10/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_10/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2461,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_9_10/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 112226,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/5_2_9_10/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_10/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/5_2_9_10/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_10/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 1906,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_9_10/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_10/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2476,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_9_10/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 112226,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_9_10/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_9_10/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 86,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_10/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2818,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_9_10/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 112226,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    }
+   ]
   }
  ]
 }

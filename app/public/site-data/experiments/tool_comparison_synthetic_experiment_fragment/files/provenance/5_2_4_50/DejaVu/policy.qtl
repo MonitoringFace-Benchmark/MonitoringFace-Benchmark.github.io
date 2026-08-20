@@ -1,0 +1,1 @@
+prop fma: ! Exists x2. Exists x1. (@  @  _P1(x1, x2) | Exists y1. Exists y2. ((_P1(x1, x2) & y1 = 17) & y2 = 100)) where _P1(x1, x2) := e() & @  (! e() S  P1(x1, x2))

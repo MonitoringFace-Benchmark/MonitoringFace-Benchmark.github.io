@@ -1,0 +1,110 @@
+{
+ "schema_version": 1,
+ "experiment_fingerprint": {
+  "fingerprint_experiment": "c7be75a3b1c468b41432dfeb4bc555a05b7b6658390cc4be6d3cc60da3d93a53",
+  "fingerprint_data": "0272d00be71dfc9e880a81aaf5ec7ce20a7f5a5e1081ef6e6aabc0d201deecd3",
+  "fingerprint_policy": "0bb9fa5fa151ad790258fb006acaefa2ea5f031e150299eea0104aae2af29bfb"
+ },
+ "framework_commit": "2206ffb7db312a6406222b43c32a6575fde137c6",
+ "tool": {
+  "name": "WhyMon",
+  "identifier": "WhyMon",
+  "params": {
+   "folder": "<project>/Infrastructure/experiments/tool_comparison_synthetic_experiment_fragment/operators_5/free_vars_2/num_9",
+   "mode": "light",
+   "path_to_project": "<project>",
+   "policy": "scratch/policy.policy",
+   "signature": "signature.sig",
+   "trace": "scratch/data_50.csv",
+   "trace_target_format": "InputOutputTraceFormats.MONPOLY"
+  }
+ },
+ "setting_key": "5_2_9_50",
+ "captures": 1,
+ "tool_invocation": [
+  "-sig",
+  "signature.sig",
+  "-formula",
+  "scratch/policy.policy",
+  "-log",
+  "scratch/data_50.csv",
+  "-mode",
+  "light"
+ ],
+ "input_unchanged_after_run": true,
+ "entries": [
+  {
+   "kind": "trace",
+   "source": {
+    "file": "operators_5/free_vars_2/num_9/data_50.csv",
+    "format": "csv",
+    "sha256": "2219ebbbcffab14bb3cac61680bd559f786a9d9465ab88c08e392baf8d684ebb"
+   },
+   "steps": [
+    {
+     "converter": "ReplayerConverter",
+     "source_format": "csv",
+     "target_format": "monpoly",
+     "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--entrypoint",
+      "java",
+      "-i",
+      "replayerconverter_dataconverters_mf_image",
+      "-cp",
+      "classes:libs/*",
+      "org.entry.Dispatcher",
+      "Replayer",
+      "-i",
+      "csv",
+      "-f",
+      "monpoly",
+      "-a",
+      "0"
+     ],
+     "cmd_params": null
+    }
+   ],
+   "stored": {
+    "file": "trace.monpoly",
+    "sha256": "4ced2fed220fbd1cb9202b5be42b5a38851716aa3f8f11113d91e496ecf5a1fe"
+   },
+   "as_seen_by_tool": "scratch/data_50.csv"
+  },
+  {
+   "kind": "policy",
+   "source": {
+    "file": "operators_5/free_vars_2/num_9/policy.policy",
+    "format": "mfotl",
+    "sha256": "b23ea09c5f571b3033469f39fefaf278446af19e02772ad144ca50ac581f7f27"
+   },
+   "steps": [
+    {
+     "converter": "NegateMFOTLConverter",
+     "source_format": "mfotl",
+     "target_format": "negated-mfotl",
+     "command": null,
+     "cmd_params": null
+    }
+   ],
+   "stored": {
+    "file": "policy.negated-mfotl",
+    "sha256": "3e7f3ebd69e92930ecfda29249064fbb41dfa35c84b9f91e3012a48b067efd54"
+   },
+   "as_seen_by_tool": "scratch/policy.policy"
+  },
+  {
+   "kind": "signature",
+   "source": {
+    "file": "operators_5/free_vars_2/num_9/signature.sig",
+    "format": "sig",
+    "sha256": "b2a93f17090d7346c54eb9ff9afe8d8404de731fc3b71fb23f624465cae37672"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "signature.sig"
+  }
+ ]
+}
