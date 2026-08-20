@@ -1,0 +1,144 @@
+:root {
+  --bg: #f6f7f9;
+  --panel: #ffffff;
+  --ink: #1c2330;
+  --muted: #667085;
+  --line: #e4e7ec;
+  --accent: #175cd3;
+  --accent-soft: #eff4ff;
+  --ok: #067647;
+  --ok-bg: #ecfdf3;
+  --to: #b54708;
+  --to-bg: #fffaeb;
+  --te: #b42318;
+  --te-bg: #fef3f2;
+  --re: #6941c6;
+  --re-bg: #f4f0ff;
+  --mi: #475467;
+  --mi-bg: #f2f4f7;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 14px;
+}
+.app { min-height: 100vh; }
+main { max-width: 1200px; margin: 0 auto; padding: 20px 24px 64px; }
+
+.topbar {
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  padding: 12px 24px;
+  position: sticky; top: 0; z-index: 10;
+}
+.brand { font-size: 17px; font-weight: 700; color: var(--ink); text-decoration: none; }
+.brand-sub { color: var(--accent); font-weight: 500; }
+
+h1 { font-size: 22px; margin: 18px 0 6px; }
+h2 { font-size: 16px; margin: 20px 0 8px; }
+.muted { color: var(--muted); }
+.small { font-size: 12px; }
+code, .mono { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 12px; }
+
+/* ---- grid page ---- */
+.searchbar {
+  display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+  margin: 14px 0;
+}
+.searchbar input[type='text'] {
+  flex: 1; min-width: 240px;
+  padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px;
+  font-size: 14px; background: var(--panel);
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 14px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--ink);
+  display: flex; flex-direction: column; gap: 8px;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+.card:hover { border-color: var(--accent); box-shadow: 0 2px 10px rgba(23, 92, 211, 0.10); }
+.card-title { font-weight: 600; font-size: 15px; }
+.card-desc { color: var(--muted); font-size: 13px; min-height: 2.3em; }
+.chip-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip {
+  padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 600;
+}
+.chip.OK { color: var(--ok); background: var(--ok-bg); }
+.chip.TO, .chip.ATO, .chip.MTO { color: var(--to); background: var(--to-bg); }
+.chip.TE { color: var(--te); background: var(--te-bg); }
+.chip.RE { color: var(--re); background: var(--re-bg); }
+.chip.MI { color: var(--mi); background: var(--mi-bg); }
+.chip.tool { color: var(--accent); background: var(--accent-soft); font-weight: 500; }
+.chip.fastest { color: var(--ok); background: var(--ok-bg); font-weight: 600; }
+
+/* ---- data search panel ---- */
+.data-search {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+  padding: 12px 16px; margin-bottom: 16px;
+}
+.data-search .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.data-search select, .data-search button, .tabs button, .btn {
+  padding: 7px 12px; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--panel); font-size: 13px; cursor: pointer; color: var(--ink);
+}
+.data-search select { cursor: default; }
+.btn.primary, .data-search button.primary {
+  background: var(--accent); border-color: var(--accent); color: white; font-weight: 600;
+}
+.btn:disabled { opacity: 0.5; cursor: default; }
+.sql-box {
+  width: 100%; font-family: ui-monospace, Menlo, monospace; font-size: 12px;
+  border: 1px solid var(--line); border-radius: 8px; padding: 8px; margin-top: 8px;
+  min-height: 60px; resize: vertical;
+}
+.notice { padding: 8px 12px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); margin: 8px 0; }
+.error-box { padding: 8px 12px; border-radius: 8px; background: var(--te-bg); color: var(--te); margin: 8px 0; white-space: pre-wrap; }
+
+/* ---- tables ---- */
+.tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
+table.tbl { border-collapse: collapse; width: 100%; }
+.tbl th, .tbl td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.tbl th { background: #fafbfc; font-size: 12px; cursor: pointer; user-select: none; position: sticky; top: 0; }
+.tbl tr:hover td { background: #fafbff; }
+.tbl td.num { font-variant-numeric: tabular-nums; text-align: right; }
+.error-cell { max-width: 480px; overflow: hidden; text-overflow: ellipsis; }
+.error-full { white-space: pre-wrap; font-family: ui-monospace, Menlo, monospace; font-size: 11px; background: var(--te-bg); padding: 8px; border-radius: 6px; max-height: 260px; overflow: auto; }
+
+/* ---- experiment page ---- */
+.tabs { display: flex; gap: 8px; margin: 14px 0; }
+.tabs button.active { background: var(--accent); border-color: var(--accent); color: white; font-weight: 600; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+.kv { display: grid; grid-template-columns: 160px 1fr; gap: 4px 12px; font-size: 13px; }
+.kv dt { color: var(--muted); }
+.kv dd { margin: 0; }
+
+/* ---- file browser ---- */
+.fb-layout { display: grid; grid-template-columns: minmax(320px, 1fr) minmax(280px, 380px); gap: 14px; align-items: start; }
+.fb-tree { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 8px; }
+.fb-node { display: flex; align-items: center; gap: 6px; height: 100%; font-size: 13px; cursor: pointer; border-radius: 6px; padding: 0 6px; }
+.fb-node:hover { background: var(--accent-soft); }
+.fb-node.selected { background: var(--accent-soft); }
+.fb-node.dim { opacity: 0.38; }
+.fb-node .size { margin-left: auto; color: var(--muted); font-size: 11px; }
+.badge-ext { color: var(--to); background: var(--to-bg); border-radius: 4px; padding: 0 5px; font-size: 10px; font-weight: 700; }
+.fb-side { display: flex; flex-direction: column; gap: 12px; }
+
+/* graphic-walker needs room */
+.gw-wrap { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 6px; min-height: 600px; }
+
+@media (max-width: 900px) {
+  .fb-layout { grid-template-columns: 1fr; }
+}

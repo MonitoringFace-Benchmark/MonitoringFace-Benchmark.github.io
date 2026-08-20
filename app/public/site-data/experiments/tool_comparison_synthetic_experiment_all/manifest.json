@@ -1,0 +1,154 @@
+{
+ "schema_version": 1,
+ "id": "tool_comparison_synthetic_experiment_all",
+ "name": "tool comparison synthetic experiment all",
+ "run_timestamp": "2026-06-14T15:30:33",
+ "runtime_setting": "offline",
+ "timeout_s": 30,
+ "config_file": "benchmark_paper/tool_comparison_synthetic_experiment_all.yaml",
+ "monitors": [
+  {
+   "name": "TimelyMon 1",
+   "identifier": "TimelyMon",
+   "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+   "branch": "development",
+   "params": {
+    "worker": 1,
+    "output_mode": 1
+   }
+  },
+  {
+   "name": "TimelyMon 6",
+   "identifier": "TimelyMon",
+   "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+   "branch": "development",
+   "params": {
+    "worker": 6,
+    "output_mode": 1
+   }
+  },
+  {
+   "name": "MonPoly",
+   "identifier": "MonPoly",
+   "commit": "bc752d37f1d4560b5667eddac9dd1670451b758e",
+   "branch": null,
+   "params": {}
+  },
+  {
+   "name": "VeriMon",
+   "identifier": "VeriMon",
+   "commit": "bc752d37f1d4560b5667eddac9dd1670451b758e",
+   "branch": null,
+   "params": {}
+  },
+  {
+   "name": "WhyMon",
+   "identifier": "WhyMon",
+   "commit": "86684beecbfc14ed3367eb5c042f610ca8a60119",
+   "branch": null,
+   "params": {
+    "mode": "light"
+   }
+  },
+  {
+   "name": "DejaVu",
+   "identifier": "DejaVu",
+   "commit": "2b5052d89e3a961de7344a2bdcb7adf1308f2bca",
+   "branch": null,
+   "params": {
+    "stratified": true
+   }
+  },
+  {
+   "name": "EnfGuard",
+   "identifier": "EnfGuard",
+   "commit": "9e6ec02c04dbcf8fa43b9e3223cad882a6d462f3",
+   "branch": null,
+   "params": {
+    "monitoring": true
+   }
+  }
+ ],
+ "oracles": [
+  {
+   "identifier": "VeriMonOracle",
+   "name": "VeriMonOracle",
+   "monitor_name": "VeriMon"
+  }
+ ],
+ "status_files": {
+  "result_error": 3,
+  "timeout": 2,
+  "tool_error": 24,
+  "valid": 41
+ },
+ "n_runs": 70,
+ "setting_schema": {
+  "kind": "offline_synthetic",
+  "dir_template": "operators_{num_operators}/free_vars_{num_fvs}/num_{num_setting}"
+ },
+ "fingerprint": {
+  "fingerprint_experiment": "19692b3fa17e6e1cd36e64247b626253892a46d068c6c4addf6794b60417fc52",
+  "fingerprint_data": "0272d00be71dfc9e880a81aaf5ec7ce20a7f5a5e1081ef6e6aabc0d201deecd3",
+  "fingerprint_policy": "f8cb38131a9c98b3f794e0799cee621ec1be770fa1cf091fb0ba53b779344032"
+ },
+ "has_filetree": true,
+ "seeds": {
+  "[5, 2, 0]": [
+   314159265,
+   87006
+  ],
+  "[5, 2, 1]": [
+   314159265,
+   53339
+  ],
+  "[5, 2, 2]": [
+   314159265,
+   34134
+  ],
+  "[5, 2, 3]": [
+   314159265,
+   16519
+  ],
+  "[5, 2, 4]": [
+   314159265,
+   41414
+  ],
+  "[5, 2, 5]": [
+   314159265,
+   99113
+  ],
+  "[5, 2, 6]": [
+   314159265,
+   98765
+  ],
+  "[5, 2, 7]": [
+   314159265,
+   65359
+  ],
+  "[5, 2, 8]": [
+   314159265,
+   11320
+  ],
+  "[5, 2, 9]": [
+   314159265,
+   53326
+  ]
+ },
+ "data_setup": {
+  "type": "SignatureContract",
+  "SignatureContract": {
+   "trace_length": 1000,
+   "event_rate": 1000
+  }
+ },
+ "policy_setup": {
+  "type": "MfotlPolicyContract",
+  "MfotlPolicyContract": {
+   "num_preds": 4,
+   "prob_let": 0,
+   "prob_matchF": 0,
+   "prob_matchP": 0
+  }
+ }
+}

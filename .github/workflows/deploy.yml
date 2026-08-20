@@ -1,0 +1,74 @@
+# Build and deploy the MonitoringFace results site to GitHub Pages.
+#
+# Guard rails, in order:
+#   - no Git LFS anywhere near served data (Pages serves LFS pointer files)
+#   - no served file over 95 MiB (GitHub hard-rejects pushes at 100 MiB anyway)
+#   - total site under 900 MiB (Pages publishes at most 1 GB)
+
+name: Deploy site
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Guard, no LFS-tracked data
+        run: |
+          if [ -f .gitattributes ] && grep -q 'filter=lfs' .gitattributes; then
+            echo '::error::Git LFS is banned: GitHub Pages serves pointer files, not content.'
+            exit 1
+          fi
+          if grep -rIl --include='*' -m1 'version https://git-lfs' app/public/site-data/ 2>/dev/null | head -1 | grep -q .; then
+            echo '::error::LFS pointer file found inside site-data.'
+            exit 1
+          fi
+
+      - name: Guard, per-file and total size budgets
+        run: |
+          big=$(find app/public/site-data -type f -size +95M | head -5)
+          if [ -n "$big" ]; then
+            echo "::error::Files over 95 MiB cannot ship on Pages (route them to a Release):"
+            echo "$big"
+            exit 1
+          fi
+          total_kb=$(du -sk app/public/site-data | cut -f1)
+          if [ "$total_kb" -gt 921600 ]; then
+            echo "::error::site-data is $((total_kb / 1024)) MiB; the Pages budget is 900 MiB."
+            exit 1
+          fi
+
+      - uses: oven-sh/setup-bun@v2
+      - name: Build
+        working-directory: app
+        run: |
+          bun install --frozen-lockfile
+          bun run typecheck
+          bun run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: app/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

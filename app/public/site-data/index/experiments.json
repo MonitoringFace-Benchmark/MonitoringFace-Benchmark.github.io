@@ -1,0 +1,202 @@
+{
+ "schema_version": 1,
+ "generated_at": "2026-08-20T08:53:49+00:00",
+ "experiments": [
+  {
+   "id": "tool_comparison_synthetic_experiment_all",
+   "name": "tool comparison synthetic experiment all",
+   "description": "GDPR benchmarks for MonPoly, VeriMon, and TimelyMon (1 + 6 workers)",
+   "run_timestamp": "2026-06-14T15:30:33",
+   "runtime_setting": "offline",
+   "timeout_s": 30,
+   "n_runs": 70,
+   "tools": [
+    "TimelyMon 1",
+    "TimelyMon 6",
+    "MonPoly",
+    "VeriMon",
+    "WhyMon",
+    "DejaVu",
+    "EnfGuard"
+   ],
+   "status_counts": {
+    "OK": 41,
+    "RE": 3,
+    "TE": 24,
+    "TO": 2
+   },
+   "per_tool": [
+    {
+     "tool": "DejaVu",
+     "runs": 10,
+     "ok": 0,
+     "timeout": 0,
+     "tool_error": 10,
+     "result_error": 0,
+     "median_runtime_s": null,
+     "fastest": false
+    },
+    {
+     "tool": "EnfGuard",
+     "runs": 10,
+     "ok": 0,
+     "timeout": 2,
+     "tool_error": 8,
+     "result_error": 0,
+     "median_runtime_s": null,
+     "fastest": false
+    },
+    {
+     "tool": "MonPoly",
+     "runs": 10,
+     "ok": 10,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.3496,
+     "fastest": true
+    },
+    {
+     "tool": "TimelyMon 1",
+     "runs": 10,
+     "ok": 10,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.3649,
+     "fastest": false
+    },
+    {
+     "tool": "TimelyMon 6",
+     "runs": 10,
+     "ok": 10,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.3526,
+     "fastest": false
+    },
+    {
+     "tool": "VeriMon",
+     "runs": 10,
+     "ok": 10,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.3607,
+     "fastest": false
+    },
+    {
+     "tool": "WhyMon",
+     "runs": 10,
+     "ok": 1,
+     "timeout": 0,
+     "tool_error": 6,
+     "result_error": 3,
+     "median_runtime_s": 0.3523,
+     "fastest": false
+    }
+   ],
+   "fastest_tool": "MonPoly",
+   "has_filetree": true
+  },
+  {
+   "id": "tool_comparison_synthetic_experiment_fragment",
+   "name": "tool comparison synthetic experiment fragment",
+   "description": "GDPR benchmarks for EnfGuard (enforcer + monitor)",
+   "run_timestamp": "2026-06-14T15:30:33",
+   "runtime_setting": "offline",
+   "timeout_s": 60,
+   "n_runs": 350,
+   "tools": [
+    "TimelyMon 1",
+    "TimelyMon 6",
+    "MonPoly",
+    "VeriMon",
+    "WhyMon",
+    "DejaVu",
+    "EnfGuard"
+   ],
+   "status_counts": {
+    "OK": 250,
+    "RE": 34,
+    "TE": 35,
+    "TO": 31
+   },
+   "per_tool": [
+    {
+     "tool": "DejaVu",
+     "runs": 50,
+     "ok": 30,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 20,
+     "median_runtime_s": 1.0923,
+     "fastest": false
+    },
+    {
+     "tool": "EnfGuard",
+     "runs": 50,
+     "ok": 17,
+     "timeout": 11,
+     "tool_error": 20,
+     "result_error": 2,
+     "median_runtime_s": 1.5722,
+     "fastest": false
+    },
+    {
+     "tool": "MonPoly",
+     "runs": 50,
+     "ok": 50,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.3633,
+     "fastest": true
+    },
+    {
+     "tool": "TimelyMon 1",
+     "runs": 50,
+     "ok": 41,
+     "timeout": 2,
+     "tool_error": 5,
+     "result_error": 2,
+     "median_runtime_s": 0.4711,
+     "fastest": false
+    },
+    {
+     "tool": "TimelyMon 6",
+     "runs": 50,
+     "ok": 42,
+     "timeout": 0,
+     "tool_error": 5,
+     "result_error": 3,
+     "median_runtime_s": 0.4433,
+     "fastest": false
+    },
+    {
+     "tool": "VeriMon",
+     "runs": 50,
+     "ok": 50,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.4735,
+     "fastest": false
+    },
+    {
+     "tool": "WhyMon",
+     "runs": 50,
+     "ok": 20,
+     "timeout": 18,
+     "tool_error": 5,
+     "result_error": 7,
+     "median_runtime_s": 0.5777,
+     "fastest": false
+    }
+   ],
+   "fastest_tool": "MonPoly",
+   "has_filetree": true
+  }
+ ]
+}

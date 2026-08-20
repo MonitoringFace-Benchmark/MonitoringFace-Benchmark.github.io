@@ -1,0 +1,1366 @@
+{
+ "name": "tool_comparison_synthetic_experiment_all",
+ "path": "",
+ "kind": "dir",
+ "children": [
+  {
+   "name": "debug",
+   "path": "debug",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "5_2_0_10_0",
+     "path": "debug/5_2_0_10_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/5_2_0_10_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "data_10.csv",
+         "path": "debug/5_2_0_10_0/WhyMon/data_10.csv",
+         "kind": "file",
+         "size": 65073,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.in",
+         "path": "debug/5_2_0_10_0/WhyMon/data_10.csv.in",
+         "kind": "file",
+         "size": 65073,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.out",
+         "path": "debug/5_2_0_10_0/WhyMon/data_10.csv.out",
+         "kind": "file",
+         "size": 65073,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "debug/5_2_0_10_0/WhyMon/policy.policy",
+         "kind": "file",
+         "size": 109,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.in",
+         "path": "debug/5_2_0_10_0/WhyMon/policy.policy.in",
+         "kind": "file",
+         "size": 109,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.out",
+         "path": "debug/5_2_0_10_0/WhyMon/policy.policy.out",
+         "kind": "file",
+         "size": 109,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/5_2_0_10_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 847,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_1_10_0",
+     "path": "debug/5_2_1_10_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/5_2_1_10_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "data_10.csv",
+         "path": "debug/5_2_1_10_0/WhyMon/data_10.csv",
+         "kind": "file",
+         "size": 133705,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.in",
+         "path": "debug/5_2_1_10_0/WhyMon/data_10.csv.in",
+         "kind": "file",
+         "size": 133705,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.out",
+         "path": "debug/5_2_1_10_0/WhyMon/data_10.csv.out",
+         "kind": "file",
+         "size": 133705,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "debug/5_2_1_10_0/WhyMon/policy.policy",
+         "kind": "file",
+         "size": 114,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.in",
+         "path": "debug/5_2_1_10_0/WhyMon/policy.policy.in",
+         "kind": "file",
+         "size": 114,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.out",
+         "path": "debug/5_2_1_10_0/WhyMon/policy.policy.out",
+         "kind": "file",
+         "size": 114,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/5_2_1_10_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 847,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_2_10_0",
+     "path": "debug/5_2_2_10_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/5_2_2_10_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "data_10.csv",
+         "path": "debug/5_2_2_10_0/WhyMon/data_10.csv",
+         "kind": "file",
+         "size": 137800,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.in",
+         "path": "debug/5_2_2_10_0/WhyMon/data_10.csv.in",
+         "kind": "file",
+         "size": 137800,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.out",
+         "path": "debug/5_2_2_10_0/WhyMon/data_10.csv.out",
+         "kind": "file",
+         "size": 137800,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "debug/5_2_2_10_0/WhyMon/policy.policy",
+         "kind": "file",
+         "size": 76,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.in",
+         "path": "debug/5_2_2_10_0/WhyMon/policy.policy.in",
+         "kind": "file",
+         "size": 76,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.out",
+         "path": "debug/5_2_2_10_0/WhyMon/policy.policy.out",
+         "kind": "file",
+         "size": 76,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/5_2_2_10_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 811,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_3_10_0",
+     "path": "debug/5_2_3_10_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/5_2_3_10_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "data_10.csv",
+         "path": "debug/5_2_3_10_0/WhyMon/data_10.csv",
+         "kind": "file",
+         "size": 133022,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.in",
+         "path": "debug/5_2_3_10_0/WhyMon/data_10.csv.in",
+         "kind": "file",
+         "size": 133022,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.out",
+         "path": "debug/5_2_3_10_0/WhyMon/data_10.csv.out",
+         "kind": "file",
+         "size": 133022,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "debug/5_2_3_10_0/WhyMon/policy.policy",
+         "kind": "file",
+         "size": 111,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.in",
+         "path": "debug/5_2_3_10_0/WhyMon/policy.policy.in",
+         "kind": "file",
+         "size": 111,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.out",
+         "path": "debug/5_2_3_10_0/WhyMon/policy.policy.out",
+         "kind": "file",
+         "size": 111,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/5_2_3_10_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 810,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_4_10_0",
+     "path": "debug/5_2_4_10_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/5_2_4_10_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "data_10.csv",
+         "path": "debug/5_2_4_10_0/WhyMon/data_10.csv",
+         "kind": "file",
+         "size": 90764,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.in",
+         "path": "debug/5_2_4_10_0/WhyMon/data_10.csv.in",
+         "kind": "file",
+         "size": 90764,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.out",
+         "path": "debug/5_2_4_10_0/WhyMon/data_10.csv.out",
+         "kind": "file",
+         "size": 90764,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "debug/5_2_4_10_0/WhyMon/policy.policy",
+         "kind": "file",
+         "size": 87,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.in",
+         "path": "debug/5_2_4_10_0/WhyMon/policy.policy.in",
+         "kind": "file",
+         "size": 87,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.out",
+         "path": "debug/5_2_4_10_0/WhyMon/policy.policy.out",
+         "kind": "file",
+         "size": 87,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/5_2_4_10_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 847,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_5_10_0",
+     "path": "debug/5_2_5_10_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/5_2_5_10_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "data_10.csv",
+         "path": "debug/5_2_5_10_0/WhyMon/data_10.csv",
+         "kind": "file",
+         "size": 110848,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.in",
+         "path": "debug/5_2_5_10_0/WhyMon/data_10.csv.in",
+         "kind": "file",
+         "size": 110848,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.out",
+         "path": "debug/5_2_5_10_0/WhyMon/data_10.csv.out",
+         "kind": "file",
+         "size": 110848,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "debug/5_2_5_10_0/WhyMon/policy.policy",
+         "kind": "file",
+         "size": 102,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.in",
+         "path": "debug/5_2_5_10_0/WhyMon/policy.policy.in",
+         "kind": "file",
+         "size": 102,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.out",
+         "path": "debug/5_2_5_10_0/WhyMon/policy.policy.out",
+         "kind": "file",
+         "size": 102,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/5_2_5_10_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 847,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_6_10_0",
+     "path": "debug/5_2_6_10_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/5_2_6_10_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "data_10.csv",
+         "path": "debug/5_2_6_10_0/WhyMon/data_10.csv",
+         "kind": "file",
+         "size": 162815,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.in",
+         "path": "debug/5_2_6_10_0/WhyMon/data_10.csv.in",
+         "kind": "file",
+         "size": 162815,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.out",
+         "path": "debug/5_2_6_10_0/WhyMon/data_10.csv.out",
+         "kind": "file",
+         "size": 162815,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "debug/5_2_6_10_0/WhyMon/policy.policy",
+         "kind": "file",
+         "size": 83,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.in",
+         "path": "debug/5_2_6_10_0/WhyMon/policy.policy.in",
+         "kind": "file",
+         "size": 83,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.out",
+         "path": "debug/5_2_6_10_0/WhyMon/policy.policy.out",
+         "kind": "file",
+         "size": 83,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/5_2_6_10_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 812,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_7_10_0",
+     "path": "debug/5_2_7_10_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/5_2_7_10_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "data_10.csv",
+         "path": "debug/5_2_7_10_0/WhyMon/data_10.csv",
+         "kind": "file",
+         "size": 63570,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.in",
+         "path": "debug/5_2_7_10_0/WhyMon/data_10.csv.in",
+         "kind": "file",
+         "size": 63570,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.out",
+         "path": "debug/5_2_7_10_0/WhyMon/data_10.csv.out",
+         "kind": "file",
+         "size": 63570,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "debug/5_2_7_10_0/WhyMon/policy.policy",
+         "kind": "file",
+         "size": 106,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.in",
+         "path": "debug/5_2_7_10_0/WhyMon/policy.policy.in",
+         "kind": "file",
+         "size": 106,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.out",
+         "path": "debug/5_2_7_10_0/WhyMon/policy.policy.out",
+         "kind": "file",
+         "size": 106,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/5_2_7_10_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 847,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_8_10_0",
+     "path": "debug/5_2_8_10_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/5_2_8_10_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "data_10.csv",
+         "path": "debug/5_2_8_10_0/WhyMon/data_10.csv",
+         "kind": "file",
+         "size": 89314,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.in",
+         "path": "debug/5_2_8_10_0/WhyMon/data_10.csv.in",
+         "kind": "file",
+         "size": 89314,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.out",
+         "path": "debug/5_2_8_10_0/WhyMon/data_10.csv.out",
+         "kind": "file",
+         "size": 89314,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "debug/5_2_8_10_0/WhyMon/policy.policy",
+         "kind": "file",
+         "size": 94,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.in",
+         "path": "debug/5_2_8_10_0/WhyMon/policy.policy.in",
+         "kind": "file",
+         "size": 94,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.out",
+         "path": "debug/5_2_8_10_0/WhyMon/policy.policy.out",
+         "kind": "file",
+         "size": 94,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/5_2_8_10_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 847,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_9_10_0",
+     "path": "debug/5_2_9_10_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/5_2_9_10_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "data_10.csv",
+         "path": "debug/5_2_9_10_0/WhyMon/data_10.csv",
+         "kind": "file",
+         "size": 112226,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.in",
+         "path": "debug/5_2_9_10_0/WhyMon/data_10.csv.in",
+         "kind": "file",
+         "size": 112226,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_10.csv.out",
+         "path": "debug/5_2_9_10_0/WhyMon/data_10.csv.out",
+         "kind": "file",
+         "size": 112226,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "debug/5_2_9_10_0/WhyMon/policy.policy",
+         "kind": "file",
+         "size": 86,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.in",
+         "path": "debug/5_2_9_10_0/WhyMon/policy.policy.in",
+         "kind": "file",
+         "size": 86,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy.out",
+         "path": "debug/5_2_9_10_0/WhyMon/policy.policy.out",
+         "kind": "file",
+         "size": 86,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/5_2_9_10_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 809,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "operators_5",
+   "path": "operators_5",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "free_vars_2",
+     "path": "operators_5/free_vars_2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "num_0",
+       "path": "operators_5/free_vars_2/num_0",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_0/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_0/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_0/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "result",
+         "path": "operators_5/free_vars_2/num_0/result",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "result_10.res",
+           "path": "operators_5/free_vars_2/num_0/result/result_10.res",
+           "kind": "file",
+           "size": 0,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_10.res.vo",
+           "path": "operators_5/free_vars_2/num_0/result/result_10.res.vo",
+           "kind": "file",
+           "size": 6,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_10.csv",
+         "path": "operators_5/free_vars_2/num_0/data_10.csv",
+         "kind": "file",
+         "size": 220198,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_0/policy.policy",
+         "kind": "file",
+         "size": 103,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_0/signature.sig",
+         "kind": "file",
+         "size": 45,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_1",
+       "path": "operators_5/free_vars_2/num_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_1/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_1/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_1/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "result",
+         "path": "operators_5/free_vars_2/num_1/result",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "result_10.res",
+           "path": "operators_5/free_vars_2/num_1/result/result_10.res",
+           "kind": "file",
+           "size": 5579640,
+           "hosting": "external",
+           "sha256": "f2a9faf488d9e723e66f519868c7f5391746db03c4ba25440e9c950f924e76a8"
+          },
+          {
+           "name": "result_10.res.vo",
+           "path": "operators_5/free_vars_2/num_1/result/result_10.res.vo",
+           "kind": "file",
+           "size": 12,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_10.csv",
+         "path": "operators_5/free_vars_2/num_1/data_10.csv",
+         "kind": "file",
+         "size": 323613,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_1/policy.policy",
+         "kind": "file",
+         "size": 108,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_1/signature.sig",
+         "kind": "file",
+         "size": 65,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_2",
+       "path": "operators_5/free_vars_2/num_2",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_2/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_2/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_2/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "result",
+         "path": "operators_5/free_vars_2/num_2/result",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "result_10.res",
+           "path": "operators_5/free_vars_2/num_2/result/result_10.res",
+           "kind": "file",
+           "size": 28559,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_10.res.vo",
+           "path": "operators_5/free_vars_2/num_2/result/result_10.res.vo",
+           "kind": "file",
+           "size": 6,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_10.csv",
+         "path": "operators_5/free_vars_2/num_2/data_10.csv",
+         "kind": "file",
+         "size": 325946,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_2/policy.policy",
+         "kind": "file",
+         "size": 70,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_2/signature.sig",
+         "kind": "file",
+         "size": 67,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_3",
+       "path": "operators_5/free_vars_2/num_3",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_3/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_3/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_3/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "result",
+         "path": "operators_5/free_vars_2/num_3/result",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "result_10.res",
+           "path": "operators_5/free_vars_2/num_3/result/result_10.res",
+           "kind": "file",
+           "size": 0,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_10.res.vo",
+           "path": "operators_5/free_vars_2/num_3/result/result_10.res.vo",
+           "kind": "file",
+           "size": 6,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_10.csv",
+         "path": "operators_5/free_vars_2/num_3/data_10.csv",
+         "kind": "file",
+         "size": 322678,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_3/policy.policy",
+         "kind": "file",
+         "size": 105,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_3/signature.sig",
+         "kind": "file",
+         "size": 65,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_4",
+       "path": "operators_5/free_vars_2/num_4",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_4/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_4/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_4/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "result",
+         "path": "operators_5/free_vars_2/num_4/result",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "result_10.res",
+           "path": "operators_5/free_vars_2/num_4/result/result_10.res",
+           "kind": "file",
+           "size": 0,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_10.res.vo",
+           "path": "operators_5/free_vars_2/num_4/result/result_10.res.vo",
+           "kind": "file",
+           "size": 12,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_10.csv",
+         "path": "operators_5/free_vars_2/num_4/data_10.csv",
+         "kind": "file",
+         "size": 256306,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_4/policy.policy",
+         "kind": "file",
+         "size": 81,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_4/signature.sig",
+         "kind": "file",
+         "size": 53,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_5",
+       "path": "operators_5/free_vars_2/num_5",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_5/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_5/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_5/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "result",
+         "path": "operators_5/free_vars_2/num_5/result",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "result_10.res",
+           "path": "operators_5/free_vars_2/num_5/result/result_10.res",
+           "kind": "file",
+           "size": 0,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_10.res.vo",
+           "path": "operators_5/free_vars_2/num_5/result/result_10.res.vo",
+           "kind": "file",
+           "size": 6,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_10.csv",
+         "path": "operators_5/free_vars_2/num_5/data_10.csv",
+         "kind": "file",
+         "size": 287847,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_5/policy.policy",
+         "kind": "file",
+         "size": 96,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_5/signature.sig",
+         "kind": "file",
+         "size": 59,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_6",
+       "path": "operators_5/free_vars_2/num_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_6/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_6/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_6/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "result",
+         "path": "operators_5/free_vars_2/num_6/result",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "result_10.res",
+           "path": "operators_5/free_vars_2/num_6/result/result_10.res",
+           "kind": "file",
+           "size": 55822,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_10.res.vo",
+           "path": "operators_5/free_vars_2/num_6/result/result_10.res.vo",
+           "kind": "file",
+           "size": 12,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_10.csv",
+         "path": "operators_5/free_vars_2/num_6/data_10.csv",
+         "kind": "file",
+         "size": 361055,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_6/policy.policy",
+         "kind": "file",
+         "size": 77,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_6/signature.sig",
+         "kind": "file",
+         "size": 75,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_7",
+       "path": "operators_5/free_vars_2/num_7",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_7/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_7/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_7/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "result",
+         "path": "operators_5/free_vars_2/num_7/result",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "result_10.res",
+           "path": "operators_5/free_vars_2/num_7/result/result_10.res",
+           "kind": "file",
+           "size": 0,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_10.res.vo",
+           "path": "operators_5/free_vars_2/num_7/result/result_10.res.vo",
+           "kind": "file",
+           "size": 6,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_10.csv",
+         "path": "operators_5/free_vars_2/num_7/data_10.csv",
+         "kind": "file",
+         "size": 217940,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_7/policy.policy",
+         "kind": "file",
+         "size": 100,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_7/signature.sig",
+         "kind": "file",
+         "size": 45,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_8",
+       "path": "operators_5/free_vars_2/num_8",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_8/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_8/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_8/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "result",
+         "path": "operators_5/free_vars_2/num_8/result",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "result_10.res",
+           "path": "operators_5/free_vars_2/num_8/result/result_10.res",
+           "kind": "file",
+           "size": 302001,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_10.res.vo",
+           "path": "operators_5/free_vars_2/num_8/result/result_10.res.vo",
+           "kind": "file",
+           "size": 12,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_10.csv",
+         "path": "operators_5/free_vars_2/num_8/data_10.csv",
+         "kind": "file",
+         "size": 254097,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_8/policy.policy",
+         "kind": "file",
+         "size": 88,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_8/signature.sig",
+         "kind": "file",
+         "size": 53,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_9",
+       "path": "operators_5/free_vars_2/num_9",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_9/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_9/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_9/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "result",
+         "path": "operators_5/free_vars_2/num_9/result",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "result_10.res",
+           "path": "operators_5/free_vars_2/num_9/result/result_10.res",
+           "kind": "file",
+           "size": 40714,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_10.res.vo",
+           "path": "operators_5/free_vars_2/num_9/result/result_10.res.vo",
+           "kind": "file",
+           "size": 6,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_10.csv",
+         "path": "operators_5/free_vars_2/num_9/data_10.csv",
+         "kind": "file",
+         "size": 290050,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_9/policy.policy",
+         "kind": "file",
+         "size": 80,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_9/signature.sig",
+         "kind": "file",
+         "size": 59,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fingerprint",
+   "path": "fingerprint",
+   "kind": "file",
+   "size": 254,
+   "hosting": "inline"
+  }
+ ]
+}
