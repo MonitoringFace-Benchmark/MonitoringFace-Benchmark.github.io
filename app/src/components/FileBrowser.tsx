@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Tree, type NodeApi } from 'react-arborist';
 import { downloadZip } from 'client-zip';
 import { dataUrl, fmtBytes, loadFileTree } from '../lib/data';
@@ -45,6 +45,66 @@ function collectFiles(node: FileNode, out: FileNode[] = []): FileNode[] {
 function tabLabel(path: string): string {
   const parts = path.split('/');
   return parts.slice(-2).join('/');
+}
+
+interface DiffLine {
+  kind: 'ctx' | 'add' | 'del';
+  text: string;
+}
+
+/** Line-level diff (LCS with common prefix/suffix trimming). Returns null
+ * when the middle sections are too large to diff comfortably in-browser. */
+function diffLines(oldText: string, newText: string): DiffLine[] | null {
+  const al = oldText.split('\n');
+  const bl = newText.split('\n');
+  let start = 0;
+  while (start < al.length && start < bl.length && al[start] === bl[start]) start++;
+  let endA = al.length;
+  let endB = bl.length;
+  while (endA > start && endB > start && al[endA - 1] === bl[endB - 1]) {
+    endA--;
+    endB--;
+  }
+  const ca = al.slice(start, endA);
+  const cb = bl.slice(start, endB);
+  const m = ca.length;
+  const n = cb.length;
+  if (m * n > 4_000_000) return null;
+  const w = n + 1;
+  const dp = new Uint32Array((m + 1) * w);
+  for (let i = m - 1; i >= 0; i--) {
+    for (let j = n - 1; j >= 0; j--) {
+      dp[i * w + j] =
+        ca[i] === cb[j]
+          ? dp[(i + 1) * w + j + 1] + 1
+          : Math.max(dp[(i + 1) * w + j], dp[i * w + j + 1]);
+    }
+  }
+  const out: DiffLine[] = al.slice(0, start).map((t) => ({ kind: 'ctx', text: t }));
+  let i = 0;
+  let j = 0;
+  while (i < m && j < n) {
+    if (ca[i] === cb[j]) {
+      out.push({ kind: 'ctx', text: ca[i] });
+      i++;
+      j++;
+    } else if (dp[(i + 1) * w + j] >= dp[i * w + j + 1]) {
+      out.push({ kind: 'del', text: ca[i] });
+      i++;
+    } else {
+      out.push({ kind: 'add', text: cb[j] });
+      j++;
+    }
+  }
+  while (i < m) out.push({ kind: 'del', text: ca[i++] });
+  while (j < n) out.push({ kind: 'add', text: cb[j++] });
+  out.push(...al.slice(endA).map((t) => ({ kind: 'ctx' as const, text: t })));
+  return out;
+}
+
+function fileExt(name: string): string {
+  const i = name.lastIndexOf('.');
+  return i >= 0 ? name.slice(i + 1).toLowerCase() : '';
 }
 
 /** Resolve the manifest's dir_template against one run's sweep factors. */
@@ -110,13 +170,16 @@ export default function FileBrowser({
   const [tabs, setTabs] = useState<ViewerTab[]>([]);
   const [activePath, setActivePath] = useState<string | null>(null);
   const [comparePath, setComparePath] = useState<string | null>(null);
+  const [diffMode, setDiffMode] = useState(false);
   const [viewerLoading, setViewerLoading] = useState<string | null>(null);
   const [viewerError, setViewerError] = useState<string | null>(null);
+  const viewerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     setTabs([]);
     setActivePath(null);
     setComparePath(null);
+    setDiffMode(false);
     setViewerError(null);
     setViewerLoading(null);
     if (manifest.has_filetree) {
@@ -170,9 +233,19 @@ export default function FileBrowser({
     });
   }
 
+  /** Bring the viewer panel into view; the tree stays where it is, so the
+   * user sees where their click landed. */
+  function scrollToViewer() {
+    setTimeout(
+      () => viewerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }),
+      60,
+    );
+  }
+
   async function viewFile(f: FileNode) {
     if (tabs.some((t) => t.file.path === f.path)) {
       setActivePath(f.path);
+      scrollToViewer();
       return;
     }
     let tab: ViewerTab;
@@ -200,6 +273,7 @@ export default function FileBrowser({
       return next.length > MAX_TABS ? next.slice(next.length - MAX_TABS) : next;
     });
     setActivePath(f.path);
+    scrollToViewer();
   }
 
   function closeTab(path: string) {
@@ -267,6 +341,21 @@ export default function FileBrowser({
     comparePath && comparePath !== activePath
       ? tabs.find((t) => t.file.path === comparePath) ?? null
       : null;
+  const openPaths = new Set(tabs.map((t) => t.file.path));
+
+  // Diff is offered only for two viewable files of the same format.
+  const diffEligible =
+    !!activeTab &&
+    !!compareTab &&
+    activeTab.file.hosting === 'inline' &&
+    compareTab.file.hosting === 'inline' &&
+    !activeTab.binary &&
+    !compareTab.binary &&
+    fileExt(activeTab.file.name) === fileExt(compareTab.file.name);
+  const diff =
+    diffMode && diffEligible && activeTab && compareTab
+      ? diffLines(compareTab.content, activeTab.content)
+      : null;
 
   return (
     <>
@@ -289,6 +378,7 @@ export default function FileBrowser({
                 checked={checked}
                 onCheck={toggleChecked}
                 onView={viewFile}
+                openPaths={openPaths}
                 experimentId={manifest.id}
               />
             )}
@@ -339,7 +429,7 @@ export default function FileBrowser({
       </div>
 
       {(tabs.length > 0 || viewerLoading || viewerError) && (
-        <div className="panel fb-viewer">
+        <div className="panel fb-viewer" ref={viewerRef}>
           <div className="fb-tabs">
             {tabs.map((t) => (
               <button
@@ -379,16 +469,55 @@ export default function FileBrowser({
                 </select>
               </label>
             )}
+            {compareTab && diffEligible && (
+              <label className="muted small" style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                <input
+                  type="checkbox"
+                  checked={diffMode}
+                  onChange={(e) => setDiffMode(e.target.checked)}
+                />
+                diff
+              </label>
+            )}
           </div>
           {viewerError && <div className="error-box">{viewerError}</div>}
-          <div className={compareTab ? 'fb-compare' : ''}>
-            {activeTab && (
-              <ViewerPane tab={activeTab} experimentId={manifest.id} />
-            )}
-            {compareTab && (
-              <ViewerPane tab={compareTab} experimentId={manifest.id} />
-            )}
-          </div>
+          {diffMode && diffEligible && diff === null && (
+            <div className="notice">
+              These files are too large to diff in the browser; showing them
+              side by side instead.
+            </div>
+          )}
+          {diff && activeTab && compareTab ? (
+            <div className="fb-pane">
+              <div className="fb-pane-head">
+                <span className="muted small">
+                  diff: <span className="mono">{tabLabel(compareTab.file.path)}</span>
+                  {' → '}
+                  <span className="mono">{tabLabel(activeTab.file.path)}</span>
+                </span>
+                {(activeTab.truncated || compareTab.truncated) && (
+                  <span className="chip TO">computed on the loaded portions only</span>
+                )}
+              </div>
+              <pre className="fb-viewer-content fb-diff">
+                {diff.map((l, i) => (
+                  <span key={i} className={`diff-${l.kind}`}>
+                    {l.kind === 'add' ? '+ ' : l.kind === 'del' ? '- ' : '  '}
+                    {l.text || ' '}
+                  </span>
+                ))}
+              </pre>
+            </div>
+          ) : (
+            <div className={compareTab ? 'fb-compare' : ''}>
+              {activeTab && (
+                <ViewerPane tab={activeTab} experimentId={manifest.id} />
+              )}
+              {compareTab && (
+                <ViewerPane tab={compareTab} experimentId={manifest.id} />
+              )}
+            </div>
+          )}
         </div>
       )}
     </>
@@ -449,6 +578,7 @@ function Node({
   checked,
   onCheck,
   onView,
+  openPaths,
   experimentId,
 }: {
   node: NodeApi<TreeDatum>;
@@ -457,10 +587,12 @@ function Node({
   checked: Set<string>;
   onCheck: (path: string) => void;
   onView: (f: FileNode) => void;
+  openPaths: Set<string>;
   experimentId: string;
 }) {
   const f = node.data.file;
   const dim = !matches(f);
+  const isOpen = f.kind === 'file' && openPaths.has(f.path);
   return (
     <div
       style={style}
@@ -478,8 +610,8 @@ function Node({
       <span>{f.kind === 'dir' ? (node.isOpen ? '📂' : '📁') : '📄'}</span>
       {f.kind === 'file' ? (
         <span
-          className="fb-name"
-          title="view file"
+          className={`fb-name ${isOpen ? 'open' : ''}`}
+          title={isOpen ? 'open in the viewer below; click to jump to it' : 'view file'}
           onClick={(e) => {
             e.stopPropagation();
             onView(f);
@@ -490,6 +622,7 @@ function Node({
       ) : (
         <span>{f.name}</span>
       )}
+      {isOpen && <span className="fb-open-badge">viewing</span>}
       {f.kind === 'file' && f.hosting === 'inline' && (
         <a
           className="fb-dl"

@@ -135,6 +135,15 @@ table.tbl { border-collapse: collapse; width: 100%; }
 .fb-node .size { margin-left: auto; color: var(--muted); font-size: 11px; }
 .fb-name { color: var(--accent); cursor: pointer; }
 .fb-name:hover { text-decoration: underline; }
+.fb-name.open { font-weight: 600; }
+.fb-open-badge {
+  color: var(--accent); background: var(--accent-soft);
+  border-radius: 4px; padding: 0 5px; font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+.fb-diff span { display: block; }
+.diff-add { background: var(--ok-bg); color: var(--ok); }
+.diff-del { background: var(--te-bg); color: var(--te); }
 .fb-dl { text-decoration: none; font-size: 12px; }
 .fb-viewer { margin-top: 14px; }
 .fb-tabs { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
