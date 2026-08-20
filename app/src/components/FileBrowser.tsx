@@ -691,7 +691,9 @@ function ViewerPane({ tab, experimentId }: { tab: ViewerTab; experimentId: strin
   return (
     <div className="fb-pane">
       <div className="fb-pane-head">
-        <strong className="mono small">{f.path}</strong>
+        <strong className="mono small" title={f.path}>
+          <bdi>{f.path}</bdi>
+        </strong>
         <span className="muted small">{fmtBytes(f.size)}</span>
         {f.hosting === 'inline' && (
           <span className={`chip ${tab.truncated ? 'TO' : 'OK'}`}>
