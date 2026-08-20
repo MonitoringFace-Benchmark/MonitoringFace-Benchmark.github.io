@@ -133,6 +133,24 @@ table.tbl { border-collapse: collapse; width: 100%; }
 .fb-node.selected { background: var(--accent-soft); }
 .fb-node.dim { opacity: 0.38; }
 .fb-node .size { margin-left: auto; color: var(--muted); font-size: 11px; }
+.fb-name { color: var(--accent); cursor: pointer; }
+.fb-name:hover { text-decoration: underline; }
+.fb-dl { text-decoration: none; font-size: 12px; }
+.fb-viewer { margin-top: 14px; }
+.fb-viewer-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.fb-viewer-content {
+  margin: 10px 0 0;
+  padding: 10px 12px;
+  background: #fafbfc;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  max-height: 420px;
+  overflow: auto;
+  white-space: pre;
+}
 .badge-ext { color: var(--to); background: var(--to-bg); border-radius: 4px; padding: 0 5px; font-size: 10px; font-weight: 700; }
 .fb-side { display: flex; flex-direction: column; gap: 12px; }
 
