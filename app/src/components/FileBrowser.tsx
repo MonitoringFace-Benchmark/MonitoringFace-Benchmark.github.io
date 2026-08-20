@@ -9,6 +9,7 @@ import type { QueryResult } from '../lib/duckdb';
 // larger ones show only the first PREVIEW_BYTES.
 const FULL_LOAD_LIMIT = 256 * 1024;
 const PREVIEW_BYTES = 64 * 1024;
+const MAX_TABS = 10;
 
 interface TreeDatum {
   id: string;
@@ -17,7 +18,7 @@ interface TreeDatum {
   children?: TreeDatum[];
 }
 
-interface ViewerState {
+interface ViewerTab {
   file: FileNode;
   content: string;
   truncated: boolean;
@@ -37,6 +38,13 @@ function collectFiles(node: FileNode, out: FileNode[] = []): FileNode[] {
   if (node.kind === 'file') out.push(node);
   node.children?.forEach((c) => collectFiles(c, out));
   return out;
+}
+
+/** Tab label: last two path segments, so two policy.policy files from
+ * different settings stay distinguishable. */
+function tabLabel(path: string): string {
+  const parts = path.split('/');
+  return parts.slice(-2).join('/');
 }
 
 /** Resolve the manifest's dir_template against one run's sweep factors. */
@@ -99,12 +107,16 @@ export default function FileBrowser({
   const [checked, setChecked] = useState<Set<string>>(new Set());
   const [exporting, setExporting] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [viewer, setViewer] = useState<ViewerState | null>(null);
+  const [tabs, setTabs] = useState<ViewerTab[]>([]);
+  const [activePath, setActivePath] = useState<string | null>(null);
+  const [comparePath, setComparePath] = useState<string | null>(null);
   const [viewerLoading, setViewerLoading] = useState<string | null>(null);
   const [viewerError, setViewerError] = useState<string | null>(null);
 
   useEffect(() => {
-    setViewer(null);
+    setTabs([]);
+    setActivePath(null);
+    setComparePath(null);
     setViewerError(null);
     setViewerLoading(null);
     if (manifest.has_filetree) {
@@ -159,26 +171,46 @@ export default function FileBrowser({
   }
 
   async function viewFile(f: FileNode) {
-    if (f.hosting !== 'inline') {
-      // not fetchable from the browser; show metadata only
-      setViewer({ file: f, content: '', truncated: false, binary: false });
-      setViewerError(null);
+    if (tabs.some((t) => t.file.path === f.path)) {
+      setActivePath(f.path);
       return;
     }
-    setViewerLoading(f.path);
-    setViewerError(null);
-    try {
-      const url = dataUrl(`experiments/${manifest.id}/files/${f.path}`);
-      const full = (f.size ?? 0) <= FULL_LOAD_LIMIT;
-      const text = await fetchPrefix(url, full ? Infinity : PREVIEW_BYTES);
-      const binary = text.includes('\u0000');
-      setViewer({ file: f, content: binary ? '' : text, truncated: !full, binary });
-    } catch (e) {
-      setViewer(null);
-      setViewerError(String(e));
-    } finally {
+    let tab: ViewerTab;
+    if (f.hosting !== 'inline') {
+      // not fetchable from the browser; the pane shows metadata only
+      tab = { file: f, content: '', truncated: false, binary: false };
+    } else {
+      setViewerLoading(f.path);
+      setViewerError(null);
+      try {
+        const url = dataUrl(`experiments/${manifest.id}/files/${f.path}`);
+        const full = (f.size ?? 0) <= FULL_LOAD_LIMIT;
+        const text = await fetchPrefix(url, full ? Infinity : PREVIEW_BYTES);
+        const binary = text.includes('\u0000');
+        tab = { file: f, content: binary ? '' : text, truncated: !full, binary };
+      } catch (e) {
+        setViewerError(String(e));
+        setViewerLoading(null);
+        return;
+      }
       setViewerLoading(null);
     }
+    setTabs((prev) => {
+      const next = [...prev, tab];
+      return next.length > MAX_TABS ? next.slice(next.length - MAX_TABS) : next;
+    });
+    setActivePath(f.path);
+  }
+
+  function closeTab(path: string) {
+    setTabs((prev) => {
+      const next = prev.filter((t) => t.file.path !== path);
+      if (comparePath === path) setComparePath(null);
+      if (activePath === path) {
+        setActivePath(next.length ? next[next.length - 1].file.path : null);
+      }
+      return next;
+    });
   }
 
   async function exportZip() {
@@ -229,6 +261,12 @@ export default function FileBrowser({
   }
   if (error) return <div className="error-box">{error}</div>;
   if (!tree) return <p className="muted">Loading file tree…</p>;
+
+  const activeTab = tabs.find((t) => t.file.path === activePath) ?? null;
+  const compareTab =
+    comparePath && comparePath !== activePath
+      ? tabs.find((t) => t.file.path === comparePath) ?? null
+      : null;
 
   return (
     <>
@@ -300,67 +338,107 @@ export default function FileBrowser({
         </div>
       </div>
 
-      {(viewer || viewerLoading || viewerError) && (
+      {(tabs.length > 0 || viewerLoading || viewerError) && (
         <div className="panel fb-viewer">
-          <div className="fb-viewer-head">
-            <span>📄</span>
-            <strong className="mono">{viewerLoading ?? viewer?.file.path}</strong>
-            {viewer && <span className="muted small">{fmtBytes(viewer.file.size)}</span>}
-            {viewer && viewer.file.hosting === 'inline' && (
-              <span className={`chip ${viewer.truncated ? 'TO' : 'OK'}`}>
-                {viewer.truncated
-                  ? `preview · first ${fmtBytes(PREVIEW_BYTES)}`
-                  : 'complete file'}
-              </span>
-            )}
-            {viewer && viewer.file.hosting === 'inline' && (
-              <a
-                href={dataUrl(`experiments/${manifest.id}/files/${viewer.file.path}`)}
-                download={viewer.file.name}
+          <div className="fb-tabs">
+            {tabs.map((t) => (
+              <button
+                key={t.file.path}
+                className={`fb-tab ${t.file.path === activePath ? 'active' : ''}`}
+                onClick={() => setActivePath(t.file.path)}
+                title={t.file.path}
               >
-                download
-              </a>
+                {tabLabel(t.file.path)}
+                <span
+                  className="fb-tab-x"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    closeTab(t.file.path);
+                  }}
+                >
+                  ×
+                </span>
+              </button>
+            ))}
+            {viewerLoading && <span className="muted small">loading {viewerLoading}…</span>}
+            {tabs.length > 1 && (
+              <label className="fb-compare-pick muted small">
+                compare side by side with
+                <select
+                  value={comparePath ?? ''}
+                  onChange={(e) => setComparePath(e.target.value || null)}
+                >
+                  <option value="">— none —</option>
+                  {tabs
+                    .filter((t) => t.file.path !== activePath)
+                    .map((t) => (
+                      <option key={t.file.path} value={t.file.path}>
+                        {tabLabel(t.file.path)}
+                      </option>
+                    ))}
+                </select>
+              </label>
             )}
-            <button
-              className="btn"
-              style={{ marginLeft: 'auto' }}
-              onClick={() => {
-                setViewer(null);
-                setViewerError(null);
-              }}
-            >
-              close
-            </button>
           </div>
           {viewerError && <div className="error-box">{viewerError}</div>}
-          {viewerLoading && <p className="muted">Loading…</p>}
-          {viewer && viewer.file.hosting !== 'inline' && (
-            <p className="muted small" style={{ marginTop: 10 }}>
-              This file is hosted externally (too large for the site bundle) and
-              cannot be viewed in the browser. Size {fmtBytes(viewer.file.size)},
-              sha256 <span className="mono">{viewer.file.sha256 ?? 'n/a'}</span>.
-              Download it from the experiment's release assets.
-            </p>
-          )}
-          {viewer && viewer.binary && (
-            <p className="muted small" style={{ marginTop: 10 }}>
-              This file looks binary; use the download link instead.
-            </p>
-          )}
-          {viewer && viewer.file.hosting === 'inline' && !viewer.binary && (
-            <>
-              <pre className="fb-viewer-content">{viewer.content}</pre>
-              {viewer.truncated && (
-                <p className="muted small" style={{ marginTop: 8 }}>
-                  Showing the first {fmtBytes(PREVIEW_BYTES)} of{' '}
-                  {fmtBytes(viewer.file.size)}; download for the complete file.
-                </p>
-              )}
-            </>
-          )}
+          <div className={compareTab ? 'fb-compare' : ''}>
+            {activeTab && (
+              <ViewerPane tab={activeTab} experimentId={manifest.id} />
+            )}
+            {compareTab && (
+              <ViewerPane tab={compareTab} experimentId={manifest.id} />
+            )}
+          </div>
         </div>
       )}
     </>
+  );
+}
+
+function ViewerPane({ tab, experimentId }: { tab: ViewerTab; experimentId: string }) {
+  const f = tab.file;
+  return (
+    <div className="fb-pane">
+      <div className="fb-pane-head">
+        <strong className="mono small">{f.path}</strong>
+        <span className="muted small">{fmtBytes(f.size)}</span>
+        {f.hosting === 'inline' && (
+          <span className={`chip ${tab.truncated ? 'TO' : 'OK'}`}>
+            {tab.truncated ? `preview · first ${fmtBytes(PREVIEW_BYTES)}` : 'complete file'}
+          </span>
+        )}
+        {f.hosting === 'inline' && (
+          <a
+            href={dataUrl(`experiments/${experimentId}/files/${f.path}`)}
+            download={f.name}
+          >
+            download
+          </a>
+        )}
+      </div>
+      {f.hosting !== 'inline' ? (
+        <p className="muted small" style={{ marginTop: 10 }}>
+          This file is hosted externally (too large for the site bundle) and
+          cannot be viewed in the browser. Size {fmtBytes(f.size)}, sha256{' '}
+          <span className="mono">{f.sha256 ?? 'n/a'}</span>. Download it from
+          the experiment's release assets.
+        </p>
+      ) : tab.binary ? (
+        <p className="muted small" style={{ marginTop: 10 }}>
+          This file looks binary; use the download link instead.
+        </p>
+      ) : (
+        <>
+          <pre className="fb-viewer-content">{tab.content}</pre>
+          {tab.truncated && (
+            <p className="muted small" style={{ marginTop: 8 }}>
+              Showing the first {fmtBytes(PREVIEW_BYTES)} of {fmtBytes(f.size)};
+              download for the complete file.
+            </p>
+          )}
+        </>
+      )}
+    </div>
   );
 }
 
