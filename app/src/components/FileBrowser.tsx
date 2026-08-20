@@ -324,15 +324,16 @@ export default function FileBrowser({
     scrollToViewer();
   }
 
-  /** Open the canonical source and the converted final input side by side. */
+  /** Open the canonical source and the converted final input side by side,
+   * in label order: source in the left (active) pane, converted on the right. */
   async function compareProvenance(sourcePath: string, storedPath: string) {
     const src = nodeByPath.get(sourcePath);
     const st = nodeByPath.get(storedPath);
     if (!src || !st) return;
     await viewFile(src);
     await viewFile(st);
-    setComparePath(sourcePath);
-    setActivePath(storedPath);
+    setActivePath(sourcePath);
+    setComparePath(storedPath);
   }
 
   function closeTab(path: string) {
