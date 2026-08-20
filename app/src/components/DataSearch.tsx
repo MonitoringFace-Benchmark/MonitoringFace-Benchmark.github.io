@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { query, type QueryResult } from '../lib/duckdb';
 import { fmtNum } from '../lib/data';
 
@@ -126,7 +127,11 @@ export default function DataSearch({ tools, onMatch }: Props) {
                     <tr key={i}>
                       {sqlResult.columns.map((c) => (
                         <td key={c} className={typeof r[c] === 'number' ? 'num' : ''}>
-                          {fmtNum(r[c])}
+                          {c === 'experiment_id' && r[c] != null ? (
+                            <Link to={`/e/${String(r[c])}`}>{String(r[c])}</Link>
+                          ) : (
+                            fmtNum(r[c])
+                          )}
                         </td>
                       ))}
                     </tr>
