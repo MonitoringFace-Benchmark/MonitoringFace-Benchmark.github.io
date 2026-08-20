@@ -87,6 +87,11 @@ export default function GridPage() {
             </div>
             <div className="chip-row">
               {c.fastest_tool && <span className="chip fastest">fastest: {c.fastest_tool}</span>}
+              {c.has_provenance && (
+                <span className="chip OK" title="exact final tool inputs stored with conversion manifests">
+                  provenance
+                </span>
+              )}
               <span className="chip tool">{c.tools.length} tools</span>
               <span className="chip tool">{c.n_runs} runs</span>
               {c.run_timestamp && (

@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Tree, type NodeApi } from 'react-arborist';
 import { downloadZip } from 'client-zip';
-import { dataUrl, fmtBytes, loadFileTree } from '../lib/data';
-import type { FileNode, Manifest } from '../lib/types';
+import { dataUrl, fmtBytes, loadFileTree, loadProvenance } from '../lib/data';
+import type { FileNode, Manifest, ProvenanceManifest } from '../lib/types';
 import type { QueryResult } from '../lib/duckdb';
 
 // Files at or below this size are loaded completely into the viewer;
@@ -173,6 +173,9 @@ export default function FileBrowser({
   const [diffMode, setDiffMode] = useState(false);
   const [viewerLoading, setViewerLoading] = useState<string | null>(null);
   const [viewerError, setViewerError] = useState<string | null>(null);
+  const [prov, setProv] = useState<ProvenanceManifest | null>(null);
+  const [provLoading, setProvLoading] = useState(false);
+  const [provError, setProvError] = useState<string | null>(null);
   const viewerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -210,7 +213,52 @@ export default function FileBrowser({
 
   const selectedRunRow = runOptions.find((o) => o.key === selectedRun)?.run;
 
+  // Provenance entry of the selected run: bundle manifests published without
+  // --provenance have no index, and everything below degrades to nothing.
+  const provEntry = useMemo(() => {
+    if (!selectedRunRow || !manifest.provenance?.length) return null;
+    const setting = String(selectedRunRow.setting ?? '');
+    const key = setting.includes('_') ? setting.slice(0, setting.lastIndexOf('_')) : setting;
+    return (
+      manifest.provenance.find(
+        (p) => p.tool === selectedRunRow.tool_name && p.setting_key === key,
+      ) ?? null
+    );
+  }, [selectedRunRow, manifest]);
+
+  useEffect(() => {
+    setProv(null);
+    setProvError(null);
+    if (!provEntry) return;
+    let stale = false;
+    setProvLoading(true);
+    loadProvenance(manifest.id, provEntry.dir)
+      .then((m) => { if (!stale) setProv(m); })
+      .catch((e) => { if (!stale) setProvError(String(e)); })
+      .finally(() => { if (!stale) setProvLoading(false); });
+    return () => { stale = true; };
+  }, [provEntry, manifest.id]);
+
+  const nodeByPath = useMemo(() => {
+    const map = new Map<string, FileNode>();
+    if (tree) for (const f of collectFiles(tree)) map.set(f.path, f);
+    return map;
+  }, [tree]);
+
   function nodeMatchesRun(f: FileNode): boolean {
+    // the grafted provenance subtree follows the run selection: only the
+    // selected run's entry stays lit
+    if (f.path === 'provenance' || f.path.startsWith('provenance/')) {
+      if (!selectedRun) return true;
+      if (!provEntry) return false;
+      const d = provEntry.dir;
+      return (
+        f.path === 'provenance' ||
+        f.path === d ||
+        f.path.startsWith(d + '/') ||
+        d.startsWith(f.path + '/')
+      );
+    }
     if (!highlightPrefix) return true;
     const inPrefix =
       f.path.startsWith(highlightPrefix + '/') || f.path === highlightPrefix;
@@ -274,6 +322,17 @@ export default function FileBrowser({
     });
     setActivePath(f.path);
     scrollToViewer();
+  }
+
+  /** Open the canonical source and the converted final input side by side. */
+  async function compareProvenance(sourcePath: string, storedPath: string) {
+    const src = nodeByPath.get(sourcePath);
+    const st = nodeByPath.get(storedPath);
+    if (!src || !st) return;
+    await viewFile(src);
+    await viewFile(st);
+    setComparePath(sourcePath);
+    setActivePath(storedPath);
   }
 
   function closeTab(path: string) {
@@ -387,11 +446,15 @@ export default function FileBrowser({
         <div className="fb-side">
           <div className="panel">
             <h2 style={{ marginTop: 0 }}>Data of a single run</h2>
-            {manifest.setting_schema.dir_template ? (
+            {manifest.setting_schema.dir_template ||
+            (manifest.provenance?.length ?? 0) > 0 ? (
               <>
                 <p className="muted small">
-                  Pick a run to dim everything that was not part of it (its setting
-                  directory, trace, policy, signature, seeds and oracle result).
+                  {manifest.setting_schema.dir_template
+                    ? 'Pick a run to dim everything that was not part of it (its ' +
+                      'setting directory, trace, policy, signature, seeds and oracle result).'
+                    : 'Pick a run to inspect the exact final input its tool received; ' +
+                      'per-run file dimming is only available for offline synthetic experiments.'}
                 </p>
                 <select
                   style={{ width: '100%' }}
@@ -414,6 +477,105 @@ export default function FileBrowser({
               </p>
             )}
           </div>
+          {selectedRunRow && (manifest.provenance?.length ?? 0) > 0 && (
+            <div className="panel">
+              <h2 style={{ marginTop: 0 }}>Final tool input</h2>
+              {!provEntry ? (
+                <p className="muted small">
+                  No provenance was recorded for this run (published before the
+                  provenance flag, or capture failed).
+                </p>
+              ) : provError ? (
+                <div className="error-box">{provError}</div>
+              ) : provLoading || !prov ? (
+                <p className="muted small">Loading provenance…</p>
+              ) : (
+                <>
+                  <div className="chip-row" style={{ marginBottom: 8 }}>
+                    {prov.input_unchanged_after_run === true && (
+                      <span className="chip OK" title="inputs re-hashed after the run">
+                        input unchanged ✓
+                      </span>
+                    )}
+                    {prov.input_unchanged_after_run === false && (
+                      <span className="chip TE" title="the tool modified or removed its input during the run">
+                        input modified during run!
+                      </span>
+                    )}
+                    {prov.captures > 1 && (
+                      <span className="chip tool" title="repeat runs re-converted and hash-matched">
+                        {prov.captures}× hash-verified
+                      </span>
+                    )}
+                  </div>
+                  {prov.entries.map((e) => {
+                    const storedPath = e.stored ? `${provEntry.dir}/${e.stored.file}` : null;
+                    const srcNode = nodeByPath.get(e.source.file);
+                    const storedNode = storedPath ? nodeByPath.get(storedPath) : null;
+                    return (
+                      <div key={e.kind} className="prov-entry">
+                        <div className="prov-line">
+                          <span className="chip tool">{e.kind}</span>
+                          {srcNode ? (
+                            <span className="fb-name" onClick={() => viewFile(srcNode)}>
+                              {e.source.file.split('/').pop()}
+                            </span>
+                          ) : (
+                            <span className="mono small">{e.source.file.split('/').pop()}</span>
+                          )}
+                          {e.stored ? (
+                            <>
+                              <span className="muted">→</span>
+                              {storedNode ? (
+                                <span className="fb-name" onClick={() => viewFile(storedNode)}>
+                                  {e.stored.file}
+                                </span>
+                              ) : (
+                                <span className="mono small">{e.stored.file}</span>
+                              )}
+                            </>
+                          ) : (
+                            <span className="muted small">
+                              {e.steps === 'custom' ? 'custom preprocessing' : 'used unmodified'}
+                            </span>
+                          )}
+                        </div>
+                        {Array.isArray(e.steps) && e.steps.length > 0 && (
+                          <details className="prov-steps">
+                            <summary className="muted small">
+                              via {e.steps.map((s) => s.converter).join(' → ')}
+                            </summary>
+                            {e.steps.map((s, i) => (
+                              <div key={i} className="small">
+                                <span className="mono">{s.source_format} → {s.target_format}</span>
+                                {s.command && (
+                                  <pre className="prov-cmd">{s.command.join(' ')}</pre>
+                                )}
+                              </div>
+                            ))}
+                          </details>
+                        )}
+                        {e.stored && srcNode && storedNode &&
+                          srcNode.hosting === 'inline' && storedNode.hosting === 'inline' && (
+                          <button
+                            className="btn small"
+                            onClick={() => compareProvenance(e.source.file, storedPath!)}
+                          >
+                            compare source ↔ converted
+                          </button>
+                        )}
+                      </div>
+                    );
+                  })}
+                  {prov.tool_invocation && (
+                    <p className="muted small" style={{ marginBottom: 0 }}>
+                      invoked: <span className="mono">{prov.tool_invocation.join(' ')}</span>
+                    </p>
+                  )}
+                </>
+              )}
+            </div>
+          )}
           <div className="panel">
             <h2 style={{ marginTop: 0 }}>Export</h2>
             <p className="muted small">

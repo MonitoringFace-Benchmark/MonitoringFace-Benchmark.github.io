@@ -1,0 +1,1 @@
+NOT (((EXISTS y1. ((P1(y1) AND ((NOT (P0(y1))))))) UNTIL[3,9] ((P1(x1) UNTIL[2,4] (P0(x1))))))

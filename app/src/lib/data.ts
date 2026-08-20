@@ -1,4 +1,4 @@
-import type { ExperimentsIndex, Manifest, FileNode } from './types';
+import type { ExperimentsIndex, Manifest, FileNode, ProvenanceManifest } from './types';
 
 /** Absolute URL for a path under site-data/, valid in dev and on Pages. */
 export function dataUrl(rel: string): string {
@@ -19,6 +19,11 @@ export const loadManifest = (id: string) =>
 
 export const loadFileTree = (id: string) =>
   fetchJson<FileNode>(`experiments/${id}/filetree.json`);
+
+/** Full provenance manifest of one (setting, tool); dir comes from the
+ * bundle manifest's provenance index. */
+export const loadProvenance = (id: string, dir: string) =>
+  fetchJson<ProvenanceManifest>(`experiments/${id}/files/${dir}/provenance.json`);
 
 export async function loadDescription(id: string): Promise<string> {
   const res = await fetch(dataUrl(`experiments/${id}/description.md`));

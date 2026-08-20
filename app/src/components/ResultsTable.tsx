@@ -16,7 +16,7 @@ const PREFERRED_ORDER = [
 ];
 const HIDDEN = new Set(['experiment_id', 'status_class', 'params_json', 'error',
   'max_mem_kb', 'num_operators', 'num_fvs', 'num_setting', 'data_set_size',
-  'repetition', 'tool_id', 'commit', 'branch']);
+  'repetition', 'tool_id', 'commit', 'branch', 'has_provenance']);
 
 type Row = Record<string, unknown>;
 
@@ -41,9 +41,15 @@ export default function ResultsTable({ result }: { result: QueryResult }) {
 
   const columns = useMemo(() => {
     const helper = createColumnHelper<Row>();
+    // drop columns that are entirely empty for this experiment (e.g.
+    // input_unchanged on bundles published without provenance)
+    const hasValue = (c: string) =>
+      result.rows.some((r) => r[c] !== null && r[c] !== undefined);
     const visible = [
-      ...PREFERRED_ORDER.filter((c) => result.columns.includes(c)),
-      ...result.columns.filter((c) => !PREFERRED_ORDER.includes(c) && !HIDDEN.has(c)),
+      ...PREFERRED_ORDER.filter((c) => result.columns.includes(c) && hasValue(c)),
+      ...result.columns.filter(
+        (c) => !PREFERRED_ORDER.includes(c) && !HIDDEN.has(c) && hasValue(c),
+      ),
     ];
     return visible.map((c) =>
       // null -> undefined + sortUndefined so timed-out/errored runs with no

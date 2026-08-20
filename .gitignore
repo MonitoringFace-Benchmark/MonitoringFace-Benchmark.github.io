@@ -2,3 +2,4 @@ app/node_modules/
 app/dist/
 ingest/.venv/
 .DS_Store
+ingest/__pycache__/

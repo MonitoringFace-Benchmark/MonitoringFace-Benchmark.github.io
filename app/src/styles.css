@@ -187,3 +187,17 @@ table.tbl { border-collapse: collapse; width: 100%; }
 @media (max-width: 900px) {
   .fb-layout { grid-template-columns: 1fr; }
 }
+
+/* ---- provenance panel (Files tab) ---- */
+.prov-entry { border-top: 1px solid var(--line); padding: 8px 0 6px; }
+.prov-entry:first-of-type { border-top: none; }
+.prov-line { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: 13px; }
+.prov-steps { margin: 5px 0 4px; }
+.prov-steps summary { cursor: pointer; }
+.prov-cmd {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 11px; background: var(--accent-soft); color: var(--ink);
+  padding: 6px 8px; border-radius: 6px; margin: 4px 0;
+  white-space: pre-wrap; word-break: break-all;
+}
+.btn.small { padding: 4px 9px; font-size: 12px; margin-top: 2px; }

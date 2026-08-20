@@ -56,6 +56,18 @@ bun run dev        # http://localhost:5173  (npm/pnpm work too)
 `bun run build` produces `dist/` exactly as Pages serves it;
 `bun run preview` serves that build. `bun run typecheck` runs tsc.
 
+## Provenance
+
+Results directories produced with the platform's `--provenance` flag carry a
+`provenance/` folder: each tool's exact final converted inputs plus a
+`provenance.json` manifest (canonical sources, conversion commands, sha256 of
+both endpoints). The ingest verifies every pointer and hash and refuses the
+bundle on a mismatch; publishes are staged and swapped atomically, so a
+refused publish never damages the previously published bundle. On the site,
+selecting a run in the file browser shows the "Final tool input" panel with
+the conversion chain and a source-vs-converted compare view. Everything is
+optional: bundles published without provenance render exactly as before.
+
 ## Data model
 
 - `site-data/index/experiments.json`  grid cards with precomputed aggregates

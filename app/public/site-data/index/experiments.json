@@ -1,7 +1,82 @@
 {
  "schema_version": 1,
- "generated_at": "2026-08-20T08:53:49+00:00",
+ "generated_at": "2026-08-20T15:08:32+00:00",
  "experiments": [
+  {
+   "id": "example_synthetic_experiment",
+   "name": "example synthetic experiment",
+   "description": "# example synthetic experiment",
+   "run_timestamp": "2026-08-20T16:39:25",
+   "runtime_setting": "offline",
+   "timeout_s": 20,
+   "n_runs": 10,
+   "tools": [
+    "TimelyMon 1",
+    "TimelyMon 6",
+    "VeriMon",
+    "MonPoly",
+    "WhyMon"
+   ],
+   "status_counts": {
+    "OK": 9,
+    "RE": 1
+   },
+   "per_tool": [
+    {
+     "tool": "MonPoly",
+     "runs": 2,
+     "ok": 2,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.3972,
+     "fastest": false
+    },
+    {
+     "tool": "TimelyMon 1",
+     "runs": 2,
+     "ok": 2,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.4339,
+     "fastest": false
+    },
+    {
+     "tool": "TimelyMon 6",
+     "runs": 2,
+     "ok": 2,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.3944,
+     "fastest": true
+    },
+    {
+     "tool": "VeriMon",
+     "runs": 2,
+     "ok": 2,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.5736,
+     "fastest": false
+    },
+    {
+     "tool": "WhyMon",
+     "runs": 2,
+     "ok": 1,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 1,
+     "median_runtime_s": 2.7204,
+     "fastest": false
+    }
+   ],
+   "fastest_tool": "TimelyMon 6",
+   "has_filetree": true,
+   "has_provenance": true
+  },
   {
    "id": "tool_comparison_synthetic_experiment_all",
    "name": "tool comparison synthetic experiment all",
@@ -98,7 +173,8 @@
     }
    ],
    "fastest_tool": "MonPoly",
-   "has_filetree": true
+   "has_filetree": true,
+   "has_provenance": false
   },
   {
    "id": "tool_comparison_synthetic_experiment_fragment",
@@ -196,7 +272,8 @@
     }
    ],
    "fastest_tool": "MonPoly",
-   "has_filetree": true
+   "has_filetree": true,
+   "has_provenance": false
   }
  ]
 }

@@ -259,6 +259,82 @@ def ingest_file_tree(inputs_dir: Path, bundle_dir: Path,
     return tree
 
 
+def ingest_provenance(exp_dir: Path, bundle: Path, inline_limit: int) -> tuple[list, dict | None]:
+    """Ingest results/<run>/provenance/ (written by the platform's
+    --provenance flag) into the bundle under files/provenance/, verifying
+    every manifest pointer and hash. Returns (index entries, a filetree
+    subtree node). Both are empty/None when the results dir has no
+    provenance, which keeps pre-provenance bundles fully valid."""
+    prov_root = exp_dir / "provenance"
+    if not prov_root.is_dir():
+        return [], None
+
+    index: list = []
+    setting_nodes: list = []
+    # dot-dirs are tmp litter from a crashed platform capture, never data
+    for sk_dir in sorted(p for p in prov_root.iterdir()
+                         if p.is_dir() and not p.name.startswith(".")):
+        tool_nodes: list = []
+        for tool_dir in sorted(p for p in sk_dir.iterdir()
+                               if p.is_dir() and not p.name.startswith(".")):
+            manifest_file = tool_dir / "provenance.json"
+            if not manifest_file.is_file():
+                sys.exit(f"provenance dir without manifest: {tool_dir}")
+            manifest = json.loads(manifest_file.read_text())
+
+            # the never-dangles guarantee extends to the site: refuse a bundle
+            # whose manifest points at a missing or hash-mismatched file
+            for entry in manifest.get("entries", []):
+                stored = entry.get("stored")
+                if not stored:
+                    continue
+                f = tool_dir / stored["file"]
+                if not f.is_file():
+                    sys.exit(f"provenance manifest {manifest_file} points at "
+                             f"missing file {stored['file']}")
+                if sha256_file(f) != stored["sha256"]:
+                    sys.exit(f"provenance hash mismatch for {f}: bundle refused")
+
+            rel_dir = f"provenance/{sk_dir.name}/{tool_dir.name}"
+            dest = bundle / "files" / rel_dir
+            dest.mkdir(parents=True, exist_ok=True)
+            file_nodes: list = []
+            for f in sorted(tool_dir.iterdir()):
+                if not f.is_file() or f.name == ".DS_Store":
+                    continue
+                size = f.stat().st_size
+                node = {"name": f.name, "path": f"{rel_dir}/{f.name}",
+                        "kind": "file", "size": size}
+                # the manifest is the panel's data source: always ship it,
+                # independent of the inline limit
+                if f.name == "provenance.json" or size <= inline_limit:
+                    node["hosting"] = "inline"
+                    shutil.copy2(f, dest / f.name)
+                else:
+                    node["hosting"] = "external"
+                    node["sha256"] = sha256_file(f)
+                file_nodes.append(node)
+
+            tool_nodes.append({"name": tool_dir.name, "path": rel_dir,
+                               "kind": "dir", "children": file_nodes})
+            index.append({
+                "setting_key": manifest.get("setting_key", sk_dir.name),
+                "tool": (manifest.get("tool") or {}).get("name", tool_dir.name),
+                "dir": rel_dir,
+                "input_unchanged_after_run": manifest.get("input_unchanged_after_run"),
+                "captures": manifest.get("captures"),
+                "kinds": [e.get("kind") for e in manifest.get("entries", [])],
+                "stored_kinds": [e.get("kind") for e in manifest.get("entries", [])
+                                 if e.get("stored")],
+            })
+        setting_nodes.append({"name": sk_dir.name, "path": f"provenance/{sk_dir.name}",
+                              "kind": "dir", "children": tool_nodes})
+
+    subtree = {"name": "provenance", "path": "provenance", "kind": "dir",
+               "children": setting_nodes}
+    return index, subtree
+
+
 def read_fingerprint(inputs_dir: Path) -> dict:
     fp = inputs_dir / "fingerprint"
     out = {}
@@ -274,13 +350,18 @@ def publish_experiment(exp_dir: Path, exp_id: str, out: Path, configs_root: Path
                        inputs_root: Path | None, description: str,
                        run_timestamp: str | None, inline_limit: int,
                        config_hint: str | None = None) -> None:
-    bundle = out / "experiments" / exp_id
+    final_bundle = out / "experiments" / exp_id
     old_description = None
-    if bundle.exists():
+    if final_bundle.exists():
         # A republish without --suite must not wipe a previously set description.
-        desc_file = bundle / "description.md"
+        desc_file = final_bundle / "description.md"
         if desc_file.is_file():
             old_description = desc_file.read_text()
+    # Stage into a hidden sibling and swap only after every validation and
+    # write succeeded: a refused publish (e.g. a provenance hash mismatch)
+    # must never destroy the previously published bundle.
+    bundle = out / "experiments" / f".tmp_{exp_id}"
+    if bundle.exists():
         shutil.rmtree(bundle)
     bundle.mkdir(parents=True)
 
@@ -288,15 +369,42 @@ def publish_experiment(exp_dir: Path, exp_id: str, out: Path, configs_root: Path
     monitors = monitor_table(config)
     status_inventory: dict = {}
     runs = build_runs_frame(exp_dir, exp_id, monitors, status_inventory)
-    runs.to_parquet(bundle / "runs.parquet", index=False)
 
     filetree = None
     fingerprint = {}
     inputs_dir = (inputs_root / exp_id) if inputs_root else None
     if inputs_dir and inputs_dir.is_dir():
         filetree = ingest_file_tree(inputs_dir, bundle, inline_limit)
-        (bundle / "filetree.json").write_text(json.dumps(filetree, indent=1))
         fingerprint = read_fingerprint(inputs_dir)
+
+    prov_index, prov_subtree = ingest_provenance(exp_dir, bundle, inline_limit)
+    if prov_subtree is not None:
+        if filetree is None:
+            filetree = {"name": exp_id, "path": "", "kind": "dir", "children": []}
+        if any(c.get("name") == "provenance" for c in filetree.get("children", [])):
+            sys.exit(f"input tree of {exp_id} has a top-level 'provenance' "
+                     f"directory, which collides with the grafted provenance "
+                     f"subtree; rename it before publishing")
+        filetree["children"].append(prov_subtree)
+    if filetree is not None:
+        (bundle / "filetree.json").write_text(json.dumps(filetree, indent=1))
+
+    # per-run provenance flags, joined on (tool, setting minus repeat index)
+    prov_by_key = {(p["tool"], p["setting_key"]): p for p in prov_index}
+    if len(runs):
+        def _prov_of(row):
+            setting = str(row.get("setting") or "")
+            key = setting.rsplit("_", 1)[0] if "_" in setting else setting
+            return prov_by_key.get((row.get("tool_name"), key))
+        matches = runs.apply(_prov_of, axis=1)
+        runs["has_provenance"] = matches.notna()
+        runs["input_unchanged"] = matches.map(
+            lambda p: p.get("input_unchanged_after_run") if isinstance(p, dict) else None
+        ).astype("boolean")
+    else:
+        runs["has_provenance"] = pd.Series(dtype="bool")
+        runs["input_unchanged"] = pd.Series(dtype="boolean")
+    runs.to_parquet(bundle / "runs.parquet", index=False)
 
     setting_kind = "offline_synthetic" if "num_operators" in runs.columns else \
         ("instruction" if "instruction_index" in runs.columns else "raw")
@@ -325,12 +433,18 @@ def publish_experiment(exp_dir: Path, exp_id: str, out: Path, configs_root: Path
         "seeds": config.get("seeds") or {},
         "data_setup": config.get("data_setup") or {},
         "policy_setup": config.get("policy_setup") or {},
+        "provenance": prov_index,
     }
     (bundle / "manifest.json").write_text(json.dumps(manifest, indent=1))
     (bundle / "description.md").write_text(
         description or old_description or f"# {manifest['name']}\n")
+    # everything succeeded: swap the staged bundle into place
+    if final_bundle.exists():
+        shutil.rmtree(final_bundle)
+    bundle.rename(final_bundle)
     print(f"  bundled {exp_id}: {len(runs)} runs, "
-          f"statuses {status_inventory}, filetree={'yes' if filetree else 'no'}")
+          f"statuses {status_inventory}, filetree={'yes' if filetree else 'no'}, "
+          f"provenance={len(prov_index)} entries")
 
 
 def rebuild_index(out: Path) -> None:
@@ -341,7 +455,8 @@ def rebuild_index(out: Path) -> None:
     index_dir.mkdir(parents=True, exist_ok=True)
     cards = []
     frames = []
-    for bundle in sorted(p for p in exp_root.iterdir() if p.is_dir()):
+    for bundle in sorted(p for p in exp_root.iterdir()
+                         if p.is_dir() and not p.name.startswith(".")):
         if not (bundle / "manifest.json").is_file() or \
            not (bundle / "runs.parquet").is_file():
             print(f"  WARNING: skipping incomplete bundle {bundle.name} "
@@ -389,6 +504,7 @@ def rebuild_index(out: Path) -> None:
             "per_tool": per_tool,
             "fastest_tool": fastest,
             "has_filetree": manifest.get("has_filetree", False),
+            "has_provenance": bool(manifest.get("provenance")),
         })
 
     if frames:
