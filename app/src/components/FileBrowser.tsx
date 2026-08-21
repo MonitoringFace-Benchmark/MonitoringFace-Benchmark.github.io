@@ -306,8 +306,15 @@ export default function FileBrowser({
       try {
         const url = dataUrl(`experiments/${manifest.id}/files/${f.path}`);
         const full = (f.size ?? 0) <= FULL_LOAD_LIMIT;
-        const text = await fetchPrefix(url, full ? Infinity : PREVIEW_BYTES);
-        const binary = text.includes('\u0000');
+        const raw = await fetchPrefix(url, full ? Infinity : PREVIEW_BYTES);
+        const binary = raw.includes('\u0000');
+        let text = raw;
+        if (!full) {
+          // never cut mid-line: a preview shows whole lines or nothing, a
+          // half line would read as the file's real content
+          const cut = text.lastIndexOf('\n');
+          text = cut >= 0 ? text.slice(0, cut + 1) : '';
+        }
         tab = { file: f, content: binary ? '' : text, truncated: !full, binary };
       } catch (e) {
         setViewerError(String(e));
@@ -721,13 +728,19 @@ function ViewerPane({ tab, experimentId }: { tab: ViewerTab; experimentId: strin
         <p className="muted small" style={{ marginTop: 10 }}>
           This file looks binary; use the download link instead.
         </p>
+      ) : tab.truncated && tab.content === '' ? (
+        <p className="muted small" style={{ marginTop: 10 }}>
+          The first line of this file alone exceeds the {fmtBytes(PREVIEW_BYTES)}{' '}
+          preview window; use the download link to see its content.
+        </p>
       ) : (
         <>
           <pre className="fb-viewer-content">{tab.content}</pre>
           {tab.truncated && (
             <p className="muted small" style={{ marginTop: 8 }}>
-              Showing the first {fmtBytes(PREVIEW_BYTES)} of {fmtBytes(f.size)};
-              download for the complete file.
+              Preview: the complete lines within the first{' '}
+              {fmtBytes(PREVIEW_BYTES)} of {fmtBytes(f.size)}; download for the
+              full file.
             </p>
           )}
         </>
