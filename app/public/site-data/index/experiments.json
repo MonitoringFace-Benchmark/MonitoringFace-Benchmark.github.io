@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-08-20T17:57:56+00:00",
+ "generated_at": "2026-08-27T07:32:55+00:00",
  "experiments": [
   {
    "id": "example_synthetic_experiment",
@@ -74,6 +74,92 @@
     }
    ],
    "fastest_tool": "TimelyMon 6",
+   "has_filetree": true,
+   "has_provenance": true
+  },
+  {
+   "id": "tessla_demo",
+   "name": "tessla demo",
+   "description": "# tessla demo",
+   "run_timestamp": "2026-08-27T09:30:14",
+   "runtime_setting": "offline",
+   "timeout_s": 30,
+   "n_runs": 36,
+   "tools": [
+    "TeSSLa",
+    "TeSSLa Rust",
+    "MonPoly",
+    "VeriMon",
+    "WhyMon",
+    "TimelyMon"
+   ],
+   "status_counts": {
+    "OK": 35,
+    "TO": 1
+   },
+   "per_tool": [
+    {
+     "tool": "MonPoly",
+     "runs": 6,
+     "ok": 6,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.3677,
+     "fastest": false
+    },
+    {
+     "tool": "TeSSLa",
+     "runs": 6,
+     "ok": 6,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 4.006,
+     "fastest": false
+    },
+    {
+     "tool": "TeSSLa Rust",
+     "runs": 6,
+     "ok": 6,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.3587,
+     "fastest": false
+    },
+    {
+     "tool": "TimelyMon",
+     "runs": 6,
+     "ok": 6,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.3691,
+     "fastest": false
+    },
+    {
+     "tool": "VeriMon",
+     "runs": 6,
+     "ok": 6,
+     "timeout": 0,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.3678,
+     "fastest": false
+    },
+    {
+     "tool": "WhyMon",
+     "runs": 6,
+     "ok": 5,
+     "timeout": 1,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.3541,
+     "fastest": true
+    }
+   ],
+   "fastest_tool": "WhyMon",
    "has_filetree": true,
    "has_provenance": true
   },
