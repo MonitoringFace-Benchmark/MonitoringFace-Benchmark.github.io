@@ -1,0 +1,1 @@
+prop fma: ! (@  Exists y1. _P0(y1) & ! (_P2() & _P2())) where _P0(y1) := e() & @  (! e() S  P0(y1)), _P2() := e() & @  (! e() S  P2())

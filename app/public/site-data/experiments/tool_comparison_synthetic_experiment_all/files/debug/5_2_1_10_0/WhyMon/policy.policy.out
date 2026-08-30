@@ -1,0 +1,1 @@
+NOT (((EVENTUALLY[3,24] (((P1(x1) AND (P2(x2))) AND ((NOT ((EVENTUALLY[1,13] (P0(x2,x1))))))))) AND ((x1 <= x2))))

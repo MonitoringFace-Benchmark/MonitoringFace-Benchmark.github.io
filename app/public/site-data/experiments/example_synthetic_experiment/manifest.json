@@ -1,0 +1,248 @@
+{
+ "schema_version": 1,
+ "id": "example_synthetic_experiment",
+ "name": "example synthetic experiment",
+ "run_timestamp": "2026-08-20T16:39:25",
+ "runtime_setting": "offline",
+ "timeout_s": 20,
+ "config_file": "examples/example_synthetic_experiment.yaml",
+ "monitors": [
+  {
+   "name": "TimelyMon 1",
+   "identifier": "TimelyMon",
+   "commit": null,
+   "branch": "development",
+   "params": {
+    "worker": 1,
+    "output_mode": 1
+   }
+  },
+  {
+   "name": "TimelyMon 6",
+   "identifier": "TimelyMon",
+   "commit": null,
+   "branch": "development",
+   "params": {
+    "worker": 6,
+    "output_mode": 1
+   }
+  },
+  {
+   "name": "VeriMon",
+   "identifier": "VeriMon",
+   "commit": null,
+   "branch": "master",
+   "params": {}
+  },
+  {
+   "name": "MonPoly",
+   "identifier": "MonPoly",
+   "commit": null,
+   "branch": "master",
+   "params": {}
+  },
+  {
+   "name": "WhyMon",
+   "identifier": "WhyMon",
+   "commit": null,
+   "branch": "main",
+   "params": {}
+  }
+ ],
+ "oracles": [
+  {
+   "identifier": "VeriMonOracle",
+   "name": "VeriMonOracle",
+   "monitor_name": "VeriMon"
+  }
+ ],
+ "status_files": {
+  "result_error": 1,
+  "valid": 9
+ },
+ "n_runs": 10,
+ "setting_schema": {
+  "kind": "offline_synthetic",
+  "dir_template": "operators_{num_operators}/free_vars_{num_fvs}/num_{num_setting}"
+ },
+ "fingerprint": {
+  "fingerprint_experiment": "4a38b1c890dbce78dc3bfe75c81cd9640de3755c451abaeafddebd9c96d66056",
+  "fingerprint_data": "0272d00be71dfc9e880a81aaf5ec7ce20a7f5a5e1081ef6e6aabc0d201deecd3",
+  "fingerprint_policy": "73a789ccef04ec4e84c29768a2eaecaf3bf61458594527cb3f6e601db9cc158f"
+ },
+ "has_filetree": true,
+ "seeds": {
+  "[5, 2, 0]": [
+   314159265,
+   87006
+  ],
+  "[5, 2, 1]": [
+   314159265,
+   53339
+  ]
+ },
+ "data_setup": {
+  "type": "SignatureContract",
+  "SignatureContract": {
+   "trace_length": 1000,
+   "event_rate": 1000
+  }
+ },
+ "policy_setup": {
+  "type": "MfotlPolicyContract",
+  "MfotlPolicyContract": {
+   "num_preds": 4,
+   "prob_eand": 0,
+   "prob_rand": 0,
+   "prob_let": 0,
+   "prob_matchF": 0,
+   "prob_matchP": 0
+  }
+ },
+ "provenance": [
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "MonPoly",
+   "dir": "provenance/5_2_0_50/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TimelyMon 1",
+   "dir": "provenance/5_2_0_50/TimelyMon_1",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TimelyMon 6",
+   "dir": "provenance/5_2_0_50/TimelyMon_6",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "VeriMon",
+   "dir": "provenance/5_2_0_50/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "WhyMon",
+   "dir": "provenance/5_2_0_50/WhyMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "MonPoly",
+   "dir": "provenance/5_2_1_50/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "TimelyMon 1",
+   "dir": "provenance/5_2_1_50/TimelyMon_1",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "TimelyMon 6",
+   "dir": "provenance/5_2_1_50/TimelyMon_6",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "VeriMon",
+   "dir": "provenance/5_2_1_50/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "WhyMon",
+   "dir": "provenance/5_2_1_50/WhyMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  }
+ ]
+}
