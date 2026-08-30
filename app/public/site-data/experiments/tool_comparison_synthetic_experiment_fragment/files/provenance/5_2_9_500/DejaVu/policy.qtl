@@ -1,1 +1,0 @@
-prop fma: ! Exists x2. Exists x1. ((((true | ! e()) S  (_P2(x1, x2) & ! _P0())) & e()) & @  Exists y1. _P1(y1)) where _P2(x1, x2) := e() & @  (! e() S  P2(x1, x2)), _P0() := e() & @  (! e() S  P0()), _P1(y1) := e() & @  (! e() S  P1(y1))

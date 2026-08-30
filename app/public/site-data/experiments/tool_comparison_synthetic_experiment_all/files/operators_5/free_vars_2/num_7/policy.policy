@@ -1,1 +1,0 @@
-(EVENTUALLY[0,10] ((NEXT[2,7] (((P3(x1) AND ((x1 < 75))) SINCE[2,28] ((P0(x1) AND ((19 = x1)))))))))

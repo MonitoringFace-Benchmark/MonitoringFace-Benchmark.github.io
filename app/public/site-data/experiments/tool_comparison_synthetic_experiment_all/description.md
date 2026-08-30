@@ -1,1 +1,0 @@
-GDPR benchmarks for MonPoly, VeriMon, and TimelyMon (1 + 6 workers)

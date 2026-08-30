@@ -1,1 +1,0 @@
-NOT ((EVENTUALLY[3,29] ((NEXT[3,20] (((P3(x2) AND ((NOT (P1(x2,x2))))) SINCE[4,17] ((ONCE[5,*) (P2(x2))))))))))
