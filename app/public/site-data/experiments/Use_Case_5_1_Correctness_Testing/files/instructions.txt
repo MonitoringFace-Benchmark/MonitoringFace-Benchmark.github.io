@@ -1,0 +1,5 @@
+Trace, Policy, Signature
+Trace/bug1.log: monpoly, Formula/bug1.mfotl: mfotl, Signature/bug.sig
+Trace/bug2.log: monpoly, Formula/bug2.mfotl: mfotl, Signature/bug.sig
+Trace/bug3.log: monpoly, Formula/bug3.mfotl: mfotl, Signature/bug.sig
+Trace/bug4.log: monpoly, Formula/bug4.mfotl: mfotl, Signature/bug.sig

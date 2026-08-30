@@ -1,0 +1,638 @@
+{
+ "name": "correctness_monpoly",
+ "path": "",
+ "kind": "dir",
+ "children": [
+  {
+   "name": "data",
+   "path": "data",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "Formula",
+     "path": "data/Formula",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "bug1.mfotl",
+       "path": "data/Formula/bug1.mfotl",
+       "kind": "file",
+       "size": 41,
+       "hosting": "inline"
+      },
+      {
+       "name": "bug2.mfotl",
+       "path": "data/Formula/bug2.mfotl",
+       "kind": "file",
+       "size": 33,
+       "hosting": "inline"
+      },
+      {
+       "name": "bug3.mfotl",
+       "path": "data/Formula/bug3.mfotl",
+       "kind": "file",
+       "size": 39,
+       "hosting": "inline"
+      },
+      {
+       "name": "bug4.mfotl",
+       "path": "data/Formula/bug4.mfotl",
+       "kind": "file",
+       "size": 29,
+       "hosting": "inline"
+      }
+     ]
+    },
+    {
+     "name": "Signature",
+     "path": "data/Signature",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "bug.sig",
+       "path": "data/Signature/bug.sig",
+       "kind": "file",
+       "size": 45,
+       "hosting": "inline"
+      }
+     ]
+    },
+    {
+     "name": "Trace",
+     "path": "data/Trace",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "bug1.log",
+       "path": "data/Trace/bug1.log",
+       "kind": "file",
+       "size": 29,
+       "hosting": "inline"
+      },
+      {
+       "name": "bug2.log",
+       "path": "data/Trace/bug2.log",
+       "kind": "file",
+       "size": 44,
+       "hosting": "inline"
+      },
+      {
+       "name": "bug3.log",
+       "path": "data/Trace/bug3.log",
+       "kind": "file",
+       "size": 44,
+       "hosting": "inline"
+      },
+      {
+       "name": "bug4.log",
+       "path": "data/Trace/bug4.log",
+       "kind": "file",
+       "size": 77205554,
+       "hosting": "external",
+       "sha256": "1f9c4c9b2c131cad72a894f5ce03da0e18b74e6ff07087172f854a659cc995e1"
+      }
+     ]
+    },
+    {
+     "name": "result",
+     "path": "data/result",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "result_0.res",
+       "path": "data/result/result_0.res",
+       "kind": "file",
+       "size": 72,
+       "hosting": "inline"
+      },
+      {
+       "name": "result_0.res.vo",
+       "path": "data/result/result_0.res.vo",
+       "kind": "file",
+       "size": 2,
+       "hosting": "inline"
+      },
+      {
+       "name": "result_1.res",
+       "path": "data/result/result_1.res",
+       "kind": "file",
+       "size": 51,
+       "hosting": "inline"
+      },
+      {
+       "name": "result_1.res.vo",
+       "path": "data/result/result_1.res.vo",
+       "kind": "file",
+       "size": 10,
+       "hosting": "inline"
+      },
+      {
+       "name": "result_2.res",
+       "path": "data/result/result_2.res",
+       "kind": "file",
+       "size": 51,
+       "hosting": "inline"
+      },
+      {
+       "name": "result_2.res.vo",
+       "path": "data/result/result_2.res.vo",
+       "kind": "file",
+       "size": 10,
+       "hosting": "inline"
+      },
+      {
+       "name": "result_3.res",
+       "path": "data/result/result_3.res",
+       "kind": "file",
+       "size": 55939,
+       "hosting": "inline"
+      },
+      {
+       "name": "result_3.res.vo",
+       "path": "data/result/result_3.res.vo",
+       "kind": "file",
+       "size": 15,
+       "hosting": "inline"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "debug",
+   "path": "debug",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "0_0",
+     "path": "debug/0_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly_Feb_15,_2023",
+       "path": "debug/0_0/MonPoly_Feb_15,_2023",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "stats.txt",
+         "path": "debug/0_0/MonPoly_Feb_15,_2023/stats.txt",
+         "kind": "file",
+         "size": 794,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Jan_4,_2023",
+       "path": "debug/0_0/MonPoly_Jan_4,_2023",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "stats.txt",
+         "path": "debug/0_0/MonPoly_Jan_4,_2023/stats.txt",
+         "kind": "file",
+         "size": 794,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Jun_11,_2026",
+       "path": "debug/0_0/MonPoly_Jun_11,_2026",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "stats.txt",
+         "path": "debug/0_0/MonPoly_Jun_11,_2026/stats.txt",
+         "kind": "file",
+         "size": 794,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Mar_25,_2026",
+       "path": "debug/0_0/MonPoly_Mar_25,_2026",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "stats.txt",
+         "path": "debug/0_0/MonPoly_Mar_25,_2026/stats.txt",
+         "kind": "file",
+         "size": 794,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "debug/0_0/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "stats.txt",
+         "path": "debug/0_0/VeriMon/stats.txt",
+         "kind": "file",
+         "size": 805,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "1_0",
+     "path": "debug/1_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "VeriMon",
+       "path": "debug/1_0/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "stats.txt",
+         "path": "debug/1_0/VeriMon/stats.txt",
+         "kind": "file",
+         "size": 804,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "2_0",
+     "path": "debug/2_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "VeriMon",
+       "path": "debug/2_0/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "stats.txt",
+         "path": "debug/2_0/VeriMon/stats.txt",
+         "kind": "file",
+         "size": 804,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "3_0",
+     "path": "debug/3_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "VeriMon",
+       "path": "debug/3_0/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "stats.txt",
+         "path": "debug/3_0/VeriMon/stats.txt",
+         "kind": "file",
+         "size": 812,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fingerprint",
+   "path": "fingerprint",
+   "kind": "file",
+   "size": 117,
+   "hosting": "inline"
+  },
+  {
+   "name": "instructions.txt",
+   "path": "instructions.txt",
+   "kind": "file",
+   "size": 305,
+   "hosting": "inline"
+  },
+  {
+   "name": "provenance",
+   "path": "provenance",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "0",
+     "path": "provenance/0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly_Feb_15,_2023",
+       "path": "provenance/0/MonPoly_Feb_15,_2023",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/0/MonPoly_Feb_15,_2023/provenance.json",
+         "kind": "file",
+         "size": 1647,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Jan_4,_2023",
+       "path": "provenance/0/MonPoly_Jan_4,_2023",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/0/MonPoly_Jan_4,_2023/provenance.json",
+         "kind": "file",
+         "size": 1646,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Jun_11,_2026",
+       "path": "provenance/0/MonPoly_Jun_11,_2026",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/0/MonPoly_Jun_11,_2026/provenance.json",
+         "kind": "file",
+         "size": 1647,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Mar_25,_2026",
+       "path": "provenance/0/MonPoly_Mar_25,_2026",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/0/MonPoly_Mar_25,_2026/provenance.json",
+         "kind": "file",
+         "size": 1647,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/0/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/0/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 1649,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "1",
+     "path": "provenance/1",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly_Feb_15,_2023",
+       "path": "provenance/1/MonPoly_Feb_15,_2023",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/1/MonPoly_Feb_15,_2023/provenance.json",
+         "kind": "file",
+         "size": 1647,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Jan_4,_2023",
+       "path": "provenance/1/MonPoly_Jan_4,_2023",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/1/MonPoly_Jan_4,_2023/provenance.json",
+         "kind": "file",
+         "size": 1646,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Jun_11,_2026",
+       "path": "provenance/1/MonPoly_Jun_11,_2026",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/1/MonPoly_Jun_11,_2026/provenance.json",
+         "kind": "file",
+         "size": 1647,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Mar_25,_2026",
+       "path": "provenance/1/MonPoly_Mar_25,_2026",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/1/MonPoly_Mar_25,_2026/provenance.json",
+         "kind": "file",
+         "size": 1647,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/1/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/1/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 1649,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "2",
+     "path": "provenance/2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly_Feb_15,_2023",
+       "path": "provenance/2/MonPoly_Feb_15,_2023",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/2/MonPoly_Feb_15,_2023/provenance.json",
+         "kind": "file",
+         "size": 1647,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Jan_4,_2023",
+       "path": "provenance/2/MonPoly_Jan_4,_2023",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/2/MonPoly_Jan_4,_2023/provenance.json",
+         "kind": "file",
+         "size": 1646,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Jun_11,_2026",
+       "path": "provenance/2/MonPoly_Jun_11,_2026",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/2/MonPoly_Jun_11,_2026/provenance.json",
+         "kind": "file",
+         "size": 1647,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Mar_25,_2026",
+       "path": "provenance/2/MonPoly_Mar_25,_2026",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/2/MonPoly_Mar_25,_2026/provenance.json",
+         "kind": "file",
+         "size": 1647,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/2/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/2/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 1649,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "3",
+     "path": "provenance/3",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly_Feb_15,_2023",
+       "path": "provenance/3/MonPoly_Feb_15,_2023",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/3/MonPoly_Feb_15,_2023/provenance.json",
+         "kind": "file",
+         "size": 1647,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Jan_4,_2023",
+       "path": "provenance/3/MonPoly_Jan_4,_2023",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/3/MonPoly_Jan_4,_2023/provenance.json",
+         "kind": "file",
+         "size": 1646,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Jun_11,_2026",
+       "path": "provenance/3/MonPoly_Jun_11,_2026",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/3/MonPoly_Jun_11,_2026/provenance.json",
+         "kind": "file",
+         "size": 1647,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "MonPoly_Mar_25,_2026",
+       "path": "provenance/3/MonPoly_Mar_25,_2026",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/3/MonPoly_Mar_25,_2026/provenance.json",
+         "kind": "file",
+         "size": 1647,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/3/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/3/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 1649,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

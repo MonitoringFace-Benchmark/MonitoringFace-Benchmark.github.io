@@ -1,0 +1,66 @@
+{
+ "schema_version": 1,
+ "experiment_fingerprint": {
+  "fingerprint_experiment": "Local_GDPR_EnfGuard",
+  "fingerprint_data": "3315f7804c97a5224531d9526e5f60477dfa0690eba7f83995f540d8340d53b5"
+ },
+ "framework_commit": "d3b14c1f127a3477f6bd583a05aee00ac7e2834b",
+ "tool": {
+  "name": "EnfGuard",
+  "identifier": "EnfGuard",
+  "params": {
+   "folder": "<project>/Infrastructure/experiments/local_gdpr_enfguard/data",
+   "path_to_project": "<project>",
+   "policy": "Formula/deletion.mfotl",
+   "signature": "Signature/sig.sig",
+   "trace": "Trace/log.log",
+   "trace_target_format": "InputOutputTraceFormats.MONPOLY"
+  }
+ },
+ "setting_key": "1",
+ "captures": 3,
+ "tool_invocation": [
+  "-sig",
+  "Signature/sig.sig",
+  "-formula",
+  "Formula/deletion.mfotl",
+  "-log",
+  "Trace/log.log"
+ ],
+ "input_unchanged_after_run": true,
+ "entries": [
+  {
+   "kind": "trace",
+   "source": {
+    "file": "data/Trace/log.log",
+    "format": "monpoly",
+    "sha256": "4fca40c70ff624bc61f48ee75cc728769168584635e4d0c5533cb98e4447eb3b"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "Trace/log.log"
+  },
+  {
+   "kind": "policy",
+   "source": {
+    "file": "data/Formula/deletion.mfotl",
+    "format": "unicode-mfotl",
+    "sha256": "f402be866f7e73aab137135d68e01be678374ec93ed8360b406b650677e7336d"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "Formula/deletion.mfotl"
+  },
+  {
+   "kind": "signature",
+   "source": {
+    "file": "data/Signature/sig.sig",
+    "format": "sig",
+    "sha256": "ae364512a51d5eb647e6c085b2c9fa31cd711405e2d81d02d2314aafa5ed04a7"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "Signature/sig.sig"
+  }
+ ]
+}

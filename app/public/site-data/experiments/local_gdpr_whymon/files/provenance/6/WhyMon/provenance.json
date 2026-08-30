@@ -1,0 +1,84 @@
+{
+ "schema_version": 1,
+ "experiment_fingerprint": {
+  "fingerprint_experiment": "Local_GDPR_WhyMon",
+  "fingerprint_data": "c4b40cf7a3fce6081823428d842ca9c0ee5492fd9746b862b3728e68dac51aa7"
+ },
+ "framework_commit": "d3b14c1f127a3477f6bd583a05aee00ac7e2834b",
+ "tool": {
+  "name": "WhyMon",
+  "identifier": "WhyMon",
+  "params": {
+   "folder": "<project>/Infrastructure/experiments/local_gdpr_whymon/data",
+   "path_to_project": "<project>",
+   "policy": "scratch/gdpr.mfotl",
+   "signature": "Signature/sig.sig",
+   "trace": "Trace/log.log",
+   "trace_target_format": "InputOutputTraceFormats.MONPOLY"
+  }
+ },
+ "setting_key": "6",
+ "captures": 3,
+ "tool_invocation": [
+  "-sig",
+  "Signature/sig.sig",
+  "-formula",
+  "scratch/gdpr.mfotl",
+  "-log",
+  "Trace/log.log"
+ ],
+ "input_unchanged_after_run": null,
+ "entries": [
+  {
+   "kind": "trace",
+   "source": {
+    "file": "data/Trace/log.log",
+    "format": "monpoly",
+    "sha256": "4fca40c70ff624bc61f48ee75cc728769168584635e4d0c5533cb98e4447eb3b"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "Trace/log.log"
+  },
+  {
+   "kind": "policy",
+   "source": {
+    "file": "data/Formula/gdpr.mfotl",
+    "format": "unicode-mfotl",
+    "sha256": "976c4b33278afd4ea542713b398d6020a973e7819ac5cc0977928f47429de54c"
+   },
+   "steps": [
+    {
+     "converter": "UnicodeMFOTLConverter",
+     "source_format": "unicode-mfotl",
+     "target_format": "mfotl",
+     "command": null,
+     "cmd_params": null
+    },
+    {
+     "converter": "NegateMFOTLConverter",
+     "source_format": "mfotl",
+     "target_format": "negated-mfotl",
+     "command": null,
+     "cmd_params": null
+    }
+   ],
+   "stored": {
+    "file": "policy.negated-mfotl",
+    "sha256": "dc48d9cedc454da8232c4d12facb96f6d38adfce964f26be906b58291e86dd3d"
+   },
+   "as_seen_by_tool": "scratch/gdpr.mfotl"
+  },
+  {
+   "kind": "signature",
+   "source": {
+    "file": "data/Signature/sig.sig",
+    "format": "sig",
+    "sha256": "32dcd4f026f0289001800f808c36d05ee69c596d5fa95d35062588f9500622e8"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "Signature/sig.sig"
+  }
+ ]
+}

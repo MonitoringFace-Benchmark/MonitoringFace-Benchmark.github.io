@@ -67,6 +67,24 @@ def status_csvs(d: Path) -> list[Path]:
             if any(f.stem.endswith(f"_{s}") for s in STATUS_SUFFIXES)]
 
 
+def derive_source_name(exp_dir: Path) -> str | None:
+    """The original experiment name, recovered from the status-CSV prefixes.
+    Results folders may be renamed to presentation titles ('Use Case 5_1:
+    Correctness Testing'); config and input-tree lookup must keep using the
+    name the run was actually executed under."""
+    for f in status_csvs(exp_dir):
+        for s in sorted(STATUS_SUFFIXES, key=len, reverse=True):
+            if f.stem.endswith(f"_{s}"):
+                return f.stem[: -len(s) - 1]
+    return None
+
+
+def slugify(name: str) -> str:
+    """Bundle/URL identity: folder names may carry spaces and colons, which
+    have no business in git paths or URLs."""
+    return re.sub(r"[^A-Za-z0-9._-]+", "_", name).strip("_")
+
+
 def sha256_file(path: Path, chunk: int = 1 << 20) -> str:
     h = hashlib.sha256()
     with path.open("rb") as f:
@@ -346,10 +364,15 @@ def read_fingerprint(inputs_dir: Path) -> dict:
     return out
 
 
-def publish_experiment(exp_dir: Path, exp_id: str, out: Path, configs_root: Path,
+def publish_experiment(exp_dir: Path, raw_name: str, out: Path, configs_root: Path,
                        inputs_root: Path | None, description: str,
                        run_timestamp: str | None, inline_limit: int,
                        config_hint: str | None = None) -> None:
+    # identity: slug for storage/URLs, the raw folder name for display,
+    # the CSV-derived source name for config and input-tree lookup
+    exp_id = slugify(raw_name)
+    display_name = raw_name if " " in raw_name else raw_name.replace("_", " ")
+    source_name = derive_source_name(exp_dir) or exp_id
     final_bundle = out / "experiments" / exp_id
     old_description = None
     if final_bundle.exists():
@@ -365,14 +388,14 @@ def publish_experiment(exp_dir: Path, exp_id: str, out: Path, configs_root: Path
         shutil.rmtree(bundle)
     bundle.mkdir(parents=True)
 
-    config, config_path = load_experiment_yaml(configs_root, exp_id, config_hint)
+    config, config_path = load_experiment_yaml(configs_root, source_name, config_hint)
     monitors = monitor_table(config)
     status_inventory: dict = {}
     runs = build_runs_frame(exp_dir, exp_id, monitors, status_inventory)
 
     filetree = None
     fingerprint = {}
-    inputs_dir = (inputs_root / exp_id) if inputs_root else None
+    inputs_dir = (inputs_root / source_name) if inputs_root else None
     if inputs_dir and inputs_dir.is_dir():
         filetree = ingest_file_tree(inputs_dir, bundle, inline_limit)
         fingerprint = read_fingerprint(inputs_dir)
@@ -411,7 +434,8 @@ def publish_experiment(exp_dir: Path, exp_id: str, out: Path, configs_root: Path
     manifest = {
         "schema_version": SCHEMA_VERSION,
         "id": exp_id,
-        "name": exp_id.replace("_", " "),
+        "name": display_name,
+        "source_experiment": source_name,
         "run_timestamp": run_timestamp,
         "runtime_setting": config.get("runtime_setting", "offline"),
         "timeout_s": (config.get("runtime_constraints") or {}).get("upper_bound"),
@@ -579,9 +603,10 @@ def main() -> None:
     results: Path = args.results
     run_ts = parse_run_timestamp(results)
     if status_csvs(results):
-        # single experiment: id from folder name minus timestamp
-        exp_id = re.sub(r"_\d{8}_\d{6}$", "", results.name)
-        targets = [(results, exp_id)]
+        # single experiment: raw name from the folder minus a timestamp
+        # suffix; may be a renamed presentation title with spaces
+        raw_name = re.sub(r"_\d{8}_\d{6}$", "", results.name)
+        targets = [(results, raw_name)]
     else:
         targets = [(d, d.name) for d in sorted(results.iterdir())
                    if d.is_dir() and status_csvs(d)]
@@ -590,11 +615,11 @@ def main() -> None:
 
     inline_limit = int(args.inline_limit_mb * 1024 * 1024)
     print(f"publishing {len(targets)} experiment(s) from {results}")
-    for exp_dir, exp_id in targets:
-        publish_experiment(exp_dir, exp_id, args.out, args.configs,
-                           args.inputs_root, descriptions.get(exp_id, ""),
+    for exp_dir, raw_name in targets:
+        publish_experiment(exp_dir, raw_name, args.out, args.configs,
+                           args.inputs_root, descriptions.get(raw_name, ""),
                            run_ts, inline_limit,
-                           config_hint=config_hints.get(exp_id))
+                           config_hint=config_hints.get(raw_name))
     rebuild_index(args.out)
 
 

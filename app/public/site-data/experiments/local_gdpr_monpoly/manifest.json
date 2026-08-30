@@ -1,0 +1,447 @@
+{
+ "schema_version": 1,
+ "id": "local_gdpr_monpoly",
+ "name": "local gdpr monpoly",
+ "source_experiment": "local_gdpr_monpoly",
+ "run_timestamp": null,
+ "runtime_setting": "offline",
+ "timeout_s": 30,
+ "config_file": "Local_GDPR/local_gdpr_monpoly.yaml",
+ "monitors": [
+  {
+   "name": "TimelyMon 1",
+   "identifier": "TimelyMon",
+   "commit": null,
+   "branch": "development",
+   "params": {
+    "worker": 1,
+    "output_mode": 1
+   }
+  },
+  {
+   "name": "TimelyMon 6",
+   "identifier": "TimelyMon",
+   "commit": null,
+   "branch": "development",
+   "params": {
+    "worker": 6,
+    "output_mode": 1
+   }
+  }
+ ],
+ "oracles": [],
+ "status_files": {
+  "valid": 84
+ },
+ "n_runs": 84,
+ "setting_schema": {
+  "kind": "instruction",
+  "dir_template": null
+ },
+ "fingerprint": {
+  "fingerprint_experiment": "Local_GDPR_MonPoly",
+  "fingerprint_data": "c40ad8730d1b4d9c103a69229b35891ccc639f38f914dbd2fec63fec4aa4cca3"
+ },
+ "has_filetree": true,
+ "seeds": {},
+ "data_setup": {
+  "type": "CaseStudy",
+  "fixed": true,
+  "name": "Local_GDPR_MonPoly"
+ },
+ "policy_setup": {},
+ "provenance": [
+  {
+   "setting_key": "0",
+   "tool": "MonPoly",
+   "dir": "provenance/0/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "0",
+   "tool": "TimelyMon 1",
+   "dir": "provenance/0/TimelyMon_1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "0",
+   "tool": "TimelyMon 6",
+   "dir": "provenance/0/TimelyMon_6",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "0",
+   "tool": "VeriMon",
+   "dir": "provenance/0/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "1",
+   "tool": "MonPoly",
+   "dir": "provenance/1/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "1",
+   "tool": "TimelyMon 1",
+   "dir": "provenance/1/TimelyMon_1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "1",
+   "tool": "TimelyMon 6",
+   "dir": "provenance/1/TimelyMon_6",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "1",
+   "tool": "VeriMon",
+   "dir": "provenance/1/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "2",
+   "tool": "MonPoly",
+   "dir": "provenance/2/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "2",
+   "tool": "TimelyMon 1",
+   "dir": "provenance/2/TimelyMon_1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "2",
+   "tool": "TimelyMon 6",
+   "dir": "provenance/2/TimelyMon_6",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "2",
+   "tool": "VeriMon",
+   "dir": "provenance/2/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "3",
+   "tool": "MonPoly",
+   "dir": "provenance/3/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "3",
+   "tool": "TimelyMon 1",
+   "dir": "provenance/3/TimelyMon_1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "3",
+   "tool": "TimelyMon 6",
+   "dir": "provenance/3/TimelyMon_6",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "3",
+   "tool": "VeriMon",
+   "dir": "provenance/3/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "4",
+   "tool": "MonPoly",
+   "dir": "provenance/4/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "4",
+   "tool": "TimelyMon 1",
+   "dir": "provenance/4/TimelyMon_1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "4",
+   "tool": "TimelyMon 6",
+   "dir": "provenance/4/TimelyMon_6",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "4",
+   "tool": "VeriMon",
+   "dir": "provenance/4/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5",
+   "tool": "MonPoly",
+   "dir": "provenance/5/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5",
+   "tool": "TimelyMon 1",
+   "dir": "provenance/5/TimelyMon_1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5",
+   "tool": "TimelyMon 6",
+   "dir": "provenance/5/TimelyMon_6",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5",
+   "tool": "VeriMon",
+   "dir": "provenance/5/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "6",
+   "tool": "MonPoly",
+   "dir": "provenance/6/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "6",
+   "tool": "TimelyMon 1",
+   "dir": "provenance/6/TimelyMon_1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "6",
+   "tool": "TimelyMon 6",
+   "dir": "provenance/6/TimelyMon_6",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "6",
+   "tool": "VeriMon",
+   "dir": "provenance/6/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  }
+ ]
+}

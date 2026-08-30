@@ -1,0 +1,272 @@
+{
+ "name": "local_gdpr_enfguard",
+ "path": "",
+ "kind": "dir",
+ "children": [
+  {
+   "name": "data",
+   "path": "data",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "Formula",
+     "path": "data/Formula",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "consent.mfotl",
+       "path": "data/Formula/consent.mfotl",
+       "kind": "file",
+       "size": 150,
+       "hosting": "inline"
+      },
+      {
+       "name": "deletion.mfotl",
+       "path": "data/Formula/deletion.mfotl",
+       "kind": "file",
+       "size": 115,
+       "hosting": "inline"
+      },
+      {
+       "name": "gdpr.mfotl",
+       "path": "data/Formula/gdpr.mfotl",
+       "kind": "file",
+       "size": 573,
+       "hosting": "inline"
+      },
+      {
+       "name": "information.mfotl",
+       "path": "data/Formula/information.mfotl",
+       "kind": "file",
+       "size": 106,
+       "hosting": "inline"
+      },
+      {
+       "name": "lawfulness.mfotl",
+       "path": "data/Formula/lawfulness.mfotl",
+       "kind": "file",
+       "size": 121,
+       "hosting": "inline"
+      },
+      {
+       "name": "limitation.mfotl",
+       "path": "data/Formula/limitation.mfotl",
+       "kind": "file",
+       "size": 103,
+       "hosting": "inline"
+      },
+      {
+       "name": "sharing.mfotl",
+       "path": "data/Formula/sharing.mfotl",
+       "kind": "file",
+       "size": 179,
+       "hosting": "inline"
+      }
+     ]
+    },
+    {
+     "name": "Signature",
+     "path": "data/Signature",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "sig.sig",
+       "path": "data/Signature/sig.sig",
+       "kind": "file",
+       "size": 630,
+       "hosting": "inline"
+      }
+     ]
+    },
+    {
+     "name": "Trace",
+     "path": "data/Trace",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "log.log",
+       "path": "data/Trace/log.log",
+       "kind": "file",
+       "size": 223988,
+       "hosting": "inline"
+      }
+     ]
+    },
+    {
+     "name": "result",
+     "path": "data/result",
+     "kind": "dir",
+     "children": []
+    }
+   ]
+  },
+  {
+   "name": "fingerprint",
+   "path": "fingerprint",
+   "kind": "file",
+   "size": 125,
+   "hosting": "inline"
+  },
+  {
+   "name": "instructions.txt",
+   "path": "instructions.txt",
+   "kind": "file",
+   "size": 592,
+   "hosting": "inline"
+  },
+  {
+   "name": "provenance",
+   "path": "provenance",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "0",
+     "path": "provenance/0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/0/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/0/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 1660,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "1",
+     "path": "provenance/1",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/1/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/1/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 1664,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "2",
+     "path": "provenance/2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/2/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/2/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 1676,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "3",
+     "path": "provenance/3",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/3/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/3/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 1672,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "4",
+     "path": "provenance/4",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/4/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/4/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 1672,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5",
+     "path": "provenance/5",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/5/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 1660,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "6",
+     "path": "provenance/6",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "EnfGuard",
+       "path": "provenance/6/EnfGuard",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/6/EnfGuard/provenance.json",
+         "kind": "file",
+         "size": 1648,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

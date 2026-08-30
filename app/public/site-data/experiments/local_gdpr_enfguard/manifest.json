@@ -1,0 +1,133 @@
+{
+ "schema_version": 1,
+ "id": "local_gdpr_enfguard",
+ "name": "local gdpr enfguard",
+ "source_experiment": "local_gdpr_enfguard",
+ "run_timestamp": null,
+ "runtime_setting": "offline",
+ "timeout_s": 30,
+ "config_file": "Local_GDPR/local_gdpr_enfguard.yaml",
+ "monitors": [
+  {
+   "name": "EnfGuard",
+   "identifier": "EnfGuard",
+   "commit": null,
+   "branch": "enfguard",
+   "params": {}
+  }
+ ],
+ "oracles": [],
+ "status_files": {
+  "valid": 21
+ },
+ "n_runs": 21,
+ "setting_schema": {
+  "kind": "instruction",
+  "dir_template": null
+ },
+ "fingerprint": {
+  "fingerprint_experiment": "Local_GDPR_EnfGuard",
+  "fingerprint_data": "3315f7804c97a5224531d9526e5f60477dfa0690eba7f83995f540d8340d53b5"
+ },
+ "has_filetree": true,
+ "seeds": {},
+ "data_setup": {
+  "type": "CaseStudy",
+  "fixed": true,
+  "name": "Local_GDPR_EnfGuard"
+ },
+ "policy_setup": {},
+ "provenance": [
+  {
+   "setting_key": "0",
+   "tool": "EnfGuard",
+   "dir": "provenance/0/EnfGuard",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "1",
+   "tool": "EnfGuard",
+   "dir": "provenance/1/EnfGuard",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "2",
+   "tool": "EnfGuard",
+   "dir": "provenance/2/EnfGuard",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "3",
+   "tool": "EnfGuard",
+   "dir": "provenance/3/EnfGuard",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "4",
+   "tool": "EnfGuard",
+   "dir": "provenance/4/EnfGuard",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5",
+   "tool": "EnfGuard",
+   "dir": "provenance/5/EnfGuard",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "6",
+   "tool": "EnfGuard",
+   "dir": "provenance/6/EnfGuard",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  }
+ ]
+}

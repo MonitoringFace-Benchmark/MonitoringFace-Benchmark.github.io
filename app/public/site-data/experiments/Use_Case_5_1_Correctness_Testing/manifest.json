@@ -1,0 +1,338 @@
+{
+ "schema_version": 1,
+ "id": "Use_Case_5_1_Correctness_Testing",
+ "name": "Use Case 5_1: Correctness Testing",
+ "source_experiment": "correctness_monpoly",
+ "run_timestamp": null,
+ "runtime_setting": "offline",
+ "timeout_s": 30,
+ "config_file": "benchmark_paper/correctness_monpoly.yaml",
+ "monitors": [
+  {
+   "name": "MonPoly Jun 11, 2026",
+   "identifier": "MonPoly",
+   "commit": "bc752d37f1d4560b5667eddac9dd1670451b758e",
+   "branch": null,
+   "params": {}
+  },
+  {
+   "name": "MonPoly Mar 25, 2026",
+   "identifier": "MonPoly",
+   "commit": "78b74d6c6f427ca391a1aa8d54d3a680abb30fd7",
+   "branch": null,
+   "params": {}
+  },
+  {
+   "name": "VeriMon",
+   "identifier": "VeriMon",
+   "commit": "bc752d37f1d4560b5667eddac9dd1670451b758e",
+   "branch": null,
+   "params": {}
+  },
+  {
+   "name": "MonPoly Feb 15, 2023",
+   "identifier": "MonPoly",
+   "commit": "23a655563715dc1e6dcd92fb7a641f404b7ac158",
+   "branch": null,
+   "params": {}
+  },
+  {
+   "name": "MonPoly Jan 4, 2023",
+   "identifier": "MonPoly",
+   "commit": "11c27e7e2c945e99553fbfe5a248397bf7a413b5",
+   "branch": null,
+   "params": {}
+  }
+ ],
+ "oracles": [
+  {
+   "identifier": "VeriMonOracle",
+   "name": "VeriMonOracle",
+   "monitor_name": "VeriMon"
+  }
+ ],
+ "status_files": {
+  "result_error": 8,
+  "timeout": 1,
+  "valid": 11
+ },
+ "n_runs": 20,
+ "setting_schema": {
+  "kind": "instruction",
+  "dir_template": null
+ },
+ "fingerprint": {
+  "fingerprint_experiment": "Correctness",
+  "fingerprint_data": "8abca099074700116365abeaaeae2b627fb19f49f1e92dbd98438a1c01828727"
+ },
+ "has_filetree": true,
+ "seeds": {},
+ "data_setup": {
+  "type": "CaseStudy",
+  "fixed": true,
+  "name": "Correctness"
+ },
+ "policy_setup": {},
+ "provenance": [
+  {
+   "setting_key": "0",
+   "tool": "MonPoly Feb 15, 2023",
+   "dir": "provenance/0/MonPoly_Feb_15,_2023",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "0",
+   "tool": "MonPoly Jan 4, 2023",
+   "dir": "provenance/0/MonPoly_Jan_4,_2023",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "0",
+   "tool": "MonPoly Jun 11, 2026",
+   "dir": "provenance/0/MonPoly_Jun_11,_2026",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "0",
+   "tool": "MonPoly Mar 25, 2026",
+   "dir": "provenance/0/MonPoly_Mar_25,_2026",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "0",
+   "tool": "VeriMon",
+   "dir": "provenance/0/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "1",
+   "tool": "MonPoly Feb 15, 2023",
+   "dir": "provenance/1/MonPoly_Feb_15,_2023",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "1",
+   "tool": "MonPoly Jan 4, 2023",
+   "dir": "provenance/1/MonPoly_Jan_4,_2023",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "1",
+   "tool": "MonPoly Jun 11, 2026",
+   "dir": "provenance/1/MonPoly_Jun_11,_2026",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "1",
+   "tool": "MonPoly Mar 25, 2026",
+   "dir": "provenance/1/MonPoly_Mar_25,_2026",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "1",
+   "tool": "VeriMon",
+   "dir": "provenance/1/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "2",
+   "tool": "MonPoly Feb 15, 2023",
+   "dir": "provenance/2/MonPoly_Feb_15,_2023",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "2",
+   "tool": "MonPoly Jan 4, 2023",
+   "dir": "provenance/2/MonPoly_Jan_4,_2023",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "2",
+   "tool": "MonPoly Jun 11, 2026",
+   "dir": "provenance/2/MonPoly_Jun_11,_2026",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "2",
+   "tool": "MonPoly Mar 25, 2026",
+   "dir": "provenance/2/MonPoly_Mar_25,_2026",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "2",
+   "tool": "VeriMon",
+   "dir": "provenance/2/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "3",
+   "tool": "MonPoly Feb 15, 2023",
+   "dir": "provenance/3/MonPoly_Feb_15,_2023",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "3",
+   "tool": "MonPoly Jan 4, 2023",
+   "dir": "provenance/3/MonPoly_Jan_4,_2023",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "3",
+   "tool": "MonPoly Jun 11, 2026",
+   "dir": "provenance/3/MonPoly_Jun_11,_2026",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "3",
+   "tool": "MonPoly Mar 25, 2026",
+   "dir": "provenance/3/MonPoly_Mar_25,_2026",
+   "input_unchanged_after_run": null,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "3",
+   "tool": "VeriMon",
+   "dir": "provenance/3/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  }
+ ]
+}

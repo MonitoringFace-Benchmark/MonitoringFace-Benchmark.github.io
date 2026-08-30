@@ -1,0 +1,74 @@
+{
+ "schema_version": 1,
+ "experiment_fingerprint": {
+  "fingerprint_experiment": "9252e857fe8d86fba68ff2c3f6738f0ea21f7fc20e69e11350a64bc37c2e35be",
+  "fingerprint_data": "b5050186a7865487d33734295113588bda34e525c8984eedcd8cea32bb63ad52",
+  "fingerprint_policy": "790b828027c9fe8b37cef457b7ad582e8389f5fa320b7414d628017505bfeec3"
+ },
+ "framework_commit": "d3b14c1f127a3477f6bd583a05aee00ac7e2834b",
+ "tool": {
+  "name": "TimelyMon 6 S1",
+  "identifier": "TimelyMon",
+  "params": {
+   "folder": "<project>/Infrastructure/experiments/timely_parameter_tuning/operators_5/free_vars_2/num_14",
+   "output_mode": 1,
+   "path_to_project": "<project>",
+   "policy": "policy.policy",
+   "signature": "signature.sig",
+   "step": 1,
+   "trace": "data_50.csv",
+   "trace_target_format": "InputOutputTraceFormats.CSV",
+   "worker": 6
+  }
+ },
+ "setting_key": "5_2_14_50",
+ "captures": 3,
+ "tool_invocation": [
+  "policy.policy",
+  "data_50.csv",
+  "--sig-file",
+  "signature.sig",
+  "-w",
+  "6",
+  "--step",
+  "1",
+  "-m",
+  "1"
+ ],
+ "input_unchanged_after_run": true,
+ "entries": [
+  {
+   "kind": "trace",
+   "source": {
+    "file": "operators_5/free_vars_2/num_14/data_50.csv",
+    "format": "csv",
+    "sha256": "173659ed32af324c15ac5a9f122d02a48d201ec2fbd5adef77bd3cb812f867d2"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "data_50.csv"
+  },
+  {
+   "kind": "policy",
+   "source": {
+    "file": "operators_5/free_vars_2/num_14/policy.policy",
+    "format": "mfotl",
+    "sha256": "f079f104cf9d03be942754b0bde272dc7ac47ab075bbb3c667dc8e0f45e923fe"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "policy.policy"
+  },
+  {
+   "kind": "signature",
+   "source": {
+    "file": "operators_5/free_vars_2/num_14/signature.sig",
+    "format": "sig",
+    "sha256": "3ae332a5a61044bee81d2b2177e6523dc6287a1fd12b6faa84dce9bc69ad151a"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "signature.sig"
+  }
+ ]
+}

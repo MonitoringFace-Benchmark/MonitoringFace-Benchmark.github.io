@@ -1,0 +1,1 @@
+NOT (((P0() SINCE[0,*) (P1(x1))) AND ((P3(x1,x2) AND ((NOT (P2(x2,x1))))))))

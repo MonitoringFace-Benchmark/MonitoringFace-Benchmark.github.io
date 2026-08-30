@@ -1,0 +1,3055 @@
+{
+ "schema_version": 1,
+ "id": "Use_Case_5_4_Parameter_Tuning",
+ "name": "Use Case 5_4: Parameter Tuning",
+ "source_experiment": "timely_parameter_tuning",
+ "run_timestamp": null,
+ "runtime_setting": "offline",
+ "timeout_s": null,
+ "config_file": "benchmark_paper/timely_parameter_tuning.yaml",
+ "monitors": [
+  {
+   "name": "TimelyMon 1 S1",
+   "identifier": "TimelyMon",
+   "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+   "branch": null,
+   "params": {
+    "worker": 1,
+    "output_mode": 1,
+    "step": 1
+   }
+  },
+  {
+   "name": "TimelyMon 1 S1000",
+   "identifier": "TimelyMon",
+   "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+   "branch": null,
+   "params": {
+    "worker": 1,
+    "output_mode": 1,
+    "step": 1000
+   }
+  },
+  {
+   "name": "TimelyMon 1 S10000",
+   "identifier": "TimelyMon",
+   "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+   "branch": null,
+   "params": {
+    "worker": 1,
+    "output_mode": 1,
+    "step": 10000
+   }
+  },
+  {
+   "name": "TimelyMon 3 S1",
+   "identifier": "TimelyMon",
+   "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+   "branch": null,
+   "params": {
+    "worker": 3,
+    "output_mode": 1,
+    "step": 1
+   }
+  },
+  {
+   "name": "TimelyMon 3 S1000",
+   "identifier": "TimelyMon",
+   "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+   "branch": null,
+   "params": {
+    "worker": 3,
+    "output_mode": 1,
+    "step": 1000
+   }
+  },
+  {
+   "name": "TimelyMon 3 S10000",
+   "identifier": "TimelyMon",
+   "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+   "branch": null,
+   "params": {
+    "worker": 3,
+    "output_mode": 1,
+    "step": 10000
+   }
+  },
+  {
+   "name": "TimelyMon 6 S1",
+   "identifier": "TimelyMon",
+   "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+   "branch": null,
+   "params": {
+    "worker": 6,
+    "output_mode": 1,
+    "step": 1
+   }
+  },
+  {
+   "name": "TimelyMon 6 S1000",
+   "identifier": "TimelyMon",
+   "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+   "branch": null,
+   "params": {
+    "worker": 6,
+    "output_mode": 1,
+    "step": 1000
+   }
+  },
+  {
+   "name": "TimelyMon 6 S10000",
+   "identifier": "TimelyMon",
+   "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+   "branch": null,
+   "params": {
+    "worker": 6,
+    "output_mode": 1,
+    "step": 10000
+   }
+  }
+ ],
+ "oracles": [],
+ "status_files": {
+  "valid": 648
+ },
+ "n_runs": 648,
+ "setting_schema": {
+  "kind": "offline_synthetic",
+  "dir_template": "operators_{num_operators}/free_vars_{num_fvs}/num_{num_setting}"
+ },
+ "fingerprint": {
+  "fingerprint_experiment": "9252e857fe8d86fba68ff2c3f6738f0ea21f7fc20e69e11350a64bc37c2e35be",
+  "fingerprint_data": "b5050186a7865487d33734295113588bda34e525c8984eedcd8cea32bb63ad52",
+  "fingerprint_policy": "790b828027c9fe8b37cef457b7ad582e8389f5fa320b7414d628017505bfeec3"
+ },
+ "has_filetree": true,
+ "seeds": {
+  "[5, 2, 0]": [
+   314159265,
+   67822
+  ],
+  "[5, 2, 1]": [
+   314159265,
+   99418
+  ],
+  "[5, 2, 2]": [
+   314159265,
+   71072
+  ],
+  "[5, 2, 3]": [
+   314159265,
+   79599
+  ],
+  "[5, 2, 4]": [
+   314159265,
+   16111
+  ],
+  "[5, 2, 5]": [
+   314159265,
+   40517
+  ],
+  "[5, 2, 6]": [
+   314159265,
+   84102
+  ],
+  "[5, 2, 7]": [
+   314159265,
+   6510
+  ],
+  "[5, 2, 8]": [
+   314159265,
+   83229
+  ],
+  "[5, 2, 9]": [
+   314159265,
+   14059
+  ],
+  "[5, 2, 10]": [
+   314159265,
+   93167
+  ],
+  "[5, 2, 11]": [
+   314159265,
+   17827
+  ],
+  "[5, 2, 12]": [
+   314159265,
+   24708
+  ],
+  "[5, 2, 13]": [
+   314159265,
+   65769
+  ],
+  "[5, 2, 14]": [
+   314159265,
+   40329
+  ],
+  "[5, 2, 15]": [
+   314159265,
+   6341
+  ],
+  "[5, 2, 16]": [
+   314159265,
+   24674
+  ],
+  "[5, 2, 17]": [
+   314159265,
+   2611
+  ],
+  "[5, 2, 18]": [
+   314159265,
+   88930
+  ],
+  "[5, 2, 19]": [
+   314159265,
+   43533
+  ],
+  "[5, 2, 20]": [
+   314159265,
+   47509
+  ],
+  "[5, 2, 21]": [
+   314159265,
+   54242
+  ],
+  "[5, 2, 22]": [
+   314159265,
+   54367
+  ],
+  "[5, 2, 23]": [
+   314159265,
+   24253
+  ]
+ },
+ "data_setup": {
+  "type": "SignatureContract",
+  "SignatureContract": {
+   "trace_length": 1000,
+   "watermarks": true,
+   "event_rate": 1000
+  }
+ },
+ "policy_setup": {
+  "type": "MfotlPolicyContract",
+  "MfotlPolicyContract": {
+   "num_preds": 4,
+   "prob_once": 0.4,
+   "prob_eventually": 0.4,
+   "prob_eand": 0,
+   "prob_rand": 0,
+   "prob_let": 0,
+   "prob_matchF": 0,
+   "prob_matchP": 0
+  }
+ },
+ "provenance": [
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_0_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_0_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_0_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_0_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_0_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_0_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_0_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_0_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_0_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_10_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_10_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_10_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_10_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_10_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_10_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_10_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_10_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_10_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_10_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_10_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_10_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_10_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_10_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_10_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_10_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_10_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_10_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_11_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_11_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_11_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_11_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_11_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_11_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_11_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_11_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_11_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_11_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_11_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_11_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_11_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_11_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_11_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_11_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_11_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_11_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_12_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_12_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_12_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_12_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_12_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_12_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_12_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_12_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_12_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_12_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_12_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_12_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_12_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_12_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_12_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_12_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_12_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_12_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_13_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_13_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_13_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_13_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_13_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_13_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_13_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_13_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_13_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_13_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_13_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_13_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_13_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_13_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_13_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_13_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_13_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_13_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_14_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_14_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_14_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_14_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_14_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_14_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_14_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_14_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_14_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_14_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_14_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_14_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_14_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_14_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_14_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_14_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_14_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_14_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_15_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_15_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_15_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_15_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_15_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_15_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_15_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_15_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_15_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_15_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_15_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_15_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_15_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_15_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_15_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_15_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_15_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_15_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_16_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_16_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_16_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_16_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_16_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_16_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_16_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_16_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_16_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_16_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_16_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_16_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_16_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_16_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_16_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_16_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_16_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_16_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_17_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_17_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_17_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_17_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_17_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_17_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_17_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_17_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_17_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_17_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_17_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_17_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_17_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_17_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_17_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_17_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_17_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_17_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_18_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_18_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_18_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_18_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_18_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_18_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_18_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_18_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_18_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_18_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_18_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_18_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_18_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_18_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_18_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_18_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_18_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_18_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_19_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_19_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_19_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_19_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_19_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_19_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_19_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_19_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_19_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_19_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_19_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_19_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_19_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_19_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_19_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_19_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_19_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_19_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_1_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_1_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_1_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_1_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_1_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_1_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_1_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_1_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_1_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_20_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_20_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_20_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_20_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_20_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_20_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_20_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_20_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_20_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_20_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_20_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_20_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_20_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_20_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_20_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_20_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_20_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_20_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_21_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_21_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_21_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_21_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_21_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_21_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_21_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_21_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_21_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_21_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_21_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_21_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_21_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_21_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_21_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_21_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_21_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_21_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_22_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_22_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_22_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_22_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_22_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_22_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_22_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_22_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_22_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_22_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_22_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_22_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_22_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_22_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_22_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_22_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_22_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_22_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_23_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_23_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_23_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_23_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_23_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_23_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_23_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_23_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_23_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_23_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_23_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_23_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_23_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_23_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_23_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_23_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_23_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_23_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_2_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_2_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_2_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_2_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_2_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_2_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_2_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_2_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_2_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_2_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_2_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_2_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_2_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_2_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_2_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_2_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_2_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_2_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_3_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_3_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_3_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_3_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_3_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_3_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_3_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_3_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_3_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_4_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_4_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_4_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_4_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_4_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_4_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_4_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_4_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_4_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_4_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_4_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_4_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_4_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_4_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_4_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_4_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_4_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_4_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_5_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_5_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_5_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_5_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_5_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_5_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_5_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_5_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_5_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_5_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_5_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_5_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_5_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_5_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_5_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_5_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_5_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_5_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_6_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_6_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_6_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_6_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_6_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_6_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_6_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_6_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_6_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_6_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_6_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_6_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_6_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_6_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_6_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_6_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_6_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_6_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_7_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_7_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_7_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_7_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_7_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_7_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_7_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_7_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_7_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_7_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_7_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_7_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_7_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_7_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_7_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_7_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_7_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_7_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_8_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_8_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_8_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_8_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_8_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_8_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_8_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_8_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_8_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_8_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_8_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_8_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_8_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_8_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_8_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_8_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_8_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_8_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "TimelyMon 1 S1",
+   "dir": "provenance/5_2_9_50/TimelyMon_1_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "TimelyMon 1 S1000",
+   "dir": "provenance/5_2_9_50/TimelyMon_1_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "TimelyMon 1 S10000",
+   "dir": "provenance/5_2_9_50/TimelyMon_1_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "TimelyMon 3 S1",
+   "dir": "provenance/5_2_9_50/TimelyMon_3_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "TimelyMon 3 S1000",
+   "dir": "provenance/5_2_9_50/TimelyMon_3_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "TimelyMon 3 S10000",
+   "dir": "provenance/5_2_9_50/TimelyMon_3_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "TimelyMon 6 S1",
+   "dir": "provenance/5_2_9_50/TimelyMon_6_S1",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "TimelyMon 6 S1000",
+   "dir": "provenance/5_2_9_50/TimelyMon_6_S1000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "TimelyMon 6 S10000",
+   "dir": "provenance/5_2_9_50/TimelyMon_6_S10000",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  }
+ ]
+}

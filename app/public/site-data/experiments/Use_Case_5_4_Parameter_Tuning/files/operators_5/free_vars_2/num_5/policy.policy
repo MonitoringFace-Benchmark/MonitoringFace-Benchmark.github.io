@@ -1,0 +1,1 @@
+(ONCE[3,*) (((EXISTS y1. (P3(y1,y1))) OR ((EXISTS y2. ((P2(y2) UNTIL[4,25] (P2(y2)))))))))

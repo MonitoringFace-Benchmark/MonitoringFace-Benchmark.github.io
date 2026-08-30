@@ -1,0 +1,1 @@
+((EVENTUALLY[4,24] ((ONCE[4,19] (P3(x2,x1))))) AND ((NOT ((ONCE[0,27] ((EVENTUALLY[1,15] (P1(x1,x2)))))))))

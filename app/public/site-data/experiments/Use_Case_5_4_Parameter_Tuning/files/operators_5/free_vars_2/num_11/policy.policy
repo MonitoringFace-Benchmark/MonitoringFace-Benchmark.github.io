@@ -1,0 +1,1 @@
+(ONCE[3,*) (((ONCE[1,*) (P1())) OR ((EVENTUALLY[2,8] (P1()))))))

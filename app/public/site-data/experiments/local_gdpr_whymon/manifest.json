@@ -1,0 +1,148 @@
+{
+ "schema_version": 1,
+ "id": "local_gdpr_whymon",
+ "name": "local gdpr whymon",
+ "source_experiment": "local_gdpr_whymon",
+ "run_timestamp": null,
+ "runtime_setting": "offline",
+ "timeout_s": 30,
+ "config_file": "Local_GDPR/local_gdpr_whymon.yaml",
+ "monitors": [
+  {
+   "name": "WhyMon",
+   "identifier": "WhyMon",
+   "commit": null,
+   "branch": "main",
+   "params": {}
+  }
+ ],
+ "oracles": [],
+ "status_files": {
+  "timeout": 15,
+  "valid": 6
+ },
+ "n_runs": 21,
+ "setting_schema": {
+  "kind": "instruction",
+  "dir_template": null
+ },
+ "fingerprint": {
+  "fingerprint_experiment": "Local_GDPR_WhyMon",
+  "fingerprint_data": "c4b40cf7a3fce6081823428d842ca9c0ee5492fd9746b862b3728e68dac51aa7"
+ },
+ "has_filetree": true,
+ "seeds": {},
+ "data_setup": {
+  "type": "CaseStudy",
+  "fixed": true,
+  "name": "Local_GDPR_WhyMon"
+ },
+ "policy_setup": {},
+ "provenance": [
+  {
+   "setting_key": "0",
+   "tool": "WhyMon",
+   "dir": "provenance/0/WhyMon",
+   "input_unchanged_after_run": null,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "1",
+   "tool": "WhyMon",
+   "dir": "provenance/1/WhyMon",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "2",
+   "tool": "WhyMon",
+   "dir": "provenance/2/WhyMon",
+   "input_unchanged_after_run": null,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "3",
+   "tool": "WhyMon",
+   "dir": "provenance/3/WhyMon",
+   "input_unchanged_after_run": null,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "4",
+   "tool": "WhyMon",
+   "dir": "provenance/4/WhyMon",
+   "input_unchanged_after_run": true,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5",
+   "tool": "WhyMon",
+   "dir": "provenance/5/WhyMon",
+   "input_unchanged_after_run": null,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "6",
+   "tool": "WhyMon",
+   "dir": "provenance/6/WhyMon",
+   "input_unchanged_after_run": null,
+   "captures": 3,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "policy"
+   ]
+  }
+ ]
+}
