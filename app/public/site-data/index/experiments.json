@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-08-30T15:35:19+00:00",
+ "generated_at": "2026-08-30T15:55:39+00:00",
  "experiments": [
   {
    "id": "Use_Case_5_1_Correctness_Testing",
@@ -87,7 +87,8 @@
    "fastest_tool": "MonPoly Jun 11, 2026",
    "fastest_common_settings": 4,
    "has_filetree": true,
-   "has_provenance": true
+   "has_provenance": true,
+   "suite_id": null
   },
   {
    "id": "Use_Case_5_2_Regression_Testing",
@@ -160,7 +161,8 @@
    "fastest_tool": "TimelyMon 6 V",
    "fastest_common_settings": 69,
    "has_filetree": true,
-   "has_provenance": true
+   "has_provenance": true,
+   "suite_id": null
   },
   {
    "id": "Use_Case_5_3_Competition",
@@ -274,7 +276,8 @@
    "fastest_tool": "MonPoly",
    "fastest_common_settings": 50,
    "has_filetree": true,
-   "has_provenance": true
+   "has_provenance": true,
+   "suite_id": null
   },
   {
    "id": "Use_Case_5_4_Parameter_Tuning",
@@ -411,7 +414,8 @@
    "fastest_tool": "TimelyMon 3 S10000",
    "fastest_common_settings": 72,
    "has_filetree": true,
-   "has_provenance": true
+   "has_provenance": true,
+   "suite_id": null
   },
   {
    "id": "example_synthetic_experiment",
@@ -497,7 +501,8 @@
    "fastest_tool": "TimelyMon 6",
    "fastest_common_settings": 2,
    "has_filetree": true,
-   "has_provenance": true
+   "has_provenance": true,
+   "suite_id": null
   },
   {
    "id": "local_gdpr_enfguard",
@@ -530,7 +535,8 @@
    "fastest_tool": "EnfGuard",
    "fastest_common_settings": 21,
    "has_filetree": true,
-   "has_provenance": true
+   "has_provenance": true,
+   "suite_id": "Use_Case_5_3_GDPR"
   },
   {
    "id": "local_gdpr_monpoly",
@@ -600,7 +606,8 @@
    "fastest_tool": "MonPoly",
    "fastest_common_settings": 21,
    "has_filetree": true,
-   "has_provenance": true
+   "has_provenance": true,
+   "suite_id": "Use_Case_5_3_GDPR"
   },
   {
    "id": "local_gdpr_whymon",
@@ -634,7 +641,8 @@
    "fastest_tool": "WhyMon",
    "fastest_common_settings": 6,
    "has_filetree": true,
-   "has_provenance": true
+   "has_provenance": true,
+   "suite_id": "Use_Case_5_3_GDPR"
   },
   {
    "id": "tessla_demo",
@@ -733,7 +741,8 @@
    "fastest_tool": "TeSSLa Rust",
    "fastest_common_settings": 6,
    "has_filetree": true,
-   "has_provenance": true
+   "has_provenance": true,
+   "suite_id": null
   },
   {
    "id": "tool_comparison_synthetic_experiment_all",
@@ -847,7 +856,8 @@
    "fastest_tool": "VeriMon",
    "fastest_common_settings": 10,
    "has_filetree": true,
-   "has_provenance": true
+   "has_provenance": true,
+   "suite_id": null
   },
   {
    "id": "tool_comparison_synthetic_experiment_fragment",
@@ -961,7 +971,28 @@
    "fastest_tool": "MonPoly",
    "fastest_common_settings": 49,
    "has_filetree": true,
-   "has_provenance": true
+   "has_provenance": true,
+   "suite_id": null
+  }
+ ],
+ "suites": [
+  {
+   "id": "Use_Case_5_3_GDPR",
+   "name": "Use Case 5_3: GDPR",
+   "description": "",
+   "run_timestamp": null,
+   "members": [
+    "local_gdpr_enfguard",
+    "local_gdpr_monpoly",
+    "local_gdpr_whymon"
+   ],
+   "n_runs": 126,
+   "status_counts": {
+    "OK": 111,
+    "TO": 15
+   },
+   "fastest_tool": "MonPoly",
+   "fastest_common_settings": 21
   }
  ]
 }

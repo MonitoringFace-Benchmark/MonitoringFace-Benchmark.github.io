@@ -26,12 +26,29 @@ export interface ExperimentCard {
   fastest_common_settings?: number;
   has_filetree: boolean;
   has_provenance?: boolean;
+  suite_id?: string | null;
+}
+
+/** A published experiment suite: derived from member manifests at index
+ * time; members remain individually addressable experiments. Optional end to
+ * end, so indexes without suites keep working. */
+export interface Suite {
+  id: string;
+  name: string;
+  description: string;
+  run_timestamp: string | null;
+  members: string[];
+  n_runs: number;
+  status_counts: Record<string, number>;
+  fastest_tool: string | null;
+  fastest_common_settings: number;
 }
 
 export interface ExperimentsIndex {
   schema_version: number;
   generated_at: string;
   experiments: ExperimentCard[];
+  suites?: Suite[];
 }
 
 export interface Monitor {

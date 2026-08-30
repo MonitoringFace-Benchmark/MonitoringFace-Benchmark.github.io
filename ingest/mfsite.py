@@ -367,7 +367,8 @@ def read_fingerprint(inputs_dir: Path) -> dict:
 def publish_experiment(exp_dir: Path, raw_name: str, out: Path, configs_root: Path,
                        inputs_root: Path | None, description: str,
                        run_timestamp: str | None, inline_limit: int,
-                       config_hint: str | None = None) -> None:
+                       config_hint: str | None = None,
+                       suite_info: dict | None = None) -> None:
     # identity: slug for storage/URLs, the raw folder name for display,
     # the CSV-derived source name for config and input-tree lookup
     exp_id = slugify(raw_name)
@@ -380,6 +381,20 @@ def publish_experiment(exp_dir: Path, raw_name: str, out: Path, configs_root: Pa
         desc_file = final_bundle / "description.md"
         if desc_file.is_file():
             old_description = desc_file.read_text()
+        # member ids are global: silently re-homing a bundle into a different
+        # suite (or out of one) would corrupt the suite listing. Adopting a
+        # previously standalone bundle into a suite is the intended upgrade
+        # and stays allowed.
+        old_manifest_file = final_bundle / "manifest.json"
+        if old_manifest_file.is_file():
+            old_suite = (json.loads(old_manifest_file.read_text()).get("suite") or {})
+            old_sid = old_suite.get("id")
+            new_sid = suite_info.get("id") if suite_info else None
+            if old_sid is not None and old_sid != new_sid:
+                sys.exit(f"bundle '{exp_id}' already belongs to suite "
+                         f"'{old_sid}' but this publish would move it to "
+                         f"'{new_sid}'; delete the bundle or rename one of "
+                         f"the two to make the re-homing explicit")
     # Stage into a hidden sibling and swap only after every validation and
     # write succeeded: a refused publish (e.g. a provenance hash mismatch)
     # must never destroy the previously published bundle.
@@ -458,6 +473,7 @@ def publish_experiment(exp_dir: Path, raw_name: str, out: Path, configs_root: Pa
         "data_setup": config.get("data_setup") or {},
         "policy_setup": config.get("policy_setup") or {},
         "provenance": prov_index,
+        "suite": suite_info,
     }
     (bundle / "manifest.json").write_text(json.dumps(manifest, indent=1))
     (bundle / "description.md").write_text(
@@ -471,14 +487,39 @@ def publish_experiment(exp_dir: Path, raw_name: str, out: Path, configs_root: Pa
           f"provenance={len(prov_index)} entries")
 
 
+def paired_fastest(runs: pd.DataFrame):
+    """The paired 'fastest' comparison: only tools with maximal setting
+    coverage are eligible, and their medians are computed over the settings
+    they ALL solved. A tool that timed out somewhere must not win by having
+    dropped its hardest setting from its own median. Returns
+    (fastest, common_settings, eligible, common_medians)."""
+    if "runtime_s" in runs.columns:
+        ok_runs = runs[(runs["status"] == "OK") & runs["runtime_s"].notna()]
+    else:
+        ok_runs = runs.iloc[0:0]
+    coverage = {t: set(g["setting"]) for t, g in ok_runs.groupby("tool_name")}
+    max_cov = max((len(s) for s in coverage.values()), default=0)
+    eligible = sorted(t for t, s in coverage.items() if len(s) == max_cov) \
+        if max_cov else []
+    common = set.intersection(*(coverage[t] for t in eligible)) if eligible else set()
+    common_med = ok_runs[
+        ok_runs["tool_name"].isin(eligible) & ok_runs["setting"].isin(common)
+    ].groupby("tool_name")["runtime_s"].median() if common else None
+    fastest = str(common_med.idxmin()) if common_med is not None and len(common_med) else None
+    return fastest, common, eligible, common_med
+
+
 def rebuild_index(out: Path) -> None:
     """Regenerate the global runs.parquet + experiments.json from every bundle
-    currently present under out/experiments/."""
+    currently present under out/experiments/. Suites are DERIVED from the
+    member manifests' suite tags, never stored separately."""
     exp_root = out / "experiments"
     index_dir = out / "index"
     index_dir.mkdir(parents=True, exist_ok=True)
     cards = []
     frames = []
+    suite_meta: dict = {}
+    suite_frames: dict = {}
     for bundle in sorted(p for p in exp_root.iterdir()
                          if p.is_dir() and not p.name.startswith(".")):
         if not (bundle / "manifest.json").is_file() or \
@@ -488,25 +529,25 @@ def rebuild_index(out: Path) -> None:
             continue
         manifest = json.loads((bundle / "manifest.json").read_text())
         runs = pd.read_parquet(bundle / "runs.parquet")
-        frames.append(runs.drop(columns=[c for c in ("error",) if c in runs.columns]))
+        suite = manifest.get("suite") or None
+        suite_id = suite.get("id") if suite else None
+        frames.append(
+            runs.drop(columns=[c for c in ("error",) if c in runs.columns])
+                .assign(suite_id=suite_id)
+        )
+        if suite_id:
+            meta = suite_meta.setdefault(suite_id, {
+                "id": suite_id, "name": suite.get("name", suite_id),
+                "description": suite.get("description", ""),
+                "run_timestamp": manifest.get("run_timestamp"),
+                "members": [],
+            })
+            meta["members"].append(manifest["id"])
+            if suite.get("description"):
+                meta["description"] = suite["description"]
+            suite_frames.setdefault(suite_id, []).append(runs)
 
-        # "fastest" is a PAIRED comparison: only tools with maximal setting
-        # coverage are eligible, and their medians are computed over the
-        # settings they ALL solved. A tool that timed out somewhere must not
-        # win by having dropped its hardest setting from its own median.
-        if "runtime_s" in runs.columns:
-            ok_runs = runs[(runs["status"] == "OK") & runs["runtime_s"].notna()]
-        else:
-            ok_runs = runs.iloc[0:0]
-        coverage = {t: set(g["setting"]) for t, g in ok_runs.groupby("tool_name")}
-        max_cov = max((len(s) for s in coverage.values()), default=0)
-        eligible = sorted(t for t, s in coverage.items() if len(s) == max_cov) \
-            if max_cov else []
-        common = set.intersection(*(coverage[t] for t in eligible)) if eligible else set()
-        common_med = ok_runs[
-            ok_runs["tool_name"].isin(eligible) & ok_runs["setting"].isin(common)
-        ].groupby("tool_name")["runtime_s"].median() if common else None
-        fastest = str(common_med.idxmin()) if common_med is not None and len(common_med) else None
+        fastest, common, eligible, common_med = paired_fastest(runs)
 
         per_tool = []
         for tool, grp in runs.groupby("tool_name"):
@@ -546,6 +587,27 @@ def rebuild_index(out: Path) -> None:
             "fastest_common_settings": len(common),
             "has_filetree": manifest.get("has_filetree", False),
             "has_provenance": bool(manifest.get("provenance")),
+            "suite_id": suite_id,
+        })
+
+    # suite entries: summed statuses; "fastest" reuses the SAME paired rule on
+    # the concatenated member runs. Members with a shared setting space (the
+    # GDPR trio) get an honest cross-member verdict; members with disjoint
+    # workloads yield an empty common set and no fastest chip, by construction.
+    suites = []
+    for sid, meta in sorted(suite_meta.items()):
+        allruns = pd.concat(suite_frames[sid], ignore_index=True)
+        s_fastest, s_common, _, _ = paired_fastest(allruns)
+        suites.append({
+            **{k: meta[k] for k in ("id", "name", "description", "run_timestamp")},
+            "members": sorted(meta["members"]),
+            "n_runs": int(len(allruns)),
+            "status_counts": {
+                s: int((allruns["status"] == s).sum())
+                for s in sorted(allruns["status"].dropna().unique())
+            },
+            "fastest_tool": s_fastest,
+            "fastest_common_settings": len(s_common),
         })
 
     if frames:
@@ -555,9 +617,11 @@ def rebuild_index(out: Path) -> None:
         "schema_version": SCHEMA_VERSION,
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "experiments": cards,
+        "suites": suites,
     }, indent=1))
     total = sum(c["n_runs"] for c in cards)
-    print(f"  index: {len(cards)} experiments, {total} runs -> {index_dir}")
+    print(f"  index: {len(cards)} experiments ({len(suites)} suites), "
+          f"{total} runs -> {index_dir}")
 
 
 def parse_run_timestamp(results_dir: Path) -> str | None:
@@ -591,10 +655,12 @@ def main() -> None:
 
     descriptions: dict[str, str] = {}
     config_hints: dict[str, str] = {}
+    suite_description = ""
     if args.suite and args.suite.is_file():
         with args.suite.open() as f:
-            suite = yaml.safe_load(f) or {}
-        for e in suite.get("experiments", []) or []:
+            suite_yaml = yaml.safe_load(f) or {}
+        suite_description = suite_yaml.get("description", "") or ""
+        for e in suite_yaml.get("experiments", []) or []:
             stem = Path(e.get("path", "")).stem
             if stem:
                 descriptions[stem] = e.get("description", "")
@@ -602,24 +668,35 @@ def main() -> None:
 
     results: Path = args.results
     run_ts = parse_run_timestamp(results)
+    suite_info = None
     if status_csvs(results):
         # single experiment: raw name from the folder minus a timestamp
         # suffix; may be a renamed presentation title with spaces
         raw_name = re.sub(r"_\d{8}_\d{6}$", "", results.name)
         targets = [(results, raw_name)]
     else:
+        # a suite: the results folder names the suite itself, its member
+        # subdirs become tagged experiments
+        raw_suite = re.sub(r"_\d{8}_\d{6}$", "", results.name)
+        suite_info = {
+            "id": slugify(raw_suite),
+            "name": raw_suite if " " in raw_suite else raw_suite.replace("_", " "),
+            "description": suite_description,
+        }
         targets = [(d, d.name) for d in sorted(results.iterdir())
                    if d.is_dir() and status_csvs(d)]
     if not targets:
         sys.exit(f"no status CSVs found under {results}")
 
     inline_limit = int(args.inline_limit_mb * 1024 * 1024)
-    print(f"publishing {len(targets)} experiment(s) from {results}")
+    print(f"publishing {len(targets)} experiment(s) from {results}" +
+          (f" as suite '{suite_info['name']}'" if suite_info else ""))
     for exp_dir, raw_name in targets:
         publish_experiment(exp_dir, raw_name, args.out, args.configs,
                            args.inputs_root, descriptions.get(raw_name, ""),
                            run_ts, inline_limit,
-                           config_hint=config_hints.get(raw_name))
+                           config_hint=config_hints.get(raw_name),
+                           suite_info=suite_info)
     rebuild_index(args.out)
 
 

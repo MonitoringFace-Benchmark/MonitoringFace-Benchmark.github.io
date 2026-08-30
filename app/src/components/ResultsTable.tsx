@@ -20,7 +20,13 @@ const HIDDEN = new Set(['experiment_id', 'status_class', 'params_json', 'error',
 
 type Row = Record<string, unknown>;
 
-export default function ResultsTable({ result }: { result: QueryResult }) {
+export default function ResultsTable({
+  result,
+  unhide = [],
+}: {
+  result: QueryResult;
+  unhide?: string[];
+}) {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [statusFilter, setStatusFilter] = useState<string>('all');
   // keyed by TanStack row id, which is stable under sorting and filtering
@@ -45,10 +51,12 @@ export default function ResultsTable({ result }: { result: QueryResult }) {
     // input_unchanged on bundles published without provenance)
     const hasValue = (c: string) =>
       result.rows.some((r) => r[c] !== null && r[c] !== undefined);
+    const hidden = (c: string) => HIDDEN.has(c) && !unhide.includes(c);
     const visible = [
+      ...unhide.filter((c) => result.columns.includes(c) && hasValue(c)),
       ...PREFERRED_ORDER.filter((c) => result.columns.includes(c) && hasValue(c)),
       ...result.columns.filter(
-        (c) => !PREFERRED_ORDER.includes(c) && !HIDDEN.has(c) && hasValue(c),
+        (c) => !PREFERRED_ORDER.includes(c) && !hidden(c) && !unhide.includes(c) && hasValue(c),
       ),
     ];
     return visible.map((c) =>
@@ -66,7 +74,8 @@ export default function ResultsTable({ result }: { result: QueryResult }) {
           ),
       }),
     );
-  }, [result]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [result, unhide.join(',')]);
 
   const table = useReactTable({
     data: rows,

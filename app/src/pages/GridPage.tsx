@@ -1,12 +1,20 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
 import MiniSearch from 'minisearch';
 import { loadIndex } from '../lib/data';
-import type { ExperimentCard } from '../lib/types';
+import type { ExperimentCard, Suite } from '../lib/types';
 import DataSearch from '../components/DataSearch';
+import { ExperimentCardView, SuiteCardView } from '../components/ExperimentCard';
+
+interface SearchDoc {
+  id: string; // 'e:<id>' or 's:<id>'
+  name: string;
+  description: string;
+  tools: string;
+}
 
 export default function GridPage() {
   const [cards, setCards] = useState<ExperimentCard[] | null>(null);
+  const [suites, setSuites] = useState<Suite[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [text, setText] = useState('');
   // null = no data predicate active; otherwise the matching experiment ids
@@ -14,49 +22,88 @@ export default function GridPage() {
 
   useEffect(() => {
     loadIndex()
-      .then((idx) => setCards(idx.experiments))
+      .then((idx) => {
+        setCards(idx.experiments);
+        setSuites(idx.suites ?? []);
+      })
       .catch((e) => setError(String(e)));
   }, []);
 
   const mini = useMemo(() => {
     if (!cards) return null;
-    const ms = new MiniSearch<{ id: string; name: string; description: string; tools: string }>({
+    const ms = new MiniSearch<SearchDoc>({
       fields: ['name', 'description', 'tools'],
       storeFields: ['id'],
       searchOptions: { prefix: true, fuzzy: 0.2, boost: { name: 2 } },
     });
     ms.addAll(
       cards.map((c) => ({
-        id: c.id,
+        id: `e:${c.id}`,
         name: c.name,
         description: c.description,
         tools: c.tools.join(' '),
       })),
     );
+    ms.addAll(
+      suites.map((s) => ({
+        id: `s:${s.id}`,
+        name: s.name,
+        description: s.description,
+        tools: s.members.join(' '),
+      })),
+    );
     return ms;
-  }, [cards]);
+  }, [cards, suites]);
 
-  const visible = useMemo(() => {
-    if (!cards) return [];
-    let out = cards;
+  const { visibleCards, visibleSuites, matchTotal } = useMemo(() => {
+    if (!cards) return { visibleCards: [], visibleSuites: [], matchTotal: 0 };
+    const membersOf = new Map(suites.map((s) => [s.id, new Set(s.members)]));
+    let expHits: Set<string> | null = null;
+    let suiteHits: Set<string> | null = null;
     if (text.trim() && mini) {
-      const hits = new Set(mini.search(text).map((h) => h.id as string));
-      out = out.filter((c) => hits.has(c.id));
+      expHits = new Set();
+      suiteHits = new Set();
+      for (const h of mini.search(text)) {
+        const id = h.id as string;
+        if (id.startsWith('e:')) expHits.add(id.slice(2));
+        else suiteHits.add(id.slice(2));
+      }
     }
-    if (dataMatch) out = out.filter((c) => dataMatch.has(c.id));
-    return out;
-  }, [cards, text, mini, dataMatch]);
+    const cardVisible = (c: ExperimentCard) =>
+      (!expHits || expHits.has(c.id)) && (!dataMatch || dataMatch.has(c.id));
+    // a suite shows when the suite itself matches the text, or any member
+    // passes the text/data filters
+    const suiteVisible = (s: Suite) => {
+      const members = cards.filter((c) => membersOf.get(s.id)?.has(c.id));
+      const memberPasses = members.some(
+        (c) => (!expHits || expHits.has(c.id)) && (!dataMatch || dataMatch.has(c.id)),
+      );
+      const textOk = !expHits || suiteHits?.has(s.id) || memberPasses;
+      const dataOk = !dataMatch || members.some((c) => dataMatch.has(c.id));
+      return textOk && dataOk;
+    };
+    const visibleSuites = suites.filter(suiteVisible);
+    // suite members live inside their suite card, not at the top level
+    const visibleCards = cards.filter((c) => !c.suite_id && cardVisible(c));
+    return {
+      visibleCards,
+      visibleSuites,
+      matchTotal: visibleCards.length + visibleSuites.length,
+    };
+  }, [cards, suites, text, mini, dataMatch]);
 
   if (error) return <div className="error-box">Failed to load index: {error}</div>;
   if (!cards) return <p className="muted">Loading experiments…</p>;
 
   const allTools = [...new Set(cards.flatMap((c) => c.tools))].sort();
+  const totalEntries = cards.filter((c) => !c.suite_id).length + suites.length;
 
   return (
     <>
       <h1>Experiments</h1>
       <p className="muted">
-        {cards.length} experiments · search by name, or query the actual run data below.
+        {cards.length} experiments{suites.length > 0 && ` in ${totalEntries} entries (${suites.length} suites)`}
+        {' '}· search by name, or query the actual run data below.
       </p>
       <div className="searchbar">
         <input
@@ -69,58 +116,19 @@ export default function GridPage() {
       <DataSearch tools={allTools} onMatch={setDataMatch} />
       {dataMatch && (
         <div className="notice">
-          Data query matches {visible.length} of {cards.length} experiments.{' '}
+          Data query matches {matchTotal} of {totalEntries} entries.{' '}
           <button className="btn" onClick={() => setDataMatch(null)}>clear</button>
         </div>
       )}
       <div className="card-grid">
-        {visible.map((c) => (
-          <Link key={c.id} to={`/e/${c.id}`} className="card">
-            <div className="card-title">{c.name}</div>
-            <div className="card-desc">{firstLine(c.description) || 'No description.'}</div>
-            <div className="chip-row">
-              {Object.entries(c.status_counts).map(([s, n]) => (
-                <span key={s} className={`chip ${s}`}>
-                  {s} {n}
-                </span>
-              ))}
-            </div>
-            <div className="chip-row">
-              {c.fastest_tool && (
-                <span
-                  className="chip fastest"
-                  title={
-                    c.fastest_common_settings != null
-                      ? `lowest median runtime over the ${c.fastest_common_settings} settings ` +
-                        `solved by every fully-covering tool; tools with failures are not eligible`
-                      : 'lowest median runtime among OK runs'
-                  }
-                >
-                  fastest: {c.fastest_tool}
-                </span>
-              )}
-              {c.has_provenance && (
-                <span className="chip OK" title="exact final tool inputs stored with conversion manifests">
-                  provenance
-                </span>
-              )}
-              <span className="chip tool">{c.tools.length} tools</span>
-              <span className="chip tool">{c.n_runs} runs</span>
-              {c.run_timestamp && (
-                <span className="muted small">{c.run_timestamp.slice(0, 10)}</span>
-              )}
-            </div>
-          </Link>
+        {visibleSuites.map((s) => (
+          <SuiteCardView key={s.id} s={s} />
+        ))}
+        {visibleCards.map((c) => (
+          <ExperimentCardView key={c.id} c={c} />
         ))}
       </div>
-      {visible.length === 0 && <p className="muted">No experiments match.</p>}
+      {matchTotal === 0 && <p className="muted">No experiments match.</p>}
     </>
   );
-}
-
-function firstLine(md: string): string {
-  return md
-    .split('\n')
-    .map((l) => l.replace(/^#+\s*/, '').trim())
-    .filter(Boolean)[0] ?? '';
 }
