@@ -1,1 +1,0 @@
-NOT (((PREVIOUS[0,*) ((EXISTS y1. (P0(y1))))) AND ((NOT ((P2() AND (P2())))))))

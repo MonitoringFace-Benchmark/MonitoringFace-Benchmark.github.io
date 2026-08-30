@@ -1,1 +1,0 @@
-((PREVIOUS[0,2] (((P1(x1) AND ((NOT (P0(x1))))) AND ((P1(x1) UNTIL[0,21] (P0(x1))))))) AND ((65 = x1)))
