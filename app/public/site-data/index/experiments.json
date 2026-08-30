@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-08-27T07:32:55+00:00",
+ "generated_at": "2026-08-30T11:18:38+00:00",
  "experiments": [
   {
    "id": "example_synthetic_experiment",
@@ -30,6 +30,8 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 0.3972,
+     "eligible": true,
+     "common_median_runtime_s": 0.3972,
      "fastest": false
     },
     {
@@ -40,6 +42,8 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 0.4339,
+     "eligible": true,
+     "common_median_runtime_s": 0.4339,
      "fastest": false
     },
     {
@@ -50,6 +54,8 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 0.3944,
+     "eligible": true,
+     "common_median_runtime_s": 0.3944,
      "fastest": true
     },
     {
@@ -60,6 +66,8 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 0.5736,
+     "eligible": true,
+     "common_median_runtime_s": 0.5736,
      "fastest": false
     },
     {
@@ -70,10 +78,13 @@
      "tool_error": 0,
      "result_error": 1,
      "median_runtime_s": 2.7204,
+     "eligible": false,
+     "common_median_runtime_s": null,
      "fastest": false
     }
    ],
    "fastest_tool": "TimelyMon 6",
+   "fastest_common_settings": 2,
    "has_filetree": true,
    "has_provenance": true
   },
@@ -106,6 +117,8 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 0.3677,
+     "eligible": true,
+     "common_median_runtime_s": 0.3677,
      "fastest": false
     },
     {
@@ -116,6 +129,8 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 4.006,
+     "eligible": true,
+     "common_median_runtime_s": 4.006,
      "fastest": false
     },
     {
@@ -126,7 +141,9 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 0.3587,
-     "fastest": false
+     "eligible": true,
+     "common_median_runtime_s": 0.3587,
+     "fastest": true
     },
     {
      "tool": "TimelyMon",
@@ -136,6 +153,8 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 0.3691,
+     "eligible": true,
+     "common_median_runtime_s": 0.3691,
      "fastest": false
     },
     {
@@ -146,6 +165,8 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 0.3678,
+     "eligible": true,
+     "common_median_runtime_s": 0.3678,
      "fastest": false
     },
     {
@@ -156,10 +177,13 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 0.3541,
-     "fastest": true
+     "eligible": false,
+     "common_median_runtime_s": null,
+     "fastest": false
     }
    ],
-   "fastest_tool": "WhyMon",
+   "fastest_tool": "TeSSLa Rust",
+   "fastest_common_settings": 6,
    "has_filetree": true,
    "has_provenance": true
   },
@@ -195,6 +219,8 @@
      "tool_error": 10,
      "result_error": 0,
      "median_runtime_s": null,
+     "eligible": false,
+     "common_median_runtime_s": null,
      "fastest": false
     },
     {
@@ -205,6 +231,8 @@
      "tool_error": 8,
      "result_error": 0,
      "median_runtime_s": null,
+     "eligible": false,
+     "common_median_runtime_s": null,
      "fastest": false
     },
     {
@@ -215,6 +243,8 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 0.3714,
+     "eligible": true,
+     "common_median_runtime_s": 0.3714,
      "fastest": false
     },
     {
@@ -225,6 +255,8 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 0.3724,
+     "eligible": true,
+     "common_median_runtime_s": 0.3724,
      "fastest": false
     },
     {
@@ -235,6 +267,8 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 0.3804,
+     "eligible": true,
+     "common_median_runtime_s": 0.3804,
      "fastest": false
     },
     {
@@ -245,6 +279,8 @@
      "tool_error": 0,
      "result_error": 0,
      "median_runtime_s": 0.3652,
+     "eligible": true,
+     "common_median_runtime_s": 0.3652,
      "fastest": true
     },
     {
@@ -255,10 +291,13 @@
      "tool_error": 6,
      "result_error": 3,
      "median_runtime_s": 0.3698,
+     "eligible": false,
+     "common_median_runtime_s": null,
      "fastest": false
     }
    ],
    "fastest_tool": "VeriMon",
+   "fastest_common_settings": 10,
    "has_filetree": true,
    "has_provenance": true
   },
@@ -294,6 +333,8 @@
      "tool_error": 3,
      "result_error": 18,
      "median_runtime_s": 1.305,
+     "eligible": false,
+     "common_median_runtime_s": null,
      "fastest": false
     },
     {
@@ -304,6 +345,8 @@
      "tool_error": 20,
      "result_error": 2,
      "median_runtime_s": 1.7109,
+     "eligible": false,
+     "common_median_runtime_s": null,
      "fastest": false
     },
     {
@@ -314,6 +357,8 @@
      "tool_error": 1,
      "result_error": 0,
      "median_runtime_s": 0.3988,
+     "eligible": true,
+     "common_median_runtime_s": 0.3988,
      "fastest": true
     },
     {
@@ -324,6 +369,8 @@
      "tool_error": 5,
      "result_error": 0,
      "median_runtime_s": 0.5702,
+     "eligible": false,
+     "common_median_runtime_s": null,
      "fastest": false
     },
     {
@@ -334,6 +381,8 @@
      "tool_error": 5,
      "result_error": 1,
      "median_runtime_s": 0.4863,
+     "eligible": false,
+     "common_median_runtime_s": null,
      "fastest": false
     },
     {
@@ -344,6 +393,8 @@
      "tool_error": 2,
      "result_error": 0,
      "median_runtime_s": 0.5045,
+     "eligible": false,
+     "common_median_runtime_s": null,
      "fastest": false
     },
     {
@@ -354,10 +405,13 @@
      "tool_error": 5,
      "result_error": 7,
      "median_runtime_s": 0.6362,
+     "eligible": false,
+     "common_median_runtime_s": null,
      "fastest": false
     }
    ],
    "fastest_tool": "MonPoly",
+   "fastest_common_settings": 49,
    "has_filetree": true,
    "has_provenance": true
   }

@@ -86,7 +86,19 @@ export default function GridPage() {
               ))}
             </div>
             <div className="chip-row">
-              {c.fastest_tool && <span className="chip fastest">fastest: {c.fastest_tool}</span>}
+              {c.fastest_tool && (
+                <span
+                  className="chip fastest"
+                  title={
+                    c.fastest_common_settings != null
+                      ? `lowest median runtime over the ${c.fastest_common_settings} settings ` +
+                        `solved by every fully-covering tool; tools with failures are not eligible`
+                      : 'lowest median runtime among OK runs'
+                  }
+                >
+                  fastest: {c.fastest_tool}
+                </span>
+              )}
               {c.has_provenance && (
                 <span className="chip OK" title="exact final tool inputs stored with conversion manifests">
                   provenance

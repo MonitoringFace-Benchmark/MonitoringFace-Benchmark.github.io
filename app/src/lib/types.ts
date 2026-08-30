@@ -7,6 +7,8 @@ export interface PerTool {
   result_error: number;
   median_runtime_s: number | null;
   fastest: boolean;
+  eligible?: boolean;
+  common_median_runtime_s?: number | null;
 }
 
 export interface ExperimentCard {
@@ -21,6 +23,7 @@ export interface ExperimentCard {
   status_counts: Record<string, number>;
   per_tool: PerTool[];
   fastest_tool: string | null;
+  fastest_common_settings?: number;
   has_filetree: boolean;
   has_provenance?: boolean;
 }

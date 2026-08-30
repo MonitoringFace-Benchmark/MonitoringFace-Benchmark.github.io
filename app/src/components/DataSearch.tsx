@@ -9,7 +9,7 @@ interface Props {
 }
 
 const PREDICATES = [
-  { key: 'fastest', label: 'is the fastest (median runtime of OK runs)' },
+  { key: 'fastest', label: 'is the fastest (median over commonly-solved settings)' },
   { key: 'TO', label: 'timed out' },
   { key: 'TE', label: 'had a tool error' },
   { key: 'RE', label: 'disagreed with the oracle' },
@@ -19,12 +19,42 @@ const PREDICATES = [
 function sqlFor(tool: string, predicate: string): string {
   const t = tool.replace(/'/g, "''");
   if (predicate === 'fastest') {
+    // paired comparison, same semantics as the grid chip: only tools with
+    // maximal setting coverage are eligible, medians are taken over the
+    // settings all eligible tools solved
     return `
+      WITH ok_runs AS (
+        SELECT experiment_id, tool_name, setting, runtime_s
+        FROM runs WHERE status = 'OK' AND runtime_s IS NOT NULL
+      ),
+      cov AS (
+        SELECT experiment_id, tool_name, count(DISTINCT setting) AS c
+        FROM ok_runs GROUP BY 1, 2
+      ),
+      eligible AS (
+        SELECT experiment_id, tool_name FROM cov
+        WHERE c = (SELECT max(c2.c) FROM cov c2 WHERE c2.experiment_id = cov.experiment_id)
+      ),
+      common AS (
+        SELECT o.experiment_id, o.setting
+        FROM ok_runs o
+        JOIN eligible e ON e.experiment_id = o.experiment_id AND e.tool_name = o.tool_name
+        GROUP BY 1, 2
+        HAVING count(DISTINCT o.tool_name) =
+          (SELECT count(*) FROM eligible e2 WHERE e2.experiment_id = o.experiment_id)
+      ),
+      med AS (
+        SELECT o.experiment_id, o.tool_name, median(o.runtime_s) AS m
+        FROM ok_runs o
+        JOIN eligible e ON e.experiment_id = o.experiment_id AND e.tool_name = o.tool_name
+        JOIN common c ON c.experiment_id = o.experiment_id AND c.setting = o.setting
+        GROUP BY 1, 2
+      )
       SELECT experiment_id FROM (
-        SELECT experiment_id, tool_name, median(runtime_s) AS med
-        FROM runs WHERE status = 'OK' GROUP BY 1, 2
-        QUALIFY med = min(med) OVER (PARTITION BY experiment_id)
-      ) WHERE tool_name = '${t}'`;
+        SELECT experiment_id, tool_name, m,
+               min(m) OVER (PARTITION BY experiment_id) AS mn
+        FROM med
+      ) WHERE tool_name = '${t}' AND m = mn`;
   }
   // "timed out" covers the whole family: offline TO, online ATO/MTO
   const cond = predicate === 'TO' ? "status IN ('TO','ATO','MTO')" : `status = '${predicate}'`;

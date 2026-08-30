@@ -466,7 +466,24 @@ def rebuild_index(out: Path) -> None:
         runs = pd.read_parquet(bundle / "runs.parquet")
         frames.append(runs.drop(columns=[c for c in ("error",) if c in runs.columns]))
 
-        ok = runs[runs["status"] == "OK"]
+        # "fastest" is a PAIRED comparison: only tools with maximal setting
+        # coverage are eligible, and their medians are computed over the
+        # settings they ALL solved. A tool that timed out somewhere must not
+        # win by having dropped its hardest setting from its own median.
+        if "runtime_s" in runs.columns:
+            ok_runs = runs[(runs["status"] == "OK") & runs["runtime_s"].notna()]
+        else:
+            ok_runs = runs.iloc[0:0]
+        coverage = {t: set(g["setting"]) for t, g in ok_runs.groupby("tool_name")}
+        max_cov = max((len(s) for s in coverage.values()), default=0)
+        eligible = sorted(t for t, s in coverage.items() if len(s) == max_cov) \
+            if max_cov else []
+        common = set.intersection(*(coverage[t] for t in eligible)) if eligible else set()
+        common_med = ok_runs[
+            ok_runs["tool_name"].isin(eligible) & ok_runs["setting"].isin(common)
+        ].groupby("tool_name")["runtime_s"].median() if common else None
+        fastest = str(common_med.idxmin()) if common_med is not None and len(common_med) else None
+
         per_tool = []
         for tool, grp in runs.groupby("tool_name"):
             g_ok = grp[grp["status"] == "OK"]
@@ -480,12 +497,11 @@ def rebuild_index(out: Path) -> None:
                 "result_error": int((grp["status"] == "RE").sum()),
                 "median_runtime_s": round(float(g_ok["runtime_s"].median()), 4)
                 if "runtime_s" in g_ok.columns and len(g_ok) else None,
+                "eligible": tool in eligible,
+                "common_median_runtime_s": round(float(common_med[tool]), 4)
+                if common_med is not None and tool in common_med.index else None,
+                "fastest": tool == fastest,
             })
-        with_rt = [t for t in per_tool if t["median_runtime_s"] is not None]
-        fastest = min(with_rt, key=lambda t: t["median_runtime_s"])["tool"] \
-            if with_rt else None
-        for t in per_tool:
-            t["fastest"] = (t["tool"] == fastest)
 
         desc = (bundle / "description.md").read_text().strip()
         cards.append({
@@ -503,6 +519,7 @@ def rebuild_index(out: Path) -> None:
             },
             "per_tool": per_tool,
             "fastest_tool": fastest,
+            "fastest_common_settings": len(common),
             "has_filetree": manifest.get("has_filetree", False),
             "has_provenance": bool(manifest.get("provenance")),
         })
@@ -539,7 +556,14 @@ def main() -> None:
                      help="root of experiment input trees (Infrastructure/experiments)")
     pub.add_argument("--out", required=True, type=Path)
     pub.add_argument("--inline-limit-mb", type=float, default=5.0)
+    reidx = sub.add_parser("reindex", help="regenerate the global index over "
+                           "the bundles already present in --out")
+    reidx.add_argument("--out", required=True, type=Path)
     args = ap.parse_args()
+
+    if args.cmd == "reindex":
+        rebuild_index(args.out)
+        return
 
     descriptions: dict[str, str] = {}
     config_hints: dict[str, str] = {}
