@@ -21,19 +21,6 @@ export function ExperimentCardView({ c }: { c: Card }) {
         ))}
       </div>
       <div className="chip-row">
-        {c.fastest_tool && (
-          <span
-            className="chip fastest"
-            title={
-              c.fastest_common_settings != null
-                ? `lowest median runtime over the ${c.fastest_common_settings} settings ` +
-                  `solved by every fully-covering tool; tools with failures are not eligible`
-                : 'lowest median runtime among OK runs'
-            }
-          >
-            fastest: {c.fastest_tool}
-          </span>
-        )}
         {c.has_provenance && (
           <span className="chip OK" title="exact final tool inputs stored with conversion manifests">
             provenance
@@ -64,14 +51,6 @@ export function SuiteCardView({ s }: { s: Suite }) {
         ))}
       </div>
       <div className="chip-row">
-        {s.fastest_tool && (
-          <span
-            className="chip fastest"
-            title={`lowest median runtime over the ${s.fastest_common_settings} settings solved by every fully-covering tool across all members`}
-          >
-            fastest: {s.fastest_tool}
-          </span>
-        )}
         <span className="chip tool">{s.members.length} members</span>
         <span className="chip tool">{s.n_runs} runs</span>
         {s.run_timestamp && <span className="muted small">{s.run_timestamp.slice(0, 10)}</span>}
