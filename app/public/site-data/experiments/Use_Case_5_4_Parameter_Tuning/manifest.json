@@ -3053,9 +3053,5 @@
    "stored_kinds": []
   }
  ],
- "suite": {
-  "id": "results",
-  "name": "results",
-  "description": ""
- }
+ "suite": null
 }

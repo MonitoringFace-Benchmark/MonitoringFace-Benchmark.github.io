@@ -1630,9 +1630,5 @@
    ]
   }
  ],
- "suite": {
-  "id": "results",
-  "name": "results",
-  "description": ""
- }
+ "suite": null
 }
