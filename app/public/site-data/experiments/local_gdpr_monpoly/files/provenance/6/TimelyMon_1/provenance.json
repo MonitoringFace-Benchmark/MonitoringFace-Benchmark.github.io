@@ -2,12 +2,16 @@
  "schema_version": 1,
  "experiment_fingerprint": {
   "fingerprint_experiment": "Local_GDPR_MonPoly",
-  "fingerprint_data": "c40ad8730d1b4d9c103a69229b35891ccc639f38f914dbd2fec63fec4aa4cca3"
+  "fingerprint_data": "c40ad8730d1b4d9c103a69229b35891ccc639f38f914dbd2fec63fec4aa4cca3",
+  "fingerprint_components": "3723aabba462f2b57fc8fd211c500f13f33143a7eb8827c7f23c1307465b2fe6"
  },
- "framework_commit": "d3b14c1f127a3477f6bd583a05aee00ac7e2834b",
+ "framework_commit": "f6dde4ff28750d68d499a9dd109ea5050a0119e2-dirty",
  "tool": {
   "name": "TimelyMon 1",
   "identifier": "TimelyMon",
+  "branch": null,
+  "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+  "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image",
   "params": {
    "folder": "<project>/Infrastructure/experiments/local_gdpr_monpoly/data",
    "output_mode": 1,
@@ -52,7 +56,7 @@
       "--entrypoint",
       "java",
       "-i",
-      "replayerconverter_dataconverters_mf_image",
+      "replayerconverter_dataconverters_d8442ab1473ea8f0a9c49836d3bf56bfd0b60672_mf_image",
       "-cp",
       "classes:libs/*",
       "org.entry.Dispatcher",
@@ -64,7 +68,11 @@
       "-a",
       "0"
      ],
-     "cmd_params": null
+     "cmd_params": null,
+     "image": "replayerconverter_dataconverters_d8442ab1473ea8f0a9c49836d3bf56bfd0b60672_mf_image",
+     "image_version": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672",
+     "params": null,
+     "stats": null
     }
    ],
    "stored": {

@@ -3,12 +3,16 @@
  "experiment_fingerprint": {
   "fingerprint_experiment": "c7be75a3b1c468b41432dfeb4bc555a05b7b6658390cc4be6d3cc60da3d93a53",
   "fingerprint_data": "0272d00be71dfc9e880a81aaf5ec7ce20a7f5a5e1081ef6e6aabc0d201deecd3",
-  "fingerprint_policy": "0bb9fa5fa151ad790258fb006acaefa2ea5f031e150299eea0104aae2af29bfb"
+  "fingerprint_policy": "62528f4cb80a0c2f163218282c5076d1fdfc7b951384a825724fd7c9ada68523",
+  "fingerprint_components": "1fb55dfe849df191af63e91e935768ec40ae9f86fe6d13768bf602dd68eb5831"
  },
- "framework_commit": "373b893987f6c0fc3590e39d86a18e6580e6f0b6",
+ "framework_commit": "f6dde4ff28750d68d499a9dd109ea5050a0119e2-dirty",
  "tool": {
   "name": "EnfGuard",
   "identifier": "EnfGuard",
+  "branch": null,
+  "commit": "9e6ec02c04dbcf8fa43b9e3223cad882a6d462f3",
+  "image": "enfguard_9e6ec02c04dbcf8fa43b9e3223cad882a6d462f3_offline_mf_image",
   "params": {
    "folder": "<project>/Infrastructure/experiments/tool_comparison_synthetic_experiment_fragment/operators_5/free_vars_2/num_9",
    "monitoring": true,
@@ -51,7 +55,7 @@
       "--entrypoint",
       "java",
       "-i",
-      "replayerconverter_dataconverters_mf_image",
+      "replayerconverter_dataconverters_d8442ab1473ea8f0a9c49836d3bf56bfd0b60672_mf_image",
       "-cp",
       "classes:libs/*",
       "org.entry.Dispatcher",
@@ -63,7 +67,11 @@
       "-a",
       "0"
      ],
-     "cmd_params": null
+     "cmd_params": null,
+     "image": "replayerconverter_dataconverters_d8442ab1473ea8f0a9c49836d3bf56bfd0b60672_mf_image",
+     "image_version": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672",
+     "params": null,
+     "stats": null
     }
    ],
    "stored": {

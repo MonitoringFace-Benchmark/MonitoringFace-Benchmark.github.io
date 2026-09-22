@@ -159,157 +159,17 @@
    ]
   },
   {
-   "name": "debug",
-   "path": "debug",
-   "kind": "dir",
-   "children": [
-    {
-     "name": "0_0",
-     "path": "debug/0_0",
-     "kind": "dir",
-     "children": [
-      {
-       "name": "MonPoly_Feb_15,_2023",
-       "path": "debug/0_0/MonPoly_Feb_15,_2023",
-       "kind": "dir",
-       "children": [
-        {
-         "name": "stats.txt",
-         "path": "debug/0_0/MonPoly_Feb_15,_2023/stats.txt",
-         "kind": "file",
-         "size": 794,
-         "hosting": "inline"
-        }
-       ]
-      },
-      {
-       "name": "MonPoly_Jan_4,_2023",
-       "path": "debug/0_0/MonPoly_Jan_4,_2023",
-       "kind": "dir",
-       "children": [
-        {
-         "name": "stats.txt",
-         "path": "debug/0_0/MonPoly_Jan_4,_2023/stats.txt",
-         "kind": "file",
-         "size": 794,
-         "hosting": "inline"
-        }
-       ]
-      },
-      {
-       "name": "MonPoly_Jun_11,_2026",
-       "path": "debug/0_0/MonPoly_Jun_11,_2026",
-       "kind": "dir",
-       "children": [
-        {
-         "name": "stats.txt",
-         "path": "debug/0_0/MonPoly_Jun_11,_2026/stats.txt",
-         "kind": "file",
-         "size": 794,
-         "hosting": "inline"
-        }
-       ]
-      },
-      {
-       "name": "MonPoly_Mar_25,_2026",
-       "path": "debug/0_0/MonPoly_Mar_25,_2026",
-       "kind": "dir",
-       "children": [
-        {
-         "name": "stats.txt",
-         "path": "debug/0_0/MonPoly_Mar_25,_2026/stats.txt",
-         "kind": "file",
-         "size": 794,
-         "hosting": "inline"
-        }
-       ]
-      },
-      {
-       "name": "VeriMon",
-       "path": "debug/0_0/VeriMon",
-       "kind": "dir",
-       "children": [
-        {
-         "name": "stats.txt",
-         "path": "debug/0_0/VeriMon/stats.txt",
-         "kind": "file",
-         "size": 805,
-         "hosting": "inline"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "name": "1_0",
-     "path": "debug/1_0",
-     "kind": "dir",
-     "children": [
-      {
-       "name": "VeriMon",
-       "path": "debug/1_0/VeriMon",
-       "kind": "dir",
-       "children": [
-        {
-         "name": "stats.txt",
-         "path": "debug/1_0/VeriMon/stats.txt",
-         "kind": "file",
-         "size": 804,
-         "hosting": "inline"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "name": "2_0",
-     "path": "debug/2_0",
-     "kind": "dir",
-     "children": [
-      {
-       "name": "VeriMon",
-       "path": "debug/2_0/VeriMon",
-       "kind": "dir",
-       "children": [
-        {
-         "name": "stats.txt",
-         "path": "debug/2_0/VeriMon/stats.txt",
-         "kind": "file",
-         "size": 804,
-         "hosting": "inline"
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "name": "3_0",
-     "path": "debug/3_0",
-     "kind": "dir",
-     "children": [
-      {
-       "name": "VeriMon",
-       "path": "debug/3_0/VeriMon",
-       "kind": "dir",
-       "children": [
-        {
-         "name": "stats.txt",
-         "path": "debug/3_0/VeriMon/stats.txt",
-         "kind": "file",
-         "size": 812,
-         "hosting": "inline"
-        }
-       ]
-      }
-     ]
-    }
-   ]
+   "name": "components.json",
+   "path": "components.json",
+   "kind": "file",
+   "size": 348,
+   "hosting": "inline"
   },
   {
    "name": "fingerprint",
    "path": "fingerprint",
    "kind": "file",
-   "size": 117,
+   "size": 205,
    "hosting": "inline"
   },
   {
@@ -338,7 +198,7 @@
          "name": "provenance.json",
          "path": "provenance/0/MonPoly_Feb_15,_2023/provenance.json",
          "kind": "file",
-         "size": 1647,
+         "size": 1903,
          "hosting": "inline"
         }
        ]
@@ -352,7 +212,7 @@
          "name": "provenance.json",
          "path": "provenance/0/MonPoly_Jan_4,_2023/provenance.json",
          "kind": "file",
-         "size": 1646,
+         "size": 1902,
          "hosting": "inline"
         }
        ]
@@ -366,7 +226,7 @@
          "name": "provenance.json",
          "path": "provenance/0/MonPoly_Jun_11,_2026/provenance.json",
          "kind": "file",
-         "size": 1647,
+         "size": 1903,
          "hosting": "inline"
         }
        ]
@@ -380,7 +240,7 @@
          "name": "provenance.json",
          "path": "provenance/0/MonPoly_Mar_25,_2026/provenance.json",
          "kind": "file",
-         "size": 1647,
+         "size": 1903,
          "hosting": "inline"
         }
        ]
@@ -394,7 +254,7 @@
          "name": "provenance.json",
          "path": "provenance/0/VeriMon/provenance.json",
          "kind": "file",
-         "size": 1649,
+         "size": 1905,
          "hosting": "inline"
         }
        ]
@@ -415,7 +275,7 @@
          "name": "provenance.json",
          "path": "provenance/1/MonPoly_Feb_15,_2023/provenance.json",
          "kind": "file",
-         "size": 1647,
+         "size": 1903,
          "hosting": "inline"
         }
        ]
@@ -429,7 +289,7 @@
          "name": "provenance.json",
          "path": "provenance/1/MonPoly_Jan_4,_2023/provenance.json",
          "kind": "file",
-         "size": 1646,
+         "size": 1902,
          "hosting": "inline"
         }
        ]
@@ -443,7 +303,7 @@
          "name": "provenance.json",
          "path": "provenance/1/MonPoly_Jun_11,_2026/provenance.json",
          "kind": "file",
-         "size": 1647,
+         "size": 1903,
          "hosting": "inline"
         }
        ]
@@ -457,7 +317,7 @@
          "name": "provenance.json",
          "path": "provenance/1/MonPoly_Mar_25,_2026/provenance.json",
          "kind": "file",
-         "size": 1647,
+         "size": 1903,
          "hosting": "inline"
         }
        ]
@@ -471,7 +331,7 @@
          "name": "provenance.json",
          "path": "provenance/1/VeriMon/provenance.json",
          "kind": "file",
-         "size": 1649,
+         "size": 1905,
          "hosting": "inline"
         }
        ]
@@ -492,7 +352,7 @@
          "name": "provenance.json",
          "path": "provenance/2/MonPoly_Feb_15,_2023/provenance.json",
          "kind": "file",
-         "size": 1647,
+         "size": 1903,
          "hosting": "inline"
         }
        ]
@@ -506,7 +366,7 @@
          "name": "provenance.json",
          "path": "provenance/2/MonPoly_Jan_4,_2023/provenance.json",
          "kind": "file",
-         "size": 1646,
+         "size": 1902,
          "hosting": "inline"
         }
        ]
@@ -520,7 +380,7 @@
          "name": "provenance.json",
          "path": "provenance/2/MonPoly_Jun_11,_2026/provenance.json",
          "kind": "file",
-         "size": 1647,
+         "size": 1903,
          "hosting": "inline"
         }
        ]
@@ -534,7 +394,7 @@
          "name": "provenance.json",
          "path": "provenance/2/MonPoly_Mar_25,_2026/provenance.json",
          "kind": "file",
-         "size": 1647,
+         "size": 1903,
          "hosting": "inline"
         }
        ]
@@ -548,7 +408,7 @@
          "name": "provenance.json",
          "path": "provenance/2/VeriMon/provenance.json",
          "kind": "file",
-         "size": 1649,
+         "size": 1905,
          "hosting": "inline"
         }
        ]
@@ -569,7 +429,7 @@
          "name": "provenance.json",
          "path": "provenance/3/MonPoly_Feb_15,_2023/provenance.json",
          "kind": "file",
-         "size": 1647,
+         "size": 1903,
          "hosting": "inline"
         }
        ]
@@ -583,7 +443,7 @@
          "name": "provenance.json",
          "path": "provenance/3/MonPoly_Jan_4,_2023/provenance.json",
          "kind": "file",
-         "size": 1646,
+         "size": 1902,
          "hosting": "inline"
         }
        ]
@@ -597,7 +457,7 @@
          "name": "provenance.json",
          "path": "provenance/3/MonPoly_Jun_11,_2026/provenance.json",
          "kind": "file",
-         "size": 1647,
+         "size": 1903,
          "hosting": "inline"
         }
        ]
@@ -611,7 +471,7 @@
          "name": "provenance.json",
          "path": "provenance/3/MonPoly_Mar_25,_2026/provenance.json",
          "kind": "file",
-         "size": 1647,
+         "size": 1903,
          "hosting": "inline"
         }
        ]
@@ -625,7 +485,7 @@
          "name": "provenance.json",
          "path": "provenance/3/VeriMon/provenance.json",
          "kind": "file",
-         "size": 1649,
+         "size": 1905,
          "hosting": "inline"
         }
        ]

@@ -2,12 +2,16 @@
  "schema_version": 1,
  "experiment_fingerprint": {
   "fingerprint_experiment": "Correctness",
-  "fingerprint_data": "8abca099074700116365abeaaeae2b627fb19f49f1e92dbd98438a1c01828727"
+  "fingerprint_data": "8abca099074700116365abeaaeae2b627fb19f49f1e92dbd98438a1c01828727",
+  "fingerprint_components": "9b226373b358803ff889486a170776fddd89b2e21eafb1b671799062e8c304b3"
  },
- "framework_commit": "064b11f5438c42c0d1df9986ad43c51118277d9c",
+ "framework_commit": "f6dde4ff28750d68d499a9dd109ea5050a0119e2-dirty",
  "tool": {
   "name": "MonPoly Mar 25, 2026",
   "identifier": "MonPoly",
+  "branch": null,
+  "commit": "78b74d6c6f427ca391a1aa8d54d3a680abb30fd7",
+  "image": "monpoly_78b74d6c6f427ca391a1aa8d54d3a680abb30fd7_offline_mf_image",
   "params": {
    "folder": "<project>/Infrastructure/experiments/correctness_monpoly/data",
    "path_to_project": "<project>",

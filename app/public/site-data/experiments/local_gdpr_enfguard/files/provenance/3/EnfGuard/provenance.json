@@ -2,12 +2,16 @@
  "schema_version": 1,
  "experiment_fingerprint": {
   "fingerprint_experiment": "Local_GDPR_EnfGuard",
-  "fingerprint_data": "3315f7804c97a5224531d9526e5f60477dfa0690eba7f83995f540d8340d53b5"
+  "fingerprint_data": "3315f7804c97a5224531d9526e5f60477dfa0690eba7f83995f540d8340d53b5",
+  "fingerprint_components": "5920d4eee5a60667169bbd4cc71a148823fd562b7f3d86afb71e5759ee82b0b0"
  },
- "framework_commit": "d3b14c1f127a3477f6bd583a05aee00ac7e2834b",
+ "framework_commit": "f6dde4ff28750d68d499a9dd109ea5050a0119e2-dirty",
  "tool": {
   "name": "EnfGuard",
   "identifier": "EnfGuard",
+  "branch": null,
+  "commit": "9e6ec02c04dbcf8fa43b9e3223cad882a6d462f3",
+  "image": "enfguard_9e6ec02c04dbcf8fa43b9e3223cad882a6d462f3_offline_mf_image",
   "params": {
    "folder": "<project>/Infrastructure/experiments/local_gdpr_enfguard/data",
    "path_to_project": "<project>",

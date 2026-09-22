@@ -1,1 +1,0 @@
-NOT (( FORALL data.  FORALL dataid.  FORALL dsid. collect(data, dataid, dsid)  IMPLIE SINCE   ( NEXT  inform(dsid)  OR   ONCE  inform(dsid))))

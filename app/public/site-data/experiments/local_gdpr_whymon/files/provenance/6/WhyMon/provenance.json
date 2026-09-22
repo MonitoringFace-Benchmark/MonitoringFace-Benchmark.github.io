@@ -2,12 +2,16 @@
  "schema_version": 1,
  "experiment_fingerprint": {
   "fingerprint_experiment": "Local_GDPR_WhyMon",
-  "fingerprint_data": "c4b40cf7a3fce6081823428d842ca9c0ee5492fd9746b862b3728e68dac51aa7"
+  "fingerprint_data": "c4b40cf7a3fce6081823428d842ca9c0ee5492fd9746b862b3728e68dac51aa7",
+  "fingerprint_components": "e798bc6d3a7f4312e0df30ed2577fe6428d50639dd477fbc8b38a0db5ffc89fe"
  },
- "framework_commit": "d3b14c1f127a3477f6bd583a05aee00ac7e2834b",
+ "framework_commit": "f6dde4ff28750d68d499a9dd109ea5050a0119e2-dirty",
  "tool": {
   "name": "WhyMon",
   "identifier": "WhyMon",
+  "branch": null,
+  "commit": "86684beecbfc14ed3367eb5c042f610ca8a60119",
+  "image": "whymon_86684beecbfc14ed3367eb5c042f610ca8a60119_offline_mf_image",
   "params": {
    "folder": "<project>/Infrastructure/experiments/local_gdpr_whymon/data",
    "path_to_project": "<project>",
@@ -53,14 +57,22 @@
      "source_format": "unicode-mfotl",
      "target_format": "mfotl",
      "command": null,
-     "cmd_params": null
+     "cmd_params": null,
+     "image": null,
+     "image_version": null,
+     "params": null,
+     "stats": null
     },
     {
      "converter": "NegateMFOTLConverter",
      "source_format": "mfotl",
      "target_format": "negated-mfotl",
      "command": null,
-     "cmd_params": null
+     "cmd_params": null,
+     "image": null,
+     "image_version": null,
+     "params": null,
+     "stats": null
     }
    ],
    "stored": {

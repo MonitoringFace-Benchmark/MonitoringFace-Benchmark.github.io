@@ -101,10 +101,17 @@
    ]
   },
   {
+   "name": "components.json",
+   "path": "components.json",
+   "kind": "file",
+   "size": 348,
+   "hosting": "inline"
+  },
+  {
    "name": "fingerprint",
    "path": "fingerprint",
    "kind": "file",
-   "size": 125,
+   "size": 213,
    "hosting": "inline"
   },
   {
@@ -133,7 +140,7 @@
          "name": "provenance.json",
          "path": "provenance/0/EnfGuard/provenance.json",
          "kind": "file",
-         "size": 1660,
+         "size": 1917,
          "hosting": "inline"
         }
        ]
@@ -154,7 +161,7 @@
          "name": "provenance.json",
          "path": "provenance/1/EnfGuard/provenance.json",
          "kind": "file",
-         "size": 1664,
+         "size": 1921,
          "hosting": "inline"
         }
        ]
@@ -175,7 +182,7 @@
          "name": "provenance.json",
          "path": "provenance/2/EnfGuard/provenance.json",
          "kind": "file",
-         "size": 1676,
+         "size": 1933,
          "hosting": "inline"
         }
        ]
@@ -196,7 +203,7 @@
          "name": "provenance.json",
          "path": "provenance/3/EnfGuard/provenance.json",
          "kind": "file",
-         "size": 1672,
+         "size": 1929,
          "hosting": "inline"
         }
        ]
@@ -217,7 +224,7 @@
          "name": "provenance.json",
          "path": "provenance/4/EnfGuard/provenance.json",
          "kind": "file",
-         "size": 1672,
+         "size": 1929,
          "hosting": "inline"
         }
        ]
@@ -238,7 +245,7 @@
          "name": "provenance.json",
          "path": "provenance/5/EnfGuard/provenance.json",
          "kind": "file",
-         "size": 1660,
+         "size": 1917,
          "hosting": "inline"
         }
        ]
@@ -259,7 +266,7 @@
          "name": "provenance.json",
          "path": "provenance/6/EnfGuard/provenance.json",
          "kind": "file",
-         "size": 1648,
+         "size": 1905,
          "hosting": "inline"
         }
        ]

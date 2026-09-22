@@ -3,12 +3,16 @@
  "experiment_fingerprint": {
   "fingerprint_experiment": "c40be2d3aa3b3896652361d45564ba82e29f280b865f00232ba5b6e06308e3c9",
   "fingerprint_data": "0272d00be71dfc9e880a81aaf5ec7ce20a7f5a5e1081ef6e6aabc0d201deecd3",
-  "fingerprint_policy": "b5af498984b43353ad2d5ac5de72b56500ebc6a52e2ade9ce0828fabf3dd079b"
+  "fingerprint_policy": "b5af498984b43353ad2d5ac5de72b56500ebc6a52e2ade9ce0828fabf3dd079b",
+  "fingerprint_components": "1fb55dfe849df191af63e91e935768ec40ae9f86fe6d13768bf602dd68eb5831"
  },
- "framework_commit": "d3b14c1f127a3477f6bd583a05aee00ac7e2834b",
+ "framework_commit": "f6dde4ff28750d68d499a9dd109ea5050a0119e2-dirty",
  "tool": {
   "name": "TimelyMon 6 V",
   "identifier": "TimelyMon",
+  "branch": null,
+  "commit": "2924d26f95acf539b85f3e71d8518ebad9961983",
+  "image": "timelymon_2924d26f95acf539b85f3e71d8518ebad9961983_offline_mf_image",
   "params": {
    "folder": "<project>/Infrastructure/experiments/timely_regression_testing/operators_5/free_vars_4/num_3",
    "mode": "oootps",
@@ -16,8 +20,8 @@
    "path_to_project": "<project>",
    "policy": "policy.policy",
    "signature": "signature.sig",
-   "trace": "data_50.csv",
-   "trace_target_format": "InputOutputTraceFormats.CSV",
+   "trace": "scratch/data_50.csv",
+   "trace_target_format": "InputOutputTraceFormats.OOO_CSV",
    "worker": 6
   }
  },
@@ -25,7 +29,7 @@
  "captures": 3,
  "tool_invocation": [
   "policy.policy",
-  "data_50.csv",
+  "scratch/data_50.csv",
   "--sig-file",
   "signature.sig",
   "-w",
@@ -42,9 +46,24 @@
     "format": "csv",
     "sha256": "c503430d67e9a77cfe45bfd39e0d0cb4a072ed3b3976217797fc5e315c7101a6"
    },
-   "steps": [],
-   "stored": null,
-   "as_seen_by_tool": "data_50.csv"
+   "steps": [
+    {
+     "converter": "OutOfOrderConverter",
+     "source_format": "csv",
+     "target_format": "ooo-csv",
+     "command": null,
+     "cmd_params": null,
+     "image": null,
+     "image_version": null,
+     "params": null,
+     "stats": null
+    }
+   ],
+   "stored": {
+    "file": "trace.ooo-csv",
+    "sha256": "4a611f9e84b3c34f27e0245ad299c8ea3902b657259620af3147d70e2f9cae77"
+   },
+   "as_seen_by_tool": "scratch/data_50.csv"
   },
   {
    "kind": "policy",

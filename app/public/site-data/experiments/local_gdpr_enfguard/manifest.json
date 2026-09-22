@@ -6,13 +6,13 @@
  "run_timestamp": null,
  "runtime_setting": "offline",
  "timeout_s": 30,
- "config_file": "Local_GDPR/local_gdpr_enfguard.yaml",
+ "config_file": "benchmark_paper/local_gdpr_enfguard.yaml",
  "monitors": [
   {
    "name": "EnfGuard",
    "identifier": "EnfGuard",
-   "commit": null,
-   "branch": "enfguard",
+   "commit": "9e6ec02c04dbcf8fa43b9e3223cad882a6d462f3",
+   "branch": null,
    "params": {}
   }
  ],
@@ -27,7 +27,8 @@
  },
  "fingerprint": {
   "fingerprint_experiment": "Local_GDPR_EnfGuard",
-  "fingerprint_data": "3315f7804c97a5224531d9526e5f60477dfa0690eba7f83995f540d8340d53b5"
+  "fingerprint_data": "3315f7804c97a5224531d9526e5f60477dfa0690eba7f83995f540d8340d53b5",
+  "fingerprint_components": "5920d4eee5a60667169bbd4cc71a148823fd562b7f3d86afb71e5759ee82b0b0"
  },
  "has_filetree": true,
  "seeds": {},
@@ -132,7 +133,7 @@
  ],
  "suite": {
   "id": "Use_Case_5_3_GDPR",
-  "name": "Use Case 5_3: GDPR",
+  "name": "Use Case 5 3 GDPR",
   "description": ""
  }
 }

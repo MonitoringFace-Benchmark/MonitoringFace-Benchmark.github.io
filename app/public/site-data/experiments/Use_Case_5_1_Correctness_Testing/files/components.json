@@ -1,0 +1,19 @@
+{
+ "schema_version": 1,
+ "requested_pins": {
+  "ReplayerConverter": {
+   "branch": null,
+   "commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672"
+  }
+ },
+ "components": {
+  "generator": {
+   "component": "CaseStudyCopyGenerator",
+   "pin_branch": null,
+   "pin_commit": null,
+   "branch": null,
+   "resolved_version": null,
+   "image": null
+  }
+ }
+}

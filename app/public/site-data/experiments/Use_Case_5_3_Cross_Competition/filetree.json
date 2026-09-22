@@ -1,0 +1,1197 @@
+{
+ "name": "srv_integration",
+ "path": "",
+ "kind": "dir",
+ "children": [
+  {
+   "name": "operators_5",
+   "path": "operators_5",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "free_vars_2",
+     "path": "operators_5/free_vars_2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "num_0",
+       "path": "operators_5/free_vars_2/num_0",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_0/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_0/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_0/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "result",
+         "path": "operators_5/free_vars_2/num_0/result",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "result_10.res",
+           "path": "operators_5/free_vars_2/num_0/result/result_10.res",
+           "kind": "file",
+           "size": 0,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_10.res.vo",
+           "path": "operators_5/free_vars_2/num_0/result/result_10.res.vo",
+           "kind": "file",
+           "size": 2,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_50.res",
+           "path": "operators_5/free_vars_2/num_0/result/result_50.res",
+           "kind": "file",
+           "size": 0,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_50.res.vo",
+           "path": "operators_5/free_vars_2/num_0/result/result_50.res.vo",
+           "kind": "file",
+           "size": 2,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_10.csv",
+         "path": "operators_5/free_vars_2/num_0/data_10.csv",
+         "kind": "file",
+         "size": 220198,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_0/data_50.csv",
+         "kind": "file",
+         "size": 1174240,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_0/policy.policy",
+         "kind": "file",
+         "size": 73,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_0/signature.sig",
+         "kind": "file",
+         "size": 45,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_3",
+       "path": "operators_5/free_vars_2/num_3",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_3/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_3/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_3/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "result",
+         "path": "operators_5/free_vars_2/num_3/result",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "result_10.res",
+           "path": "operators_5/free_vars_2/num_3/result/result_10.res",
+           "kind": "file",
+           "size": 4638,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_10.res.vo",
+           "path": "operators_5/free_vars_2/num_3/result/result_10.res.vo",
+           "kind": "file",
+           "size": 6,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_50.res",
+           "path": "operators_5/free_vars_2/num_3/result/result_50.res",
+           "kind": "file",
+           "size": 25624,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_50.res.vo",
+           "path": "operators_5/free_vars_2/num_3/result/result_50.res.vo",
+           "kind": "file",
+           "size": 6,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_10.csv",
+         "path": "operators_5/free_vars_2/num_3/data_10.csv",
+         "kind": "file",
+         "size": 322678,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_3/data_50.csv",
+         "kind": "file",
+         "size": 1697175,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_3/policy.policy",
+         "kind": "file",
+         "size": 83,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_3/signature.sig",
+         "kind": "file",
+         "size": 65,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_9",
+       "path": "operators_5/free_vars_2/num_9",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_9/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_9/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_9/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "result",
+         "path": "operators_5/free_vars_2/num_9/result",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "result_10.res",
+           "path": "operators_5/free_vars_2/num_9/result/result_10.res",
+           "kind": "file",
+           "size": 0,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_10.res.vo",
+           "path": "operators_5/free_vars_2/num_9/result/result_10.res.vo",
+           "kind": "file",
+           "size": 12,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_50.res",
+           "path": "operators_5/free_vars_2/num_9/result/result_50.res",
+           "kind": "file",
+           "size": 0,
+           "hosting": "inline"
+          },
+          {
+           "name": "result_50.res.vo",
+           "path": "operators_5/free_vars_2/num_9/result/result_50.res.vo",
+           "kind": "file",
+           "size": 12,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_10.csv",
+         "path": "operators_5/free_vars_2/num_9/data_10.csv",
+         "kind": "file",
+         "size": 290050,
+         "hosting": "inline"
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_9/data_50.csv",
+         "kind": "file",
+         "size": 1523790,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_9/policy.policy",
+         "kind": "file",
+         "size": 92,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_9/signature.sig",
+         "kind": "file",
+         "size": 59,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "components.json",
+   "path": "components.json",
+   "kind": "file",
+   "size": 1049,
+   "hosting": "inline"
+  },
+  {
+   "name": "fingerprint",
+   "path": "fingerprint",
+   "kind": "file",
+   "size": 342,
+   "hosting": "inline"
+  },
+  {
+   "name": "provenance",
+   "path": "provenance",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "5_2_0_10",
+     "path": "provenance/5_2_0_10",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_0_10/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_10/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2872,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_0_10/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 65073,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TeSSLa",
+       "path": "provenance/5_2_0_10/TeSSLa",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.srv-policy",
+         "path": "provenance/5_2_0_10/TeSSLa/policy.srv-policy",
+         "kind": "file",
+         "size": 2227,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_10/TeSSLa/provenance.json",
+         "kind": "file",
+         "size": 2877,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.srv-trace",
+         "path": "provenance/5_2_0_10/TeSSLa/trace.srv-trace",
+         "kind": "file",
+         "size": 38613,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TeSSLa_Rust",
+       "path": "provenance/5_2_0_10/TeSSLa_Rust",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.srv-policy",
+         "path": "provenance/5_2_0_10/TeSSLa_Rust/policy.srv-policy",
+         "kind": "file",
+         "size": 2227,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_10/TeSSLa_Rust/provenance.json",
+         "kind": "file",
+         "size": 2857,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.srv-trace",
+         "path": "provenance/5_2_0_10/TeSSLa_Rust/trace.srv-trace",
+         "kind": "file",
+         "size": 38613,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon",
+       "path": "provenance/5_2_0_10/TimelyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_10/TimelyMon/provenance.json",
+         "kind": "file",
+         "size": 2079,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_0_10/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_10/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2887,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_0_10/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 65073,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_0_10/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_0_10/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 79,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_10/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 3313,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_0_10/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 65073,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_0_50",
+     "path": "provenance/5_2_0_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_0_50/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2872,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_0_50/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 321145,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TeSSLa",
+       "path": "provenance/5_2_0_50/TeSSLa",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.srv-policy",
+         "path": "provenance/5_2_0_50/TeSSLa/policy.srv-policy",
+         "kind": "file",
+         "size": 2227,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/TeSSLa/provenance.json",
+         "kind": "file",
+         "size": 2877,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.srv-trace",
+         "path": "provenance/5_2_0_50/TeSSLa/trace.srv-trace",
+         "kind": "file",
+         "size": 197352,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TeSSLa_Rust",
+       "path": "provenance/5_2_0_50/TeSSLa_Rust",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.srv-policy",
+         "path": "provenance/5_2_0_50/TeSSLa_Rust/policy.srv-policy",
+         "kind": "file",
+         "size": 2227,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/TeSSLa_Rust/provenance.json",
+         "kind": "file",
+         "size": 2857,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.srv-trace",
+         "path": "provenance/5_2_0_50/TeSSLa_Rust/trace.srv-trace",
+         "kind": "file",
+         "size": 197352,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon",
+       "path": "provenance/5_2_0_50/TimelyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/TimelyMon/provenance.json",
+         "kind": "file",
+         "size": 2079,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_0_50/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2887,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_0_50/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 321145,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_0_50/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_0_50/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 79,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 3313,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_0_50/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 321145,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_3_10",
+     "path": "provenance/5_2_3_10",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_3_10/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_10/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2872,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_3_10/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 133022,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TeSSLa",
+       "path": "provenance/5_2_3_10/TeSSLa",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.srv-policy",
+         "path": "provenance/5_2_3_10/TeSSLa/policy.srv-policy",
+         "kind": "file",
+         "size": 2831,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_10/TeSSLa/provenance.json",
+         "kind": "file",
+         "size": 2877,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.srv-trace",
+         "path": "provenance/5_2_3_10/TeSSLa/trace.srv-trace",
+         "kind": "file",
+         "size": 139558,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TeSSLa_Rust",
+       "path": "provenance/5_2_3_10/TeSSLa_Rust",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.srv-policy",
+         "path": "provenance/5_2_3_10/TeSSLa_Rust/policy.srv-policy",
+         "kind": "file",
+         "size": 2831,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_10/TeSSLa_Rust/provenance.json",
+         "kind": "file",
+         "size": 2857,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.srv-trace",
+         "path": "provenance/5_2_3_10/TeSSLa_Rust/trace.srv-trace",
+         "kind": "file",
+         "size": 139558,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon",
+       "path": "provenance/5_2_3_10/TimelyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_10/TimelyMon/provenance.json",
+         "kind": "file",
+         "size": 2079,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_3_10/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_10/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2887,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_3_10/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 133022,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_3_10/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_3_10/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 89,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_10/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 3313,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_3_10/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 133022,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_3_50",
+     "path": "provenance/5_2_3_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_3_50/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2872,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_3_50/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 668191,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TeSSLa",
+       "path": "provenance/5_2_3_50/TeSSLa",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.srv-policy",
+         "path": "provenance/5_2_3_50/TeSSLa/policy.srv-policy",
+         "kind": "file",
+         "size": 2831,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/TeSSLa/provenance.json",
+         "kind": "file",
+         "size": 2877,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.srv-trace",
+         "path": "provenance/5_2_3_50/TeSSLa/trace.srv-trace",
+         "kind": "file",
+         "size": 697700,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TeSSLa_Rust",
+       "path": "provenance/5_2_3_50/TeSSLa_Rust",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.srv-policy",
+         "path": "provenance/5_2_3_50/TeSSLa_Rust/policy.srv-policy",
+         "kind": "file",
+         "size": 2831,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/TeSSLa_Rust/provenance.json",
+         "kind": "file",
+         "size": 2857,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.srv-trace",
+         "path": "provenance/5_2_3_50/TeSSLa_Rust/trace.srv-trace",
+         "kind": "file",
+         "size": 697700,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon",
+       "path": "provenance/5_2_3_50/TimelyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/TimelyMon/provenance.json",
+         "kind": "file",
+         "size": 2079,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_3_50/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2887,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_3_50/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 668191,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_3_50/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_3_50/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 89,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 3313,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_3_50/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 668191,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_9_10",
+     "path": "provenance/5_2_9_10",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_9_10/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_10/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2872,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_9_10/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 112226,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TeSSLa",
+       "path": "provenance/5_2_9_10/TeSSLa",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.srv-policy",
+         "path": "provenance/5_2_9_10/TeSSLa/policy.srv-policy",
+         "kind": "file",
+         "size": 2891,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_10/TeSSLa/provenance.json",
+         "kind": "file",
+         "size": 2877,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.srv-trace",
+         "path": "provenance/5_2_9_10/TeSSLa/trace.srv-trace",
+         "kind": "file",
+         "size": 113289,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TeSSLa_Rust",
+       "path": "provenance/5_2_9_10/TeSSLa_Rust",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.srv-policy",
+         "path": "provenance/5_2_9_10/TeSSLa_Rust/policy.srv-policy",
+         "kind": "file",
+         "size": 2891,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_10/TeSSLa_Rust/provenance.json",
+         "kind": "file",
+         "size": 2857,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.srv-trace",
+         "path": "provenance/5_2_9_10/TeSSLa_Rust/trace.srv-trace",
+         "kind": "file",
+         "size": 113289,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon",
+       "path": "provenance/5_2_9_10/TimelyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_10/TimelyMon/provenance.json",
+         "kind": "file",
+         "size": 2079,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_9_10/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_10/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2887,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_9_10/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 112226,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_9_10/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_9_10/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 98,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_10/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 3313,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_9_10/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 112226,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_9_50",
+     "path": "provenance/5_2_9_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly",
+       "path": "provenance/5_2_9_50/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 2872,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_9_50/MonPoly/trace.monpoly",
+         "kind": "file",
+         "size": 557201,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TeSSLa",
+       "path": "provenance/5_2_9_50/TeSSLa",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.srv-policy",
+         "path": "provenance/5_2_9_50/TeSSLa/policy.srv-policy",
+         "kind": "file",
+         "size": 2891,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/TeSSLa/provenance.json",
+         "kind": "file",
+         "size": 2877,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.srv-trace",
+         "path": "provenance/5_2_9_50/TeSSLa/trace.srv-trace",
+         "kind": "file",
+         "size": 566313,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TeSSLa_Rust",
+       "path": "provenance/5_2_9_50/TeSSLa_Rust",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.srv-policy",
+         "path": "provenance/5_2_9_50/TeSSLa_Rust/policy.srv-policy",
+         "kind": "file",
+         "size": 2891,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/TeSSLa_Rust/provenance.json",
+         "kind": "file",
+         "size": 2857,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.srv-trace",
+         "path": "provenance/5_2_9_50/TeSSLa_Rust/trace.srv-trace",
+         "kind": "file",
+         "size": 566313,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon",
+       "path": "provenance/5_2_9_50/TimelyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/TimelyMon/provenance.json",
+         "kind": "file",
+         "size": 2079,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5_2_9_50/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 2887,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_9_50/VeriMon/trace.monpoly",
+         "kind": "file",
+         "size": 557201,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "WhyMon",
+       "path": "provenance/5_2_9_50/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5_2_9_50/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 98,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 3313,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.monpoly",
+         "path": "provenance/5_2_9_50/WhyMon/trace.monpoly",
+         "kind": "file",
+         "size": 557201,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

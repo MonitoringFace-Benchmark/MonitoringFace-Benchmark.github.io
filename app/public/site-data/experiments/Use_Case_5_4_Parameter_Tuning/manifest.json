@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "id": "Use_Case_5_4_Parameter_Tuning",
- "name": "Use Case 5_4: Parameter Tuning",
+ "name": "Use Case 5 4 Parameter Tuning",
  "source_experiment": "timely_parameter_tuning",
  "run_timestamp": null,
  "runtime_setting": "offline",
@@ -120,7 +120,8 @@
  "fingerprint": {
   "fingerprint_experiment": "9252e857fe8d86fba68ff2c3f6738f0ea21f7fc20e69e11350a64bc37c2e35be",
   "fingerprint_data": "b5050186a7865487d33734295113588bda34e525c8984eedcd8cea32bb63ad52",
-  "fingerprint_policy": "790b828027c9fe8b37cef457b7ad582e8389f5fa320b7414d628017505bfeec3"
+  "fingerprint_policy": "790b828027c9fe8b37cef457b7ad582e8389f5fa320b7414d628017505bfeec3",
+  "fingerprint_components": "1fb55dfe849df191af63e91e935768ec40ae9f86fe6d13768bf602dd68eb5831"
  },
  "has_filetree": true,
  "seeds": {
@@ -3051,5 +3052,10 @@
    ],
    "stored_kinds": []
   }
- ]
+ ],
+ "suite": {
+  "id": "results",
+  "name": "results",
+  "description": ""
+ }
 }

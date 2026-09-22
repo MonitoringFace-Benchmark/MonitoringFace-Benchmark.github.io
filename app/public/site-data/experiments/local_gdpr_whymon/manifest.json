@@ -6,13 +6,13 @@
  "run_timestamp": null,
  "runtime_setting": "offline",
  "timeout_s": 30,
- "config_file": "Local_GDPR/local_gdpr_whymon.yaml",
+ "config_file": "benchmark_paper/local_gdpr_whymon.yaml",
  "monitors": [
   {
    "name": "WhyMon",
    "identifier": "WhyMon",
-   "commit": null,
-   "branch": "main",
+   "commit": "86684beecbfc14ed3367eb5c042f610ca8a60119",
+   "branch": null,
    "params": {}
   }
  ],
@@ -28,7 +28,8 @@
  },
  "fingerprint": {
   "fingerprint_experiment": "Local_GDPR_WhyMon",
-  "fingerprint_data": "c4b40cf7a3fce6081823428d842ca9c0ee5492fd9746b862b3728e68dac51aa7"
+  "fingerprint_data": "c4b40cf7a3fce6081823428d842ca9c0ee5492fd9746b862b3728e68dac51aa7",
+  "fingerprint_components": "e798bc6d3a7f4312e0df30ed2577fe6428d50639dd477fbc8b38a0db5ffc89fe"
  },
  "has_filetree": true,
  "seeds": {},
@@ -147,7 +148,7 @@
  ],
  "suite": {
   "id": "Use_Case_5_3_GDPR",
-  "name": "Use Case 5_3: GDPR",
+  "name": "Use Case 5 3 GDPR",
   "description": ""
  }
 }

@@ -1,0 +1,31 @@
+{
+ "schema_version": 1,
+ "requested_pins": {
+  "SignatureGenerator": {
+   "branch": null,
+   "commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672"
+  },
+  "MfotlPolicyGenerator": {
+   "branch": null,
+   "commit": "fef5f8f5551a36dac4aa45cc7c48bef09964a265"
+  }
+ },
+ "components": {
+  "data_source": {
+   "component": "SignatureGenerator",
+   "pin_branch": null,
+   "pin_commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672",
+   "branch": "main",
+   "resolved_version": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672",
+   "image": "gen_data_datagenerators_d8442ab1473ea8f0a9c49836d3bf56bfd0b60672_mf_image"
+  },
+  "policy_source": {
+   "component": "MfotlPolicyGenerator",
+   "pin_branch": null,
+   "pin_commit": "fef5f8f5551a36dac4aa45cc7c48bef09964a265",
+   "branch": "main",
+   "resolved_version": "fef5f8f5551a36dac4aa45cc7c48bef09964a265",
+   "image": "mfotlpolicygenerator_policygenerators_fef5f8f5551a36dac4aa45cc7c48bef09964a265_mf_image"
+  }
+ }
+}

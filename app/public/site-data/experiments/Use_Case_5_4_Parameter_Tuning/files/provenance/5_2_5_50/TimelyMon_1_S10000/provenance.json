@@ -3,12 +3,16 @@
  "experiment_fingerprint": {
   "fingerprint_experiment": "9252e857fe8d86fba68ff2c3f6738f0ea21f7fc20e69e11350a64bc37c2e35be",
   "fingerprint_data": "b5050186a7865487d33734295113588bda34e525c8984eedcd8cea32bb63ad52",
-  "fingerprint_policy": "790b828027c9fe8b37cef457b7ad582e8389f5fa320b7414d628017505bfeec3"
+  "fingerprint_policy": "790b828027c9fe8b37cef457b7ad582e8389f5fa320b7414d628017505bfeec3",
+  "fingerprint_components": "1fb55dfe849df191af63e91e935768ec40ae9f86fe6d13768bf602dd68eb5831"
  },
- "framework_commit": "d3b14c1f127a3477f6bd583a05aee00ac7e2834b",
+ "framework_commit": "f6dde4ff28750d68d499a9dd109ea5050a0119e2-dirty",
  "tool": {
   "name": "TimelyMon 1 S10000",
   "identifier": "TimelyMon",
+  "branch": null,
+  "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+  "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image",
   "params": {
    "folder": "<project>/Infrastructure/experiments/timely_parameter_tuning/operators_5/free_vars_2/num_5",
    "output_mode": 1,
