@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
- "id": "Use_Case_5_1_Correctness_Testing",
- "name": "Use Case 5 1 Correctness Testing",
+ "id": "Use_Case_5.1_Correctness_Testing",
+ "name": "Use Case 5.1: Correctness Testing",
  "source_experiment": "correctness_monpoly",
  "run_timestamp": null,
  "runtime_setting": "offline",

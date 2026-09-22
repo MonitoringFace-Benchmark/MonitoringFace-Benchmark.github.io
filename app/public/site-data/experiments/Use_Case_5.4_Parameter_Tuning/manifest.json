@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
- "id": "Use_Case_5_4_Parameter_Tuning",
- "name": "Use Case 5 4 Parameter Tuning",
+ "id": "Use_Case_5.4_Parameter_Tuning",
+ "name": "Use Case 5.4: Parameter Tuning",
  "source_experiment": "timely_parameter_tuning",
  "run_timestamp": null,
  "runtime_setting": "offline",

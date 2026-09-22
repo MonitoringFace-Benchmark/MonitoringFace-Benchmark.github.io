@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
- "id": "Use_Case_5_3_Competition",
- "name": "Use Case 5 3 Competition",
+ "id": "Use_Case_5.3_Competition",
+ "name": "Use Case 5.3: Competition",
  "source_experiment": "tool_comparison_synthetic_experiment_fragment",
  "run_timestamp": null,
  "runtime_setting": "offline",

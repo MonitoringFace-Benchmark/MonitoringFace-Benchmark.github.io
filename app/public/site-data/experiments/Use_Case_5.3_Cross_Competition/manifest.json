@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
- "id": "Use_Case_5_3_Cross_Competition",
- "name": "Use Case 5 3 Cross Competition",
+ "id": "Use_Case_5.3_Cross_Competition",
+ "name": "Use Case 5.3: Cross Competition",
  "source_experiment": "srv_integration",
  "run_timestamp": null,
  "runtime_setting": "offline",

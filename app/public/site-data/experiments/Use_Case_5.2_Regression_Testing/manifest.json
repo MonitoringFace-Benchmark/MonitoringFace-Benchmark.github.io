@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
- "id": "Use_Case_5_2_Regression_Testing",
- "name": "Use Case 5 2 Regression Testing",
+ "id": "Use_Case_5.2_Regression_Testing",
+ "name": "Use Case 5.2: Regression Testing",
  "source_experiment": "timely_regression_testing",
  "run_timestamp": null,
  "runtime_setting": "offline",
