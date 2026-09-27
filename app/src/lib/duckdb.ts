@@ -6,7 +6,7 @@ import duckdbMvpWasm from '@duckdb/duckdb-wasm/dist/duckdb-mvp.wasm?url';
 import duckdbMvpWorker from '@duckdb/duckdb-wasm/dist/duckdb-browser-mvp.worker.js?url';
 import duckdbEhWasm from '@duckdb/duckdb-wasm/dist/duckdb-eh.wasm?url';
 import duckdbEhWorker from '@duckdb/duckdb-wasm/dist/duckdb-browser-eh.worker.js?url';
-import { dataUrl } from './data';
+import { dataUrl, loadIndex } from './data';
 
 const BUNDLES: duckdb.DuckDBBundles = {
   mvp: { mainModule: duckdbMvpWasm, mainWorker: duckdbMvpWorker },
@@ -14,11 +14,23 @@ const BUNDLES: duckdb.DuckDBBundles = {
 };
 
 let dbPromise: Promise<duckdb.AsyncDuckDB> | null = null;
+// the index's generated_at, used to version parquet URLs: Pages caches by
+// URL for 10 minutes, so an unversioned parquet could pair a fresh index
+// with stale run data (or keep serving removed experiments)
+let dataVersion = '';
+
+function versioned(rel: string): string {
+  return `${dataUrl(rel)}?v=${encodeURIComponent(dataVersion)}`;
+}
 
 export function getDb(): Promise<duckdb.AsyncDuckDB> {
   if (!dbPromise) {
     const attempt = (async () => {
-      const bundle = await duckdb.selectBundle(BUNDLES);
+      const [bundle, index] = await Promise.all([
+        duckdb.selectBundle(BUNDLES),
+        loadIndex(), // revalidated fetch; its generated_at versions the parquet
+      ]);
+      dataVersion = index.generated_at ?? '';
       const worker = new Worker(bundle.mainWorker!);
       const db = new duckdb.AsyncDuckDB(new duckdb.VoidLogger(), worker);
       await db.instantiate(bundle.mainModule, bundle.pthreadWorker);
@@ -26,7 +38,7 @@ export function getDb(): Promise<duckdb.AsyncDuckDB> {
       // Global view over the cross-experiment runs table; every data-predicate
       // search is a query against this one parquet file.
       await conn.query(`CREATE OR REPLACE VIEW runs AS
-        SELECT * FROM read_parquet('${dataUrl('index/runs.parquet')}')`);
+        SELECT * FROM read_parquet('${versioned('index/runs.parquet')}')`);
       await conn.close();
       return db;
     })();
@@ -69,9 +81,10 @@ export async function query(sql: string): Promise<QueryResult> {
 }
 
 /** Runs of one experiment, straight from its bundle parquet. */
-export function experimentRuns(id: string): Promise<QueryResult> {
+export async function experimentRuns(id: string): Promise<QueryResult> {
+  await getDb(); // ensures dataVersion is set before composing the URL
   return query(
-    `SELECT * FROM read_parquet('${dataUrl(`experiments/${id}/runs.parquet`)}')
+    `SELECT * FROM read_parquet('${versioned(`experiments/${id}/runs.parquet`)}')
      ORDER BY tool_name, setting`,
   );
 }

@@ -124,9 +124,11 @@ function runPrefix(template: string, run: Record<string, unknown>): string | nul
 /** Fetch at most `limit` bytes of `url`. Sends a Range header, but also caps
  * via a streaming reader so servers that ignore Range never flood memory. */
 async function fetchPrefix(url: string, limit: number): Promise<string> {
-  const init = Number.isFinite(limit)
-    ? { headers: { Range: `bytes=0-${limit - 1}` } }
-    : undefined;
+  // 'no-cache' revalidates against Pages' 10-minute cache so republished
+  // bundle files show fresh content immediately
+  const init: RequestInit = Number.isFinite(limit)
+    ? { headers: { Range: `bytes=0-${limit - 1}` }, cache: 'no-cache' }
+    : { cache: 'no-cache' };
   const res = await fetch(url, init);
   if (!res.ok && res.status !== 206) throw new Error(`HTTP ${res.status}`);
   if (!Number.isFinite(limit) || !res.body) {
@@ -367,7 +369,7 @@ export default function FileBrowser({
       );
       const inputs = await Promise.all(
         all.map(async (f) => {
-          const res = await fetch(dataUrl(`experiments/${manifest.id}/files/${f.path}`));
+          const res = await fetch(dataUrl(`experiments/${manifest.id}/files/${f.path}`), { cache: 'no-cache' });
           if (!res.ok) throw new Error(`fetch ${f.path}: HTTP ${res.status}`);
           return { name: f.path, input: await res.blob() };
         }),

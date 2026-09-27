@@ -6,8 +6,12 @@ export function dataUrl(rel: string): string {
   return new URL(`site-data/${rel}`, base).toString();
 }
 
+// GitHub Pages caches for 10 minutes; 'no-cache' forces a conditional
+// revalidation (ETag) so a fresh deploy is visible immediately, at the cost
+// of a cheap 304 when nothing changed. Without this, removed or updated
+// experiments linger in open tabs until the cache expires.
 async function fetchJson<T>(rel: string): Promise<T> {
-  const res = await fetch(dataUrl(rel));
+  const res = await fetch(dataUrl(rel), { cache: 'no-cache' });
   if (!res.ok) throw new Error(`fetch ${rel}: HTTP ${res.status}`);
   return res.json() as Promise<T>;
 }
@@ -26,7 +30,7 @@ export const loadProvenance = (id: string, dir: string) =>
   fetchJson<ProvenanceManifest>(`experiments/${id}/files/${dir}/provenance.json`);
 
 export async function loadDescription(id: string): Promise<string> {
-  const res = await fetch(dataUrl(`experiments/${id}/description.md`));
+  const res = await fetch(dataUrl(`experiments/${id}/description.md`), { cache: 'no-cache' });
   return res.ok ? res.text() : '';
 }
 
