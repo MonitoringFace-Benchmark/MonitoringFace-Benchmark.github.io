@@ -1,1 +1,0 @@
-((ONCE[0,*) ((P2(x1,x2) AND ((NOT (P0())))))) AND ((PREVIOUS[0,*) ((EXISTS y1. (P1(y1)))))))

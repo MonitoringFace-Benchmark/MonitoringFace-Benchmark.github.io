@@ -1,1 +1,0 @@
-NOT ((PREVIOUS[0,*) (((P3(x2) OR (P3(x2))) AND ((NOT ((P2(x2) SINCE[0,*) (P2(x2))))))))))

@@ -1,1 +1,0 @@
-(∀data. ∀dataid. ∀dsid. collect(data, dataid, dsid) → (○ inform(dsid) ∨ ⧫ inform(dsid)))

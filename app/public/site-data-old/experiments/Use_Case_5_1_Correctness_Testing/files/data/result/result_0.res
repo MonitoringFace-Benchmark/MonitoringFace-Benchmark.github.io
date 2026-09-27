@@ -1,3 +1,0 @@
-@0 (time point 0): true
-@1 (time point 1): true
-@2 (time point 2): true

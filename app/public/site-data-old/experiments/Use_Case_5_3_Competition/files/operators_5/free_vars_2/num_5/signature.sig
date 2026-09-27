@@ -1,5 +1,0 @@
-P0(x0:int)
-P1(x0:int, x1:int)
-P2()
-P3(x0:int)
-Placeholder()
