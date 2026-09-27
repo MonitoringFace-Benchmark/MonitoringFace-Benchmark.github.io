@@ -1,0 +1,96 @@
+{
+ "schema_version": 1,
+ "experiment_fingerprint": {
+  "fingerprint_experiment": "c7be75a3b1c468b41432dfeb4bc555a05b7b6658390cc4be6d3cc60da3d93a53",
+  "fingerprint_data": "0272d00be71dfc9e880a81aaf5ec7ce20a7f5a5e1081ef6e6aabc0d201deecd3",
+  "fingerprint_policy": "0bb9fa5fa151ad790258fb006acaefa2ea5f031e150299eea0104aae2af29bfb"
+ },
+ "framework_commit": "373b893987f6c0fc3590e39d86a18e6580e6f0b6",
+ "tool": {
+  "name": "MonPoly",
+  "identifier": "MonPoly",
+  "params": {
+   "folder": "<project>/Infrastructure/experiments/tool_comparison_synthetic_experiment_fragment/operators_5/free_vars_2/num_8",
+   "path_to_project": "<project>",
+   "policy": "policy.policy",
+   "signature": "signature.sig",
+   "trace": "scratch/data_1000.csv",
+   "trace_target_format": "InputOutputTraceFormats.MONPOLY"
+  }
+ },
+ "setting_key": "5_2_8_1000",
+ "captures": 1,
+ "tool_invocation": [
+  "-sig",
+  "signature.sig",
+  "-formula",
+  "policy.policy",
+  "-log",
+  "scratch/data_1000.csv"
+ ],
+ "input_unchanged_after_run": true,
+ "entries": [
+  {
+   "kind": "trace",
+   "source": {
+    "file": "operators_5/free_vars_2/num_8/data_1000.csv",
+    "format": "csv",
+    "sha256": "26d6522e5a1ff5f4d9e6264cae7bcbd611f71204ada45b2fb438d538a0d3e706"
+   },
+   "steps": [
+    {
+     "converter": "ReplayerConverter",
+     "source_format": "csv",
+     "target_format": "monpoly",
+     "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--entrypoint",
+      "java",
+      "-i",
+      "replayerconverter_dataconverters_mf_image",
+      "-cp",
+      "classes:libs/*",
+      "org.entry.Dispatcher",
+      "Replayer",
+      "-i",
+      "csv",
+      "-f",
+      "monpoly",
+      "-a",
+      "0"
+     ],
+     "cmd_params": null
+    }
+   ],
+   "stored": {
+    "file": "trace.monpoly",
+    "sha256": "d61a5d75c6f70f3fe8f7c5ce68c801207144881ae925bcd25d10b4770236df7a"
+   },
+   "as_seen_by_tool": "scratch/data_1000.csv"
+  },
+  {
+   "kind": "policy",
+   "source": {
+    "file": "operators_5/free_vars_2/num_8/policy.policy",
+    "format": "mfotl",
+    "sha256": "5f4af512c00ede0e3ae9a38afacc07bc0f22a0779738c48b3f6c2542e72e7532"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "policy.policy"
+  },
+  {
+   "kind": "signature",
+   "source": {
+    "file": "operators_5/free_vars_2/num_8/signature.sig",
+    "format": "sig",
+    "sha256": "8868914d45cf9ddaee527384a50d5ed4e3a7d1b3af54bd2bb83df44e03f00082"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "signature.sig"
+  }
+ ]
+}

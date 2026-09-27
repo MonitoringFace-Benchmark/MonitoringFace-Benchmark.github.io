@@ -1,0 +1,99 @@
+{
+ "schema_version": 1,
+ "experiment_fingerprint": {
+  "fingerprint_experiment": "Local_GDPR_MonPoly",
+  "fingerprint_data": "c40ad8730d1b4d9c103a69229b35891ccc639f38f914dbd2fec63fec4aa4cca3"
+ },
+ "framework_commit": "d3b14c1f127a3477f6bd583a05aee00ac7e2834b",
+ "tool": {
+  "name": "TimelyMon 6",
+  "identifier": "TimelyMon",
+  "params": {
+   "folder": "<project>/Infrastructure/experiments/local_gdpr_monpoly/data",
+   "output_mode": 1,
+   "path_to_project": "<project>",
+   "policy": "Formula/limitation.mfotl",
+   "signature": "Signature/sig.sig",
+   "trace": "scratch/log.log",
+   "trace_target_format": "InputOutputTraceFormats.CSV",
+   "worker": 6
+  }
+ },
+ "setting_key": "4",
+ "captures": 3,
+ "tool_invocation": [
+  "Formula/limitation.mfotl",
+  "scratch/log.log",
+  "--sig-file",
+  "Signature/sig.sig",
+  "-w",
+  "6",
+  "-m",
+  "1"
+ ],
+ "input_unchanged_after_run": true,
+ "entries": [
+  {
+   "kind": "trace",
+   "source": {
+    "file": "data/Trace/log.log",
+    "format": "monpoly",
+    "sha256": "4fca40c70ff624bc61f48ee75cc728769168584635e4d0c5533cb98e4447eb3b"
+   },
+   "steps": [
+    {
+     "converter": "ReplayerConverter",
+     "source_format": "monpoly",
+     "target_format": "csv",
+     "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--entrypoint",
+      "java",
+      "-i",
+      "replayerconverter_dataconverters_mf_image",
+      "-cp",
+      "classes:libs/*",
+      "org.entry.Dispatcher",
+      "Replayer",
+      "-i",
+      "monpoly",
+      "-f",
+      "csv",
+      "-a",
+      "0"
+     ],
+     "cmd_params": null
+    }
+   ],
+   "stored": {
+    "file": "trace.csv",
+    "sha256": "b7f27cf9c7f4c4fb94a2e5f1bfddcf2a2084ec59c32c4c55d1e573a7f14ff335"
+   },
+   "as_seen_by_tool": "scratch/log.log"
+  },
+  {
+   "kind": "policy",
+   "source": {
+    "file": "data/Formula/limitation.mfotl",
+    "format": "mfotl",
+    "sha256": "30f5ef4c8273ec04797fbcd0d408d837d920c546055283d3863daeea8b75c6a9"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "Formula/limitation.mfotl"
+  },
+  {
+   "kind": "signature",
+   "source": {
+    "file": "data/Signature/sig.sig",
+    "format": "sig",
+    "sha256": "32dcd4f026f0289001800f808c36d05ee69c596d5fa95d35062588f9500622e8"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "Signature/sig.sig"
+  }
+ ]
+}

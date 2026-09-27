@@ -2,11 +2,11 @@
  "schema_version": 1,
  "id": "Use_Case_5.1_Correctness_Testing",
  "name": "Use Case 5.1: Correctness Testing",
- "source_experiment": "correctness_monpoly",
- "run_timestamp": null,
+ "source_experiment": "use_case_5_1_correctness_monpoly",
+ "run_timestamp": "2026-09-23T15:11:48",
  "runtime_setting": "offline",
  "timeout_s": 30,
- "config_file": "benchmark_paper/correctness_monpoly.yaml",
+ "config_file": "benchmark_paper/use_case_5_1_correctness_monpoly.yaml",
  "monitors": [
   {
    "name": "MonPoly Jun 11, 2026",
@@ -336,5 +336,62 @@
    "stored_kinds": []
   }
  ],
- "suite": null
+ "suite": null,
+ "components": {
+  "schema_version": 1,
+  "requested_pins": {
+   "ReplayerConverter": {
+    "branch": null,
+    "commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672"
+   }
+  },
+  "components": {
+   "generator": {
+    "component": "CaseStudyCopyGenerator",
+    "pin_branch": null,
+    "pin_commit": null,
+    "branch": null,
+    "resolved_version": null,
+    "image": null
+   }
+  },
+  "monitors": {
+   "MonPoly Jun 11, 2026": {
+    "identifier": "MonPoly",
+    "branch": null,
+    "commit": "bc752d37f1d4560b5667eddac9dd1670451b758e",
+    "resolved_version": null,
+    "image": "monpoly_bc752d37f1d4560b5667eddac9dd1670451b758e_offline_mf_image"
+   },
+   "MonPoly Mar 25, 2026": {
+    "identifier": "MonPoly",
+    "branch": null,
+    "commit": "78b74d6c6f427ca391a1aa8d54d3a680abb30fd7",
+    "resolved_version": null,
+    "image": "monpoly_78b74d6c6f427ca391a1aa8d54d3a680abb30fd7_offline_mf_image"
+   },
+   "MonPoly Feb 15, 2023": {
+    "identifier": "MonPoly",
+    "branch": null,
+    "commit": "23a655563715dc1e6dcd92fb7a641f404b7ac158",
+    "resolved_version": null,
+    "image": "monpoly_23a655563715dc1e6dcd92fb7a641f404b7ac158_offline_mf_image"
+   },
+   "MonPoly Jan 4, 2023": {
+    "identifier": "MonPoly",
+    "branch": null,
+    "commit": "11c27e7e2c945e99553fbfe5a248397bf7a413b5",
+    "resolved_version": null,
+    "image": "monpoly_11c27e7e2c945e99553fbfe5a248397bf7a413b5_offline_mf_image"
+   },
+   "VeriMon": {
+    "identifier": "VeriMon",
+    "branch": null,
+    "commit": "bc752d37f1d4560b5667eddac9dd1670451b758e",
+    "resolved_version": null,
+    "image": "monpoly_bc752d37f1d4560b5667eddac9dd1670451b758e_offline_mf_image"
+   }
+  },
+  "framework_commit": "79471683d2633c717542e0ed78420c062f51c88b"
+ }
 }

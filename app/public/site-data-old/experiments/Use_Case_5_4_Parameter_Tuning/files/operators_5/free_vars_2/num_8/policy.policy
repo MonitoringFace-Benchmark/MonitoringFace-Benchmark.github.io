@@ -1,0 +1,1 @@
+(EVENTUALLY[2,17] ((ONCE[5,*) (((EXISTS y2. ((EVENTUALLY[1,14] (P1(y2))))) SINCE[2,6] ((EXISTS y1. (P1(y1)))))))))

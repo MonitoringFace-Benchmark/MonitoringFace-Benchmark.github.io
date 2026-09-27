@@ -1,0 +1,1 @@
+(ONCE[3,31] ((ONCE[1,*) ((NEXT[5,15] ((EVENTUALLY[1,30] ((ONCE[0,*) ((NEXT[4,13] ((ONCE[4,6] ((EVENTUALLY[5,10] ((ONCE[3,*) ((EVENTUALLY[3,4] (P2(x2,x1,x3)))))))))))))))))))))

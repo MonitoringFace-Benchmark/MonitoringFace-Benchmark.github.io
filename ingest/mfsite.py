@@ -415,6 +415,14 @@ def publish_experiment(exp_dir: Path, raw_name: str, out: Path, configs_root: Pa
         filetree = ingest_file_tree(inputs_dir, bundle, inline_limit)
         fingerprint = read_fingerprint(inputs_dir)
 
+    # component pins (generators/converters/case-study images), written by the
+    # platform since 2026-09; absent in older results and then simply null
+    components = None
+    comp_file = exp_dir / "components.json"
+    if comp_file.is_file():
+        components = json.loads(comp_file.read_text())
+        shutil.copy2(comp_file, bundle / "components.json")
+
     prov_index, prov_subtree = ingest_provenance(exp_dir, bundle, inline_limit)
     if prov_subtree is not None:
         if filetree is None:
@@ -474,6 +482,7 @@ def publish_experiment(exp_dir: Path, raw_name: str, out: Path, configs_root: Pa
         "policy_setup": config.get("policy_setup") or {},
         "provenance": prov_index,
         "suite": suite_info,
+        "components": components,
     }
     (bundle / "manifest.json").write_text(json.dumps(manifest, indent=1))
     (bundle / "description.md").write_text(
@@ -644,6 +653,11 @@ def main() -> None:
                      help="root of experiment input trees (Infrastructure/experiments)")
     pub.add_argument("--out", required=True, type=Path)
     pub.add_argument("--inline-limit-mb", type=float, default=5.0)
+    pub.add_argument("--name", type=str, default=None,
+                     help="presentation title override for the published "
+                          "experiment (or suite); replaces the results folder "
+                          "name as identity, so timestamped folders can update "
+                          "an existing bundle title in place")
     reidx = sub.add_parser("reindex", help="regenerate the global index over "
                            "the bundles already present in --out")
     reidx.add_argument("--out", required=True, type=Path)
@@ -671,13 +685,14 @@ def main() -> None:
     suite_info = None
     if status_csvs(results):
         # single experiment: raw name from the folder minus a timestamp
-        # suffix; may be a renamed presentation title with spaces
-        raw_name = re.sub(r"_\d{8}_\d{6}$", "", results.name)
+        # suffix; may be a renamed presentation title with spaces, or an
+        # explicit --name override so timestamped folders update in place
+        raw_name = args.name or re.sub(r"_\d{8}_\d{6}$", "", results.name)
         targets = [(results, raw_name)]
     else:
-        # a suite: the results folder names the suite itself, its member
-        # subdirs become tagged experiments
-        raw_suite = re.sub(r"_\d{8}_\d{6}$", "", results.name)
+        # a suite: the results folder (or --name) names the suite itself,
+        # its member subdirs become tagged experiments
+        raw_suite = args.name or re.sub(r"_\d{8}_\d{6}$", "", results.name)
         suite_info = {
             "id": slugify(raw_suite),
             "name": raw_suite if " " in raw_suite else raw_suite.replace("_", " "),

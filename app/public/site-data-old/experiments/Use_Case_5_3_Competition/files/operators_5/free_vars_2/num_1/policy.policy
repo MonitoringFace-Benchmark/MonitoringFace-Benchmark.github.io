@@ -1,0 +1,1 @@
+((PREVIOUS[0,*) ((P2(x1) SINCE[0,*) (P0(x1,x2))))) AND ((NOT ((ONCE[0,*) ((PREVIOUS[0,*) (P2(x1)))))))))

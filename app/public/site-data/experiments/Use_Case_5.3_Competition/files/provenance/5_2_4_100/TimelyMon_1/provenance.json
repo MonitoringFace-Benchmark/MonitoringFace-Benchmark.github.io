@@ -6,15 +6,15 @@
   "fingerprint_policy": "62528f4cb80a0c2f163218282c5076d1fdfc7b951384a825724fd7c9ada68523",
   "fingerprint_components": "1fb55dfe849df191af63e91e935768ec40ae9f86fe6d13768bf602dd68eb5831"
  },
- "framework_commit": "f6dde4ff28750d68d499a9dd109ea5050a0119e2-dirty",
+ "framework_commit": "eac6d48dd2e7a05c11eb145d04e73ab3b2482c56-dirty",
  "tool": {
   "name": "TimelyMon 1",
   "identifier": "TimelyMon",
   "branch": null,
-  "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
-  "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image",
+  "commit": "f6e7e6d1255b86abb3c31e00d1a8398eb4f2a4e3",
+  "image": "timelymon_f6e7e6d1255b86abb3c31e00d1a8398eb4f2a4e3_offline_mf_image",
   "params": {
-   "folder": "<project>/Infrastructure/experiments/tool_comparison_synthetic_experiment_fragment/operators_5/free_vars_2/num_4",
+   "folder": "<project>/Infrastructure/experiments/use_case_5_3_competition/operators_5/free_vars_2/num_4",
    "output_mode": 1,
    "path_to_project": "<project>",
    "policy": "policy.policy",

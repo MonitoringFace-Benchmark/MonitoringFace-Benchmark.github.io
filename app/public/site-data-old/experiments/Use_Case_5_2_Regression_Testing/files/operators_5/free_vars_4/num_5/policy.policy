@@ -1,0 +1,1 @@
+(ONCE[3,9] ((EVENTUALLY[0,25] ((EVENTUALLY[1,4] ((EVENTUALLY[1,4] ((ONCE[3,*) (P2(x2,x1)))))))))))

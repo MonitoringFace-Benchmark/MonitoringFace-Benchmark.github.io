@@ -1,0 +1,1 @@
+(EVENTUALLY[0,20] (((ONCE[3,*) ((PREVIOUS[1,5] ((ONCE[5,10] ((EVENTUALLY[2,7] (P1(x1,x2))))))))) OR ((ONCE[4,*) ((PREVIOUS[5,9] ((EVENTUALLY[3,18] ((EVENTUALLY[4,19] (P3(x2,x1)))))))))))))

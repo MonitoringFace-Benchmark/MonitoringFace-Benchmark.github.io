@@ -2,16 +2,32 @@
  "schema_version": 1,
  "id": "Use_Case_5.3_Competition",
  "name": "Use Case 5.3: Competition",
- "source_experiment": "tool_comparison_synthetic_experiment_fragment",
- "run_timestamp": null,
+ "source_experiment": "use_case_5_3_competition",
+ "run_timestamp": "2026-09-27T19:17:36",
  "runtime_setting": "offline",
  "timeout_s": 60,
- "config_file": "benchmark_paper/tool_comparison_synthetic_experiment_fragment.yaml",
+ "config_file": "benchmark_paper/use_case_5_3_competition.yaml",
  "monitors": [
+  {
+   "name": "TeSSLa",
+   "identifier": "TeSSLa",
+   "commit": "b1964bd445286832bd2cb120ca7586858e941ceb",
+   "branch": null,
+   "params": {}
+  },
+  {
+   "name": "TeSSLa Rust",
+   "identifier": "TeSSLa",
+   "commit": "b1964bd445286832bd2cb120ca7586858e941ceb",
+   "branch": null,
+   "params": {
+    "backend": "rust"
+   }
+  },
   {
    "name": "TimelyMon 1",
    "identifier": "TimelyMon",
-   "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+   "commit": "f6e7e6d1255b86abb3c31e00d1a8398eb4f2a4e3",
    "branch": null,
    "params": {
     "worker": 1,
@@ -21,7 +37,7 @@
   {
    "name": "TimelyMon 6",
    "identifier": "TimelyMon",
-   "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+   "commit": "f6e7e6d1255b86abb3c31e00d1a8398eb4f2a4e3",
    "branch": null,
    "params": {
     "worker": 6,
@@ -78,12 +94,12 @@
   }
  ],
  "status_files": {
-  "result_error": 14,
-  "timeout": 31,
-  "tool_error": 37,
-  "valid": 268
+  "result_error": 15,
+  "timeout": 40,
+  "tool_error": 25,
+  "valid": 370
  },
- "n_runs": 350,
+ "n_runs": 450,
  "setting_schema": {
   "kind": "offline_synthetic",
   "dir_template": "operators_{num_operators}/free_vars_{num_fvs}/num_{num_setting}"
@@ -369,6 +385,38 @@
   },
   {
    "setting_key": "5_2_0_10",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_0_10/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_10",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_0_10/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_10",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_0_10/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -468,6 +516,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_100",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_0_100/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_100",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_0_100/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -575,6 +655,38 @@
   },
   {
    "setting_key": "5_2_0_1000",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_0_1000/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_1000",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_0_1000/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_1000",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_0_1000/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -674,6 +786,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_0_50/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_0_50/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -781,6 +925,38 @@
   },
   {
    "setting_key": "5_2_0_500",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_0_500/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_500",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_0_500/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_500",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_0_500/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -880,6 +1056,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_1_10",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_1_10/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_1_10",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_1_10/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -987,6 +1195,38 @@
   },
   {
    "setting_key": "5_2_1_100",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_1_100/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_1_100",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_1_100/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_1_100",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_1_100/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -1086,6 +1326,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_1_1000",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_1_1000/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_1_1000",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_1_1000/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -1193,6 +1465,38 @@
   },
   {
    "setting_key": "5_2_1_50",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_1_50/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_1_50",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_1_50/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_1_50",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_1_50/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -1292,6 +1596,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_1_500",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_1_500/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_1_500",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_1_500/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -1399,6 +1735,38 @@
   },
   {
    "setting_key": "5_2_2_10",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_2_10/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_2_10",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_2_10/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_2_10",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_2_10/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -1498,6 +1866,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_2_100",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_2_100/TeSSLa",
+   "input_unchanged_after_run": null,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_2_100",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_2_100/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -1605,9 +2005,41 @@
   },
   {
    "setting_key": "5_2_2_1000",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_2_1000/TeSSLa",
+   "input_unchanged_after_run": null,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_2_1000",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_2_1000/TeSSLa_Rust",
+   "input_unchanged_after_run": null,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_2_1000",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_2_1000/TimelyMon_1",
-   "input_unchanged_after_run": null,
+   "input_unchanged_after_run": true,
    "captures": 1,
    "kinds": [
     "trace",
@@ -1704,6 +2136,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_2_50",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_2_50/TeSSLa",
+   "input_unchanged_after_run": null,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_2_50",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_2_50/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -1811,6 +2275,38 @@
   },
   {
    "setting_key": "5_2_2_500",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_2_500/TeSSLa",
+   "input_unchanged_after_run": null,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_2_500",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_2_500/TeSSLa_Rust",
+   "input_unchanged_after_run": null,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_2_500",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_2_500/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -1910,6 +2406,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_10",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_3_10/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_10",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_3_10/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -2017,6 +2545,38 @@
   },
   {
    "setting_key": "5_2_3_100",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_3_100/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_100",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_3_100/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_100",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_3_100/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -2116,6 +2676,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_1000",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_3_1000/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_1000",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_3_1000/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -2223,6 +2815,38 @@
   },
   {
    "setting_key": "5_2_3_50",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_3_50/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_3_50/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_50",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_3_50/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -2322,6 +2946,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_500",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_3_500/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_500",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_3_500/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -2429,6 +3085,38 @@
   },
   {
    "setting_key": "5_2_4_10",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_4_10/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_4_10",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_4_10/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_4_10",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_4_10/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -2528,6 +3216,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_4_100",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_4_100/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_4_100",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_4_100/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -2635,6 +3355,38 @@
   },
   {
    "setting_key": "5_2_4_1000",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_4_1000/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_4_1000",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_4_1000/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_4_1000",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_4_1000/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -2734,6 +3486,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_4_50",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_4_50/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_4_50",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_4_50/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -2841,6 +3625,38 @@
   },
   {
    "setting_key": "5_2_4_500",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_4_500/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_4_500",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_4_500/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_4_500",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_4_500/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -2940,6 +3756,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_5_10",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_5_10/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_5_10",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_5_10/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -3047,6 +3895,38 @@
   },
   {
    "setting_key": "5_2_5_100",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_5_100/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_5_100",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_5_100/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_5_100",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_5_100/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -3146,6 +4026,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_5_1000",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_5_1000/TeSSLa",
+   "input_unchanged_after_run": null,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_5_1000",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_5_1000/TeSSLa_Rust",
+   "input_unchanged_after_run": null,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -3253,6 +4165,38 @@
   },
   {
    "setting_key": "5_2_5_50",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_5_50/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_5_50",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_5_50/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_5_50",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_5_50/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -3352,6 +4296,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_5_500",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_5_500/TeSSLa",
+   "input_unchanged_after_run": null,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_5_500",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_5_500/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -3459,6 +4435,38 @@
   },
   {
    "setting_key": "5_2_6_10",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_6_10/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_6_10",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_6_10/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_6_10",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_6_10/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -3558,6 +4566,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_6_100",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_6_100/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_6_100",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_6_100/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -3665,6 +4705,38 @@
   },
   {
    "setting_key": "5_2_6_1000",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_6_1000/TeSSLa",
+   "input_unchanged_after_run": null,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_6_1000",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_6_1000/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_6_1000",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_6_1000/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -3764,6 +4836,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_6_50",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_6_50/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_6_50",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_6_50/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -3871,6 +4975,38 @@
   },
   {
    "setting_key": "5_2_6_500",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_6_500/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_6_500",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_6_500/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_6_500",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_6_500/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -3970,6 +5106,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_7_10",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_7_10/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_7_10",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_7_10/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -4077,6 +5245,38 @@
   },
   {
    "setting_key": "5_2_7_100",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_7_100/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_7_100",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_7_100/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_7_100",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_7_100/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -4176,6 +5376,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_7_1000",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_7_1000/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_7_1000",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_7_1000/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -4283,6 +5515,38 @@
   },
   {
    "setting_key": "5_2_7_50",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_7_50/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_7_50",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_7_50/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_7_50",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_7_50/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -4382,6 +5646,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_7_500",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_7_500/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_7_500",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_7_500/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -4489,6 +5785,38 @@
   },
   {
    "setting_key": "5_2_8_10",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_8_10/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_8_10",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_8_10/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_8_10",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_8_10/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -4588,6 +5916,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_8_100",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_8_100/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_8_100",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_8_100/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -4695,6 +6055,38 @@
   },
   {
    "setting_key": "5_2_8_1000",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_8_1000/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_8_1000",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_8_1000/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_8_1000",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_8_1000/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -4794,6 +6186,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_8_50",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_8_50/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_8_50",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_8_50/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -4901,6 +6325,38 @@
   },
   {
    "setting_key": "5_2_8_500",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_8_500/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_8_500",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_8_500/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_8_500",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_8_500/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -5000,6 +6456,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_10",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_9_10/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_10",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_9_10/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -5107,6 +6595,38 @@
   },
   {
    "setting_key": "5_2_9_100",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_9_100/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_100",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_9_100/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_100",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_9_100/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -5206,6 +6726,38 @@
    ],
    "stored_kinds": [
     "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_1000",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_9_1000/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_1000",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_9_1000/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
    ]
   },
   {
@@ -5313,6 +6865,38 @@
   },
   {
    "setting_key": "5_2_9_50",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_9_50/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_9_50/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_50",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_9_50/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -5416,6 +7000,38 @@
   },
   {
    "setting_key": "5_2_9_500",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_9_500/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_500",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_9_500/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_500",
    "tool": "TimelyMon 1",
    "dir": "provenance/5_2_9_500/TimelyMon_1",
    "input_unchanged_after_run": true,
@@ -5472,5 +7088,110 @@
    ]
   }
  ],
- "suite": null
+ "suite": null,
+ "components": {
+  "schema_version": 1,
+  "requested_pins": {
+   "SignatureGenerator": {
+    "branch": null,
+    "commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672"
+   },
+   "MfotlPolicyGenerator": {
+    "branch": null,
+    "commit": "fef5f8f5551a36dac4aa45cc7c48bef09964a265"
+   },
+   "ReplayerConverter": {
+    "branch": null,
+    "commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672"
+   },
+   "QTLConverter": {
+    "branch": null,
+    "commit": "9fa865a5db71e1d46f1d7b48b281f609ce36ac43"
+   }
+  },
+  "components": {
+   "data_source": {
+    "component": "SignatureGenerator",
+    "pin_branch": null,
+    "pin_commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672",
+    "branch": "main",
+    "resolved_version": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672",
+    "image": "gen_data_datagenerators_d8442ab1473ea8f0a9c49836d3bf56bfd0b60672_mf_image"
+   },
+   "policy_source": {
+    "component": "MfotlPolicyGenerator",
+    "pin_branch": null,
+    "pin_commit": "fef5f8f5551a36dac4aa45cc7c48bef09964a265",
+    "branch": "main",
+    "resolved_version": "fef5f8f5551a36dac4aa45cc7c48bef09964a265",
+    "image": "mfotlpolicygenerator_policygenerators_fef5f8f5551a36dac4aa45cc7c48bef09964a265_mf_image"
+   }
+  },
+  "monitors": {
+   "TimelyMon 1": {
+    "identifier": "TimelyMon",
+    "branch": null,
+    "commit": "f6e7e6d1255b86abb3c31e00d1a8398eb4f2a4e3",
+    "resolved_version": null,
+    "image": "timelymon_f6e7e6d1255b86abb3c31e00d1a8398eb4f2a4e3_offline_mf_image"
+   },
+   "TimelyMon 6": {
+    "identifier": "TimelyMon",
+    "branch": null,
+    "commit": "f6e7e6d1255b86abb3c31e00d1a8398eb4f2a4e3",
+    "resolved_version": null,
+    "image": "timelymon_f6e7e6d1255b86abb3c31e00d1a8398eb4f2a4e3_offline_mf_image"
+   },
+   "VeriMon": {
+    "identifier": "VeriMon",
+    "branch": null,
+    "commit": "bc752d37f1d4560b5667eddac9dd1670451b758e",
+    "resolved_version": null,
+    "image": "monpoly_bc752d37f1d4560b5667eddac9dd1670451b758e_offline_mf_image"
+   },
+   "MonPoly": {
+    "identifier": "MonPoly",
+    "branch": null,
+    "commit": "bc752d37f1d4560b5667eddac9dd1670451b758e",
+    "resolved_version": null,
+    "image": "monpoly_bc752d37f1d4560b5667eddac9dd1670451b758e_offline_mf_image"
+   },
+   "WhyMon": {
+    "identifier": "WhyMon",
+    "branch": null,
+    "commit": "86684beecbfc14ed3367eb5c042f610ca8a60119",
+    "resolved_version": null,
+    "image": "whymon_86684beecbfc14ed3367eb5c042f610ca8a60119_offline_mf_image"
+   },
+   "DejaVu": {
+    "identifier": "DejaVu",
+    "branch": null,
+    "commit": "2b5052d89e3a961de7344a2bdcb7adf1308f2bca",
+    "resolved_version": null,
+    "image": "dejavu_2b5052d89e3a961de7344a2bdcb7adf1308f2bca_offline_mf_image"
+   },
+   "EnfGuard": {
+    "identifier": "EnfGuard",
+    "branch": null,
+    "commit": "9e6ec02c04dbcf8fa43b9e3223cad882a6d462f3",
+    "resolved_version": null,
+    "image": "enfguard_9e6ec02c04dbcf8fa43b9e3223cad882a6d462f3_offline_mf_image"
+   },
+   "TeSSLa": {
+    "identifier": "TeSSLa",
+    "branch": null,
+    "commit": "b1964bd445286832bd2cb120ca7586858e941ceb",
+    "resolved_version": null,
+    "image": "tessla_b1964bd445286832bd2cb120ca7586858e941ceb_offline_mf_image"
+   },
+   "TeSSLa Rust": {
+    "identifier": "TeSSLa",
+    "branch": null,
+    "commit": "b1964bd445286832bd2cb120ca7586858e941ceb",
+    "resolved_version": null,
+    "image": "tessla_b1964bd445286832bd2cb120ca7586858e941ceb_offline_mf_image"
+   }
+  },
+  "framework_commit": "eac6d48dd2e7a05c11eb145d04e73ab3b2482c56-dirty"
+ }
 }

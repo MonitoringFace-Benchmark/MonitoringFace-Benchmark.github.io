@@ -1,0 +1,1 @@
+(ONCE[3,10] (((ONCE[4,6] (P2(x1))) SINCE[1,*) ((EVENTUALLY[0,7] (P1(x1)))))))

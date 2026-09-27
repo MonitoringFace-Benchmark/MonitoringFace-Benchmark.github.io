@@ -1,0 +1,98 @@
+{
+ "schema_version": 1,
+ "experiment_fingerprint": {
+  "fingerprint_experiment": "c7be75a3b1c468b41432dfeb4bc555a05b7b6658390cc4be6d3cc60da3d93a53",
+  "fingerprint_data": "0272d00be71dfc9e880a81aaf5ec7ce20a7f5a5e1081ef6e6aabc0d201deecd3",
+  "fingerprint_policy": "62528f4cb80a0c2f163218282c5076d1fdfc7b951384a825724fd7c9ada68523",
+  "fingerprint_components": "1fb55dfe849df191af63e91e935768ec40ae9f86fe6d13768bf602dd68eb5831"
+ },
+ "framework_commit": "eac6d48dd2e7a05c11eb145d04e73ab3b2482c56-dirty",
+ "tool": {
+  "name": "TeSSLa Rust",
+  "identifier": "TeSSLa",
+  "branch": null,
+  "commit": "b1964bd445286832bd2cb120ca7586858e941ceb",
+  "image": "tessla_b1964bd445286832bd2cb120ca7586858e941ceb_offline_mf_image",
+  "params": {
+   "backend": "rust",
+   "folder": "<project>/Infrastructure/experiments/use_case_5_3_competition/operators_5/free_vars_2/num_3",
+   "path_to_project": "<project>",
+   "policy": "scratch/policy.policy",
+   "signature": "signature.sig",
+   "trace": "scratch/data_500.csv",
+   "trace_target_format": "InputOutputTraceFormats.SRV_TRACE"
+  }
+ },
+ "setting_key": "5_2_3_500",
+ "captures": 1,
+ "tool_invocation": [
+  "-c",
+  "scratch/mf_monitor < scratch/data_500.csv"
+ ],
+ "input_unchanged_after_run": true,
+ "entries": [
+  {
+   "kind": "trace",
+   "source": {
+    "file": "operators_5/free_vars_2/num_3/data_500.csv",
+    "format": "csv",
+    "sha256": "1ab07c968dbfff2567e943af830ee8a80b1d64b276e0e9452c186c76bfa89460"
+   },
+   "steps": [
+    {
+     "converter": "TeSSLaTraceConverter",
+     "source_format": "csv",
+     "target_format": "srv-trace",
+     "command": null,
+     "cmd_params": null,
+     "image": null,
+     "image_version": null,
+     "params": null,
+     "stats": null
+    }
+   ],
+   "stored": {
+    "file": "trace.srv-trace",
+    "sha256": "a7764e14479c295563721874657b441703503b3498497f23de1112c5ee7e7486"
+   },
+   "as_seen_by_tool": "scratch/data_500.csv"
+  },
+  {
+   "kind": "policy",
+   "source": {
+    "file": "operators_5/free_vars_2/num_3/policy.policy",
+    "format": "mfotl",
+    "sha256": "f58eb7bb5e1f5c479cd34737aef2bc820d0a62fd2c403ddc6c7c1a30b6d9622f"
+   },
+   "steps": [
+    {
+     "converter": "TeSSLaPolicyConverter",
+     "source_format": "mfotl",
+     "target_format": "srv-policy",
+     "command": null,
+     "cmd_params": null,
+     "image": null,
+     "image_version": null,
+     "params": null,
+     "stats": null
+    }
+   ],
+   "stored": {
+    "file": "policy.srv-policy",
+    "sha256": "d5c5216b71b23d7623d88c0716c371aaee043245e9b9ad3d5abdd0edf8fc0558"
+   },
+   "as_seen_by_tool": "scratch/policy.policy"
+  },
+  {
+   "kind": "signature",
+   "source": {
+    "file": "operators_5/free_vars_2/num_3/signature.sig",
+    "format": "sig",
+    "sha256": "e70278569d8aac88f893a9bee6e6c6ba35d0ae085df0f2d70b475b9c0e4a55ad"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "signature.sig"
+  }
+ ]
+}

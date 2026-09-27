@@ -1,12 +1,12 @@
 {
  "schema_version": 1,
- "generated_at": "2026-09-22T12:53:45+00:00",
+ "generated_at": "2026-09-27T19:15:34+00:00",
  "experiments": [
   {
    "id": "Use_Case_5.1_Correctness_Testing",
    "name": "Use Case 5.1: Correctness Testing",
    "description": "# Use Case 5.1: Correctness Testing",
-   "run_timestamp": null,
+   "run_timestamp": "2026-09-23T15:11:48",
    "runtime_setting": "offline",
    "timeout_s": 30,
    "n_runs": 20,
@@ -30,7 +30,7 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 3,
-     "median_runtime_s": 3.9642,
+     "median_runtime_s": 3.6341,
      "eligible": false,
      "common_median_runtime_s": null,
      "fastest": false
@@ -42,7 +42,7 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 2,
-     "median_runtime_s": 2.1345,
+     "median_runtime_s": 2.0594,
      "eligible": false,
      "common_median_runtime_s": null,
      "fastest": false
@@ -54,9 +54,9 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.3814,
+     "median_runtime_s": 0.3721,
      "eligible": true,
-     "common_median_runtime_s": 0.3814,
+     "common_median_runtime_s": 0.3721,
      "fastest": false
     },
     {
@@ -78,9 +78,9 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.375,
+     "median_runtime_s": 0.3328,
      "eligible": true,
-     "common_median_runtime_s": 0.375,
+     "common_median_runtime_s": 0.3328,
      "fastest": true
     }
    ],
@@ -94,7 +94,7 @@
    "id": "Use_Case_5.2_Regression_Testing",
    "name": "Use Case 5.2: Regression Testing",
    "description": "# Use Case 5.2: Regression Testing",
-   "run_timestamp": null,
+   "run_timestamp": "2026-09-23T15:13:00",
    "runtime_setting": "offline",
    "timeout_s": null,
    "n_runs": 288,
@@ -116,9 +116,9 @@
      "timeout": 0,
      "tool_error": 3,
      "result_error": 0,
-     "median_runtime_s": 4.0664,
+     "median_runtime_s": 4.0457,
      "eligible": true,
-     "common_median_runtime_s": 4.0664,
+     "common_median_runtime_s": 4.0457,
      "fastest": false
     },
     {
@@ -128,9 +128,9 @@
      "timeout": 0,
      "tool_error": 3,
      "result_error": 0,
-     "median_runtime_s": 4.0634,
+     "median_runtime_s": 4.0938,
      "eligible": true,
-     "common_median_runtime_s": 4.0634,
+     "common_median_runtime_s": 4.0938,
      "fastest": false
     },
     {
@@ -140,10 +140,10 @@
      "timeout": 0,
      "tool_error": 3,
      "result_error": 0,
-     "median_runtime_s": 3.1934,
+     "median_runtime_s": 3.2227,
      "eligible": true,
-     "common_median_runtime_s": 3.1934,
-     "fastest": false
+     "common_median_runtime_s": 3.2227,
+     "fastest": true
     },
     {
      "tool": "TimelyMon 6 V",
@@ -152,13 +152,13 @@
      "timeout": 0,
      "tool_error": 3,
      "result_error": 0,
-     "median_runtime_s": 3.182,
+     "median_runtime_s": 3.2765,
      "eligible": true,
-     "common_median_runtime_s": 3.182,
-     "fastest": true
+     "common_median_runtime_s": 3.2765,
+     "fastest": false
     }
    ],
-   "fastest_tool": "TimelyMon 6 V",
+   "fastest_tool": "TimelyMon 6",
    "fastest_common_settings": 69,
    "has_filetree": true,
    "has_provenance": true,
@@ -168,11 +168,13 @@
    "id": "Use_Case_5.3_Competition",
    "name": "Use Case 5.3: Competition",
    "description": "# Use Case 5.3: Competition",
-   "run_timestamp": null,
+   "run_timestamp": "2026-09-27T19:17:36",
    "runtime_setting": "offline",
    "timeout_s": 60,
-   "n_runs": 350,
+   "n_runs": 450,
    "tools": [
+    "TeSSLa",
+    "TeSSLa Rust",
     "TimelyMon 1",
     "TimelyMon 6",
     "MonPoly",
@@ -182,22 +184,22 @@
     "EnfGuard"
    ],
    "status_counts": {
-    "OK": 268,
-    "RE": 14,
-    "TE": 37,
-    "TO": 31
+    "OK": 370,
+    "RE": 15,
+    "TE": 25,
+    "TO": 40
    },
    "per_tool": [
     {
      "tool": "DejaVu",
      "runs": 50,
-     "ok": 48,
+     "ok": 50,
      "timeout": 0,
-     "tool_error": 2,
+     "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 1.3804,
-     "eligible": false,
-     "common_median_runtime_s": null,
+     "median_runtime_s": 1.2342,
+     "eligible": true,
+     "common_median_runtime_s": 1.2342,
      "fastest": false
     },
     {
@@ -207,7 +209,7 @@
      "timeout": 11,
      "tool_error": 20,
      "result_error": 2,
-     "median_runtime_s": 1.6838,
+     "median_runtime_s": 1.5736,
      "eligible": false,
      "common_median_runtime_s": null,
      "fastest": false
@@ -219,19 +221,43 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.4041,
+     "median_runtime_s": 0.3687,
      "eligible": true,
-     "common_median_runtime_s": 0.4041,
+     "common_median_runtime_s": 0.3687,
      "fastest": true
+    },
+    {
+     "tool": "TeSSLa",
+     "runs": 50,
+     "ok": 43,
+     "timeout": 7,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 5.1276,
+     "eligible": false,
+     "common_median_runtime_s": null,
+     "fastest": false
+    },
+    {
+     "tool": "TeSSLa Rust",
+     "runs": 50,
+     "ok": 47,
+     "timeout": 3,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.4187,
+     "eligible": false,
+     "common_median_runtime_s": null,
+     "fastest": false
     },
     {
      "tool": "TimelyMon 1",
      "runs": 50,
-     "ok": 42,
-     "timeout": 2,
-     "tool_error": 5,
-     "result_error": 1,
-     "median_runtime_s": 0.5507,
+     "ok": 49,
+     "timeout": 1,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.5242,
      "eligible": false,
      "common_median_runtime_s": null,
      "fastest": false
@@ -239,13 +265,13 @@
     {
      "tool": "TimelyMon 6",
      "runs": 50,
-     "ok": 41,
+     "ok": 50,
      "timeout": 0,
-     "tool_error": 5,
-     "result_error": 4,
-     "median_runtime_s": 0.4864,
-     "eligible": false,
-     "common_median_runtime_s": null,
+     "tool_error": 0,
+     "result_error": 0,
+     "median_runtime_s": 0.4892,
+     "eligible": true,
+     "common_median_runtime_s": 0.4892,
      "fastest": false
     },
     {
@@ -255,19 +281,19 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.5082,
+     "median_runtime_s": 0.4758,
      "eligible": true,
-     "common_median_runtime_s": 0.5082,
+     "common_median_runtime_s": 0.4758,
      "fastest": false
     },
     {
      "tool": "WhyMon",
      "runs": 50,
-     "ok": 20,
+     "ok": 14,
      "timeout": 18,
      "tool_error": 5,
-     "result_error": 7,
-     "median_runtime_s": 0.6317,
+     "result_error": 13,
+     "median_runtime_s": 0.5936,
      "eligible": false,
      "common_median_runtime_s": null,
      "fastest": false
@@ -383,7 +409,7 @@
    "id": "Use_Case_5.4_Parameter_Tuning",
    "name": "Use Case 5.4: Parameter Tuning",
    "description": "# Use Case 5.4: Parameter Tuning",
-   "run_timestamp": null,
+   "run_timestamp": "2026-09-23T17:05:19",
    "runtime_setting": "offline",
    "timeout_s": null,
    "n_runs": 648,
@@ -409,10 +435,10 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.2605,
+     "median_runtime_s": 0.2502,
      "eligible": true,
-     "common_median_runtime_s": 0.2605,
-     "fastest": false
+     "common_median_runtime_s": 0.2502,
+     "fastest": true
     },
     {
      "tool": "TimelyMon 1 S1000",
@@ -421,10 +447,10 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.2527,
+     "median_runtime_s": 0.2594,
      "eligible": true,
-     "common_median_runtime_s": 0.2527,
-     "fastest": true
+     "common_median_runtime_s": 0.2594,
+     "fastest": false
     },
     {
      "tool": "TimelyMon 1 S10000",
@@ -433,9 +459,9 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.2541,
+     "median_runtime_s": 0.2626,
      "eligible": true,
-     "common_median_runtime_s": 0.2541,
+     "common_median_runtime_s": 0.2626,
      "fastest": false
     },
     {
@@ -445,9 +471,9 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.2635,
+     "median_runtime_s": 0.2611,
      "eligible": true,
-     "common_median_runtime_s": 0.2635,
+     "common_median_runtime_s": 0.2611,
      "fastest": false
     },
     {
@@ -457,9 +483,9 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.2642,
+     "median_runtime_s": 0.2598,
      "eligible": true,
-     "common_median_runtime_s": 0.2642,
+     "common_median_runtime_s": 0.2598,
      "fastest": false
     },
     {
@@ -469,9 +495,9 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.2629,
+     "median_runtime_s": 0.2726,
      "eligible": true,
-     "common_median_runtime_s": 0.2629,
+     "common_median_runtime_s": 0.2726,
      "fastest": false
     },
     {
@@ -481,9 +507,9 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.2608,
+     "median_runtime_s": 0.2626,
      "eligible": true,
-     "common_median_runtime_s": 0.2608,
+     "common_median_runtime_s": 0.2626,
      "fastest": false
     },
     {
@@ -493,9 +519,9 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.2601,
+     "median_runtime_s": 0.2682,
      "eligible": true,
-     "common_median_runtime_s": 0.2601,
+     "common_median_runtime_s": 0.2682,
      "fastest": false
     },
     {
@@ -505,13 +531,13 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.2656,
+     "median_runtime_s": 0.2619,
      "eligible": true,
-     "common_median_runtime_s": 0.2656,
+     "common_median_runtime_s": 0.2619,
      "fastest": false
     }
    ],
-   "fastest_tool": "TimelyMon 1 S1000",
+   "fastest_tool": "TimelyMon 1 S1",
    "fastest_common_settings": 72,
    "has_filetree": true,
    "has_provenance": true,
@@ -521,7 +547,7 @@
    "id": "local_gdpr_enfguard",
    "name": "local gdpr enfguard",
    "description": "# local gdpr enfguard",
-   "run_timestamp": null,
+   "run_timestamp": "2026-09-23T16:53:24",
    "runtime_setting": "offline",
    "timeout_s": 30,
    "n_runs": 21,
@@ -539,9 +565,9 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 2.849,
+     "median_runtime_s": 2.9505,
      "eligible": true,
-     "common_median_runtime_s": 2.849,
+     "common_median_runtime_s": 2.9505,
      "fastest": true
     }
    ],
@@ -555,7 +581,7 @@
    "id": "local_gdpr_monpoly",
    "name": "local gdpr monpoly",
    "description": "# local gdpr monpoly",
-   "run_timestamp": null,
+   "run_timestamp": "2026-09-23T16:53:24",
    "runtime_setting": "offline",
    "timeout_s": 30,
    "n_runs": 84,
@@ -576,9 +602,9 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.3801,
+     "median_runtime_s": 0.3537,
      "eligible": true,
-     "common_median_runtime_s": 0.3801,
+     "common_median_runtime_s": 0.3537,
      "fastest": true
     },
     {
@@ -588,9 +614,9 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.4234,
+     "median_runtime_s": 0.3722,
      "eligible": true,
-     "common_median_runtime_s": 0.4234,
+     "common_median_runtime_s": 0.3722,
      "fastest": false
     },
     {
@@ -600,9 +626,9 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.4923,
+     "median_runtime_s": 0.4605,
      "eligible": true,
-     "common_median_runtime_s": 0.4923,
+     "common_median_runtime_s": 0.4605,
      "fastest": false
     },
     {
@@ -612,9 +638,9 @@
      "timeout": 0,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 0.4146,
+     "median_runtime_s": 0.3743,
      "eligible": true,
-     "common_median_runtime_s": 0.4146,
+     "common_median_runtime_s": 0.3743,
      "fastest": false
     }
    ],
@@ -628,7 +654,7 @@
    "id": "local_gdpr_whymon",
    "name": "local gdpr whymon",
    "description": "# local gdpr whymon",
-   "run_timestamp": null,
+   "run_timestamp": "2026-09-23T16:53:24",
    "runtime_setting": "offline",
    "timeout_s": 30,
    "n_runs": 21,
@@ -647,9 +673,9 @@
      "timeout": 15,
      "tool_error": 0,
      "result_error": 0,
-     "median_runtime_s": 13.8811,
+     "median_runtime_s": 14.5368,
      "eligible": true,
-     "common_median_runtime_s": 13.8811,
+     "common_median_runtime_s": 14.5368,
      "fastest": true
     }
    ],
@@ -665,7 +691,7 @@
    "id": "Use_Case_5.3_GDPR",
    "name": "Use Case 5.3: GDPR",
    "description": "",
-   "run_timestamp": null,
+   "run_timestamp": "2026-09-23T16:53:24",
    "members": [
     "local_gdpr_enfguard",
     "local_gdpr_monpoly",

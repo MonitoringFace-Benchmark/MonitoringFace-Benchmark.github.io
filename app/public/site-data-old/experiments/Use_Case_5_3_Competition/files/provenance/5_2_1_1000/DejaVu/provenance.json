@@ -1,0 +1,117 @@
+{
+ "schema_version": 1,
+ "experiment_fingerprint": {
+  "fingerprint_experiment": "c7be75a3b1c468b41432dfeb4bc555a05b7b6658390cc4be6d3cc60da3d93a53",
+  "fingerprint_data": "0272d00be71dfc9e880a81aaf5ec7ce20a7f5a5e1081ef6e6aabc0d201deecd3",
+  "fingerprint_policy": "0bb9fa5fa151ad790258fb006acaefa2ea5f031e150299eea0104aae2af29bfb"
+ },
+ "framework_commit": "373b893987f6c0fc3590e39d86a18e6580e6f0b6",
+ "tool": {
+  "name": "DejaVu",
+  "identifier": "DejaVu",
+  "params": {
+   "folder": "<project>/Infrastructure/experiments/tool_comparison_synthetic_experiment_fragment/operators_5/free_vars_2/num_1",
+   "path_to_project": "<project>",
+   "policy": "scratch/policy.policy",
+   "signature": "signature.sig",
+   "stratified": true,
+   "trace": "scratch/data_1000.csv",
+   "trace_target_format": "InputOutputTraceFormats.DEJAVU_ENCODED"
+  }
+ },
+ "setting_key": "5_2_1_1000",
+ "captures": 1,
+ "tool_invocation": [
+  "run",
+  "scratch/policy.policy",
+  "scratch/data_1000.csv",
+  "scratch"
+ ],
+ "input_unchanged_after_run": true,
+ "entries": [
+  {
+   "kind": "trace",
+   "source": {
+    "file": "operators_5/free_vars_2/num_1/data_1000.csv",
+    "format": "csv",
+    "sha256": "0c4febe2af74f0ea65eb0dc3304c4177a094de2ea31ddf1f781878f0c97b3e67"
+   },
+   "steps": [
+    {
+     "converter": "ReplayerConverter",
+     "source_format": "csv",
+     "target_format": "dejavu-encoded",
+     "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--entrypoint",
+      "java",
+      "-i",
+      "replayerconverter_dataconverters_mf_image",
+      "-cp",
+      "classes:libs/*",
+      "org.entry.Dispatcher",
+      "Replayer",
+      "-i",
+      "csv",
+      "-f",
+      "dejavu-encoded",
+      "-a",
+      "0"
+     ],
+     "cmd_params": null
+    }
+   ],
+   "stored": {
+    "file": "trace.dejavu-encoded",
+    "sha256": "f162afd5118441853edd6c13e7432be3c2e92d57332ac27e28b48b4c77cc28f1"
+   },
+   "as_seen_by_tool": "scratch/data_1000.csv"
+  },
+  {
+   "kind": "policy",
+   "source": {
+    "file": "operators_5/free_vars_2/num_1/policy.policy",
+    "format": "mfotl",
+    "sha256": "f841b934e94a8520c65afa6677cdf3751eaccfbf31e734179d4bf850a5a615d4"
+   },
+   "steps": [
+    {
+     "converter": "QTLConverter",
+     "source_format": "mfotl",
+     "target_format": "qtl",
+     "command": [
+      "docker",
+      "run",
+      "--rm",
+      "-iv",
+      "/Users/krq770/PycharmProjects/MonitoringFace_curr/Infrastructure/experiments/tool_comparison_synthetic_experiment_fragment/operators_5/free_vars_2/num_1/scratch:/home/qtl-translator/work",
+      "qtlconverter_policyconverters_mf_image",
+      "-n",
+      "-e",
+      "e",
+      "policy.policy.in"
+     ],
+     "cmd_params": null
+    }
+   ],
+   "stored": {
+    "file": "policy.qtl",
+    "sha256": "39eac65fbbf5471f61c4058f9036d6217f52b3231a06da27bba97d7c98f23982"
+   },
+   "as_seen_by_tool": "scratch/policy.policy"
+  },
+  {
+   "kind": "signature",
+   "source": {
+    "file": "operators_5/free_vars_2/num_1/signature.sig",
+    "format": "sig",
+    "sha256": "333b6e7a8bd62bff80893aa197ea9c01fd4eead6576b859b7401f0f256434df4"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "signature.sig"
+  }
+ ]
+}

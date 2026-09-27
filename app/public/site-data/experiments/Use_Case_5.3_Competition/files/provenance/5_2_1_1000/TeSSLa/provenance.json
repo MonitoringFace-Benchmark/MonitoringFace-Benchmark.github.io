@@ -1,0 +1,99 @@
+{
+ "schema_version": 1,
+ "experiment_fingerprint": {
+  "fingerprint_experiment": "c7be75a3b1c468b41432dfeb4bc555a05b7b6658390cc4be6d3cc60da3d93a53",
+  "fingerprint_data": "0272d00be71dfc9e880a81aaf5ec7ce20a7f5a5e1081ef6e6aabc0d201deecd3",
+  "fingerprint_policy": "62528f4cb80a0c2f163218282c5076d1fdfc7b951384a825724fd7c9ada68523",
+  "fingerprint_components": "1fb55dfe849df191af63e91e935768ec40ae9f86fe6d13768bf602dd68eb5831"
+ },
+ "framework_commit": "eac6d48dd2e7a05c11eb145d04e73ab3b2482c56-dirty",
+ "tool": {
+  "name": "TeSSLa",
+  "identifier": "TeSSLa",
+  "branch": null,
+  "commit": "b1964bd445286832bd2cb120ca7586858e941ceb",
+  "image": "tessla_b1964bd445286832bd2cb120ca7586858e941ceb_offline_mf_image",
+  "params": {
+   "folder": "<project>/Infrastructure/experiments/use_case_5_3_competition/operators_5/free_vars_2/num_1",
+   "path_to_project": "<project>",
+   "policy": "scratch/policy.policy",
+   "signature": "signature.sig",
+   "trace": "scratch/data_1000.csv",
+   "trace_target_format": "InputOutputTraceFormats.SRV_TRACE"
+  }
+ },
+ "setting_key": "5_2_1_1000",
+ "captures": 1,
+ "tool_invocation": [
+  "interpreter",
+  "--reject-undeclared-inputs",
+  "scratch/policy.policy",
+  "scratch/data_1000.csv"
+ ],
+ "input_unchanged_after_run": true,
+ "entries": [
+  {
+   "kind": "trace",
+   "source": {
+    "file": "operators_5/free_vars_2/num_1/data_1000.csv",
+    "format": "csv",
+    "sha256": "0c4febe2af74f0ea65eb0dc3304c4177a094de2ea31ddf1f781878f0c97b3e67"
+   },
+   "steps": [
+    {
+     "converter": "TeSSLaTraceConverter",
+     "source_format": "csv",
+     "target_format": "srv-trace",
+     "command": null,
+     "cmd_params": null,
+     "image": null,
+     "image_version": null,
+     "params": null,
+     "stats": null
+    }
+   ],
+   "stored": {
+    "file": "trace.srv-trace",
+    "sha256": "fdc1dd0bcc9e4f671256f01175faa42cf1fed4819c68dd8f9cdbcd9c1d6d252a"
+   },
+   "as_seen_by_tool": "scratch/data_1000.csv"
+  },
+  {
+   "kind": "policy",
+   "source": {
+    "file": "operators_5/free_vars_2/num_1/policy.policy",
+    "format": "mfotl",
+    "sha256": "f841b934e94a8520c65afa6677cdf3751eaccfbf31e734179d4bf850a5a615d4"
+   },
+   "steps": [
+    {
+     "converter": "TeSSLaPolicyConverter",
+     "source_format": "mfotl",
+     "target_format": "srv-policy",
+     "command": null,
+     "cmd_params": null,
+     "image": null,
+     "image_version": null,
+     "params": null,
+     "stats": null
+    }
+   ],
+   "stored": {
+    "file": "policy.srv-policy",
+    "sha256": "ff4910e803ad2ecf6512234b2e8ed2be677bfea1527deb027e8a3c231f29346a"
+   },
+   "as_seen_by_tool": "scratch/policy.policy"
+  },
+  {
+   "kind": "signature",
+   "source": {
+    "file": "operators_5/free_vars_2/num_1/signature.sig",
+    "format": "sig",
+    "sha256": "333b6e7a8bd62bff80893aa197ea9c01fd4eead6576b859b7401f0f256434df4"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "signature.sig"
+  }
+ ]
+}

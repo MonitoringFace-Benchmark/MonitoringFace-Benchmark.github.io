@@ -1,0 +1,1 @@
+(EXISTS y. ONCE [0, 1] (p(y) AND y > 0))

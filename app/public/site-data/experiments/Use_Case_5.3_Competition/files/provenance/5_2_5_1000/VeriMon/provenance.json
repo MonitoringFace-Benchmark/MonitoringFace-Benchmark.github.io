@@ -6,7 +6,7 @@
   "fingerprint_policy": "62528f4cb80a0c2f163218282c5076d1fdfc7b951384a825724fd7c9ada68523",
   "fingerprint_components": "1fb55dfe849df191af63e91e935768ec40ae9f86fe6d13768bf602dd68eb5831"
  },
- "framework_commit": "f6dde4ff28750d68d499a9dd109ea5050a0119e2-dirty",
+ "framework_commit": "eac6d48dd2e7a05c11eb145d04e73ab3b2482c56-dirty",
  "tool": {
   "name": "VeriMon",
   "identifier": "VeriMon",
@@ -14,7 +14,7 @@
   "commit": "bc752d37f1d4560b5667eddac9dd1670451b758e",
   "image": "monpoly_bc752d37f1d4560b5667eddac9dd1670451b758e_offline_mf_image",
   "params": {
-   "folder": "<project>/Infrastructure/experiments/tool_comparison_synthetic_experiment_fragment/operators_5/free_vars_2/num_5",
+   "folder": "<project>/Infrastructure/experiments/use_case_5_3_competition/operators_5/free_vars_2/num_5",
    "path_to_project": "<project>",
    "policy": "policy.policy",
    "signature": "signature.sig",

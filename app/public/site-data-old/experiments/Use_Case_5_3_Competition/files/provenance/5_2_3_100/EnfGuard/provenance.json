@@ -1,0 +1,98 @@
+{
+ "schema_version": 1,
+ "experiment_fingerprint": {
+  "fingerprint_experiment": "c7be75a3b1c468b41432dfeb4bc555a05b7b6658390cc4be6d3cc60da3d93a53",
+  "fingerprint_data": "0272d00be71dfc9e880a81aaf5ec7ce20a7f5a5e1081ef6e6aabc0d201deecd3",
+  "fingerprint_policy": "0bb9fa5fa151ad790258fb006acaefa2ea5f031e150299eea0104aae2af29bfb"
+ },
+ "framework_commit": "373b893987f6c0fc3590e39d86a18e6580e6f0b6",
+ "tool": {
+  "name": "EnfGuard",
+  "identifier": "EnfGuard",
+  "params": {
+   "folder": "<project>/Infrastructure/experiments/tool_comparison_synthetic_experiment_fragment/operators_5/free_vars_2/num_3",
+   "monitoring": true,
+   "path_to_project": "<project>",
+   "policy": "policy.policy",
+   "signature": "signature.sig",
+   "trace": "scratch/data_100.csv",
+   "trace_target_format": "InputOutputTraceFormats.MONPOLY"
+  }
+ },
+ "setting_key": "5_2_3_100",
+ "captures": 1,
+ "tool_invocation": [
+  "-sig",
+  "signature.sig",
+  "-formula",
+  "policy.policy",
+  "-log",
+  "scratch/data_100.csv",
+  "-monitoring"
+ ],
+ "input_unchanged_after_run": true,
+ "entries": [
+  {
+   "kind": "trace",
+   "source": {
+    "file": "operators_5/free_vars_2/num_3/data_100.csv",
+    "format": "csv",
+    "sha256": "e4db4540c7de4c073ad4ec6881db1ec907cfdd4452401c919167f9d8fb9379f8"
+   },
+   "steps": [
+    {
+     "converter": "ReplayerConverter",
+     "source_format": "csv",
+     "target_format": "monpoly",
+     "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--entrypoint",
+      "java",
+      "-i",
+      "replayerconverter_dataconverters_mf_image",
+      "-cp",
+      "classes:libs/*",
+      "org.entry.Dispatcher",
+      "Replayer",
+      "-i",
+      "csv",
+      "-f",
+      "monpoly",
+      "-a",
+      "0"
+     ],
+     "cmd_params": null
+    }
+   ],
+   "stored": {
+    "file": "trace.monpoly",
+    "sha256": "876ad30ba2d29bd4098a36edd8f8cf23ad1864e02349cf96320144534999e9fc"
+   },
+   "as_seen_by_tool": "scratch/data_100.csv"
+  },
+  {
+   "kind": "policy",
+   "source": {
+    "file": "operators_5/free_vars_2/num_3/policy.policy",
+    "format": "mfotl",
+    "sha256": "f58eb7bb5e1f5c479cd34737aef2bc820d0a62fd2c403ddc6c7c1a30b6d9622f"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "policy.policy"
+  },
+  {
+   "kind": "signature",
+   "source": {
+    "file": "operators_5/free_vars_2/num_3/signature.sig",
+    "format": "sig",
+    "sha256": "e70278569d8aac88f893a9bee6e6c6ba35d0ae085df0f2d70b475b9c0e4a55ad"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "signature.sig"
+  }
+ ]
+}

@@ -1,0 +1,1210 @@
+{
+ "name": "local_gdpr_whymon",
+ "path": "",
+ "kind": "dir",
+ "children": [
+  {
+   "name": "data",
+   "path": "data",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "Formula",
+     "path": "data/Formula",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "consent.mfotl",
+       "path": "data/Formula/consent.mfotl",
+       "kind": "file",
+       "size": 146,
+       "hosting": "inline"
+      },
+      {
+       "name": "deletion.mfotl",
+       "path": "data/Formula/deletion.mfotl",
+       "kind": "file",
+       "size": 111,
+       "hosting": "inline"
+      },
+      {
+       "name": "gdpr.mfotl",
+       "path": "data/Formula/gdpr.mfotl",
+       "kind": "file",
+       "size": 557,
+       "hosting": "inline"
+      },
+      {
+       "name": "information.mfotl",
+       "path": "data/Formula/information.mfotl",
+       "kind": "file",
+       "size": 102,
+       "hosting": "inline"
+      },
+      {
+       "name": "lawfulness.mfotl",
+       "path": "data/Formula/lawfulness.mfotl",
+       "kind": "file",
+       "size": 117,
+       "hosting": "inline"
+      },
+      {
+       "name": "limitation.mfotl",
+       "path": "data/Formula/limitation.mfotl",
+       "kind": "file",
+       "size": 99,
+       "hosting": "inline"
+      },
+      {
+       "name": "sharing.mfotl",
+       "path": "data/Formula/sharing.mfotl",
+       "kind": "file",
+       "size": 175,
+       "hosting": "inline"
+      }
+     ]
+    },
+    {
+     "name": "Signature",
+     "path": "data/Signature",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "sig.sig",
+       "path": "data/Signature/sig.sig",
+       "kind": "file",
+       "size": 632,
+       "hosting": "inline"
+      }
+     ]
+    },
+    {
+     "name": "Trace",
+     "path": "data/Trace",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "log.log",
+       "path": "data/Trace/log.log",
+       "kind": "file",
+       "size": 223988,
+       "hosting": "inline"
+      }
+     ]
+    },
+    {
+     "name": "result",
+     "path": "data/result",
+     "kind": "dir",
+     "children": []
+    }
+   ]
+  },
+  {
+   "name": "debug",
+   "path": "debug",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "0_0",
+     "path": "debug/0_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/0_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "consent.mfotl",
+         "path": "debug/0_0/WhyMon/consent.mfotl",
+         "kind": "file",
+         "size": 186,
+         "hosting": "inline"
+        },
+        {
+         "name": "consent.mfotl.in",
+         "path": "debug/0_0/WhyMon/consent.mfotl.in",
+         "kind": "file",
+         "size": 186,
+         "hosting": "inline"
+        },
+        {
+         "name": "consent.mfotl.out",
+         "path": "debug/0_0/WhyMon/consent.mfotl.out",
+         "kind": "file",
+         "size": 186,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/0_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 834,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "0_1",
+     "path": "debug/0_1",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/0_1/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "consent.mfotl",
+         "path": "debug/0_1/WhyMon/consent.mfotl",
+         "kind": "file",
+         "size": 186,
+         "hosting": "inline"
+        },
+        {
+         "name": "consent.mfotl.in",
+         "path": "debug/0_1/WhyMon/consent.mfotl.in",
+         "kind": "file",
+         "size": 186,
+         "hosting": "inline"
+        },
+        {
+         "name": "consent.mfotl.out",
+         "path": "debug/0_1/WhyMon/consent.mfotl.out",
+         "kind": "file",
+         "size": 186,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/0_1/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 834,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "0_2",
+     "path": "debug/0_2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/0_2/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "consent.mfotl",
+         "path": "debug/0_2/WhyMon/consent.mfotl",
+         "kind": "file",
+         "size": 186,
+         "hosting": "inline"
+        },
+        {
+         "name": "consent.mfotl.in",
+         "path": "debug/0_2/WhyMon/consent.mfotl.in",
+         "kind": "file",
+         "size": 186,
+         "hosting": "inline"
+        },
+        {
+         "name": "consent.mfotl.out",
+         "path": "debug/0_2/WhyMon/consent.mfotl.out",
+         "kind": "file",
+         "size": 186,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/0_2/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 834,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "1_0",
+     "path": "debug/1_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/1_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "deletion.mfotl",
+         "path": "debug/1_0/WhyMon/deletion.mfotl",
+         "kind": "file",
+         "size": 153,
+         "hosting": "inline"
+        },
+        {
+         "name": "deletion.mfotl.in",
+         "path": "debug/1_0/WhyMon/deletion.mfotl.in",
+         "kind": "file",
+         "size": 153,
+         "hosting": "inline"
+        },
+        {
+         "name": "deletion.mfotl.out",
+         "path": "debug/1_0/WhyMon/deletion.mfotl.out",
+         "kind": "file",
+         "size": 153,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/1_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 835,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "1_1",
+     "path": "debug/1_1",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/1_1/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "deletion.mfotl",
+         "path": "debug/1_1/WhyMon/deletion.mfotl",
+         "kind": "file",
+         "size": 153,
+         "hosting": "inline"
+        },
+        {
+         "name": "deletion.mfotl.in",
+         "path": "debug/1_1/WhyMon/deletion.mfotl.in",
+         "kind": "file",
+         "size": 153,
+         "hosting": "inline"
+        },
+        {
+         "name": "deletion.mfotl.out",
+         "path": "debug/1_1/WhyMon/deletion.mfotl.out",
+         "kind": "file",
+         "size": 153,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/1_1/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 835,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "1_2",
+     "path": "debug/1_2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/1_2/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "deletion.mfotl",
+         "path": "debug/1_2/WhyMon/deletion.mfotl",
+         "kind": "file",
+         "size": 153,
+         "hosting": "inline"
+        },
+        {
+         "name": "deletion.mfotl.in",
+         "path": "debug/1_2/WhyMon/deletion.mfotl.in",
+         "kind": "file",
+         "size": 153,
+         "hosting": "inline"
+        },
+        {
+         "name": "deletion.mfotl.out",
+         "path": "debug/1_2/WhyMon/deletion.mfotl.out",
+         "kind": "file",
+         "size": 153,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/1_2/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 835,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "2_0",
+     "path": "debug/2_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/2_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "information.mfotl",
+         "path": "debug/2_0/WhyMon/information.mfotl",
+         "kind": "file",
+         "size": 142,
+         "hosting": "inline"
+        },
+        {
+         "name": "information.mfotl.in",
+         "path": "debug/2_0/WhyMon/information.mfotl.in",
+         "kind": "file",
+         "size": 142,
+         "hosting": "inline"
+        },
+        {
+         "name": "information.mfotl.out",
+         "path": "debug/2_0/WhyMon/information.mfotl.out",
+         "kind": "file",
+         "size": 142,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/2_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 838,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "2_1",
+     "path": "debug/2_1",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/2_1/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "information.mfotl",
+         "path": "debug/2_1/WhyMon/information.mfotl",
+         "kind": "file",
+         "size": 142,
+         "hosting": "inline"
+        },
+        {
+         "name": "information.mfotl.in",
+         "path": "debug/2_1/WhyMon/information.mfotl.in",
+         "kind": "file",
+         "size": 142,
+         "hosting": "inline"
+        },
+        {
+         "name": "information.mfotl.out",
+         "path": "debug/2_1/WhyMon/information.mfotl.out",
+         "kind": "file",
+         "size": 142,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/2_1/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 838,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "2_2",
+     "path": "debug/2_2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/2_2/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "information.mfotl",
+         "path": "debug/2_2/WhyMon/information.mfotl",
+         "kind": "file",
+         "size": 142,
+         "hosting": "inline"
+        },
+        {
+         "name": "information.mfotl.in",
+         "path": "debug/2_2/WhyMon/information.mfotl.in",
+         "kind": "file",
+         "size": 142,
+         "hosting": "inline"
+        },
+        {
+         "name": "information.mfotl.out",
+         "path": "debug/2_2/WhyMon/information.mfotl.out",
+         "kind": "file",
+         "size": 142,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/2_2/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 838,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "3_0",
+     "path": "debug/3_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/3_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "lawfulness.mfotl",
+         "path": "debug/3_0/WhyMon/lawfulness.mfotl",
+         "kind": "file",
+         "size": 154,
+         "hosting": "inline"
+        },
+        {
+         "name": "lawfulness.mfotl.in",
+         "path": "debug/3_0/WhyMon/lawfulness.mfotl.in",
+         "kind": "file",
+         "size": 154,
+         "hosting": "inline"
+        },
+        {
+         "name": "lawfulness.mfotl.out",
+         "path": "debug/3_0/WhyMon/lawfulness.mfotl.out",
+         "kind": "file",
+         "size": 154,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/3_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 837,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "3_1",
+     "path": "debug/3_1",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/3_1/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "lawfulness.mfotl",
+         "path": "debug/3_1/WhyMon/lawfulness.mfotl",
+         "kind": "file",
+         "size": 154,
+         "hosting": "inline"
+        },
+        {
+         "name": "lawfulness.mfotl.in",
+         "path": "debug/3_1/WhyMon/lawfulness.mfotl.in",
+         "kind": "file",
+         "size": 154,
+         "hosting": "inline"
+        },
+        {
+         "name": "lawfulness.mfotl.out",
+         "path": "debug/3_1/WhyMon/lawfulness.mfotl.out",
+         "kind": "file",
+         "size": 154,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/3_1/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 837,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "3_2",
+     "path": "debug/3_2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/3_2/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "lawfulness.mfotl",
+         "path": "debug/3_2/WhyMon/lawfulness.mfotl",
+         "kind": "file",
+         "size": 154,
+         "hosting": "inline"
+        },
+        {
+         "name": "lawfulness.mfotl.in",
+         "path": "debug/3_2/WhyMon/lawfulness.mfotl.in",
+         "kind": "file",
+         "size": 154,
+         "hosting": "inline"
+        },
+        {
+         "name": "lawfulness.mfotl.out",
+         "path": "debug/3_2/WhyMon/lawfulness.mfotl.out",
+         "kind": "file",
+         "size": 154,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/3_2/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 837,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "4_0",
+     "path": "debug/4_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/4_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "limitation.mfotl",
+         "path": "debug/4_0/WhyMon/limitation.mfotl",
+         "kind": "file",
+         "size": 141,
+         "hosting": "inline"
+        },
+        {
+         "name": "limitation.mfotl.in",
+         "path": "debug/4_0/WhyMon/limitation.mfotl.in",
+         "kind": "file",
+         "size": 141,
+         "hosting": "inline"
+        },
+        {
+         "name": "limitation.mfotl.out",
+         "path": "debug/4_0/WhyMon/limitation.mfotl.out",
+         "kind": "file",
+         "size": 141,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/4_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 837,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "4_1",
+     "path": "debug/4_1",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/4_1/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "limitation.mfotl",
+         "path": "debug/4_1/WhyMon/limitation.mfotl",
+         "kind": "file",
+         "size": 141,
+         "hosting": "inline"
+        },
+        {
+         "name": "limitation.mfotl.in",
+         "path": "debug/4_1/WhyMon/limitation.mfotl.in",
+         "kind": "file",
+         "size": 141,
+         "hosting": "inline"
+        },
+        {
+         "name": "limitation.mfotl.out",
+         "path": "debug/4_1/WhyMon/limitation.mfotl.out",
+         "kind": "file",
+         "size": 141,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/4_1/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 837,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "4_2",
+     "path": "debug/4_2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/4_2/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "limitation.mfotl",
+         "path": "debug/4_2/WhyMon/limitation.mfotl",
+         "kind": "file",
+         "size": 141,
+         "hosting": "inline"
+        },
+        {
+         "name": "limitation.mfotl.in",
+         "path": "debug/4_2/WhyMon/limitation.mfotl.in",
+         "kind": "file",
+         "size": 141,
+         "hosting": "inline"
+        },
+        {
+         "name": "limitation.mfotl.out",
+         "path": "debug/4_2/WhyMon/limitation.mfotl.out",
+         "kind": "file",
+         "size": 141,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/4_2/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 837,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_0",
+     "path": "debug/5_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/5_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "sharing.mfotl",
+         "path": "debug/5_0/WhyMon/sharing.mfotl",
+         "kind": "file",
+         "size": 227,
+         "hosting": "inline"
+        },
+        {
+         "name": "sharing.mfotl.in",
+         "path": "debug/5_0/WhyMon/sharing.mfotl.in",
+         "kind": "file",
+         "size": 227,
+         "hosting": "inline"
+        },
+        {
+         "name": "sharing.mfotl.out",
+         "path": "debug/5_0/WhyMon/sharing.mfotl.out",
+         "kind": "file",
+         "size": 227,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/5_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 834,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_1",
+     "path": "debug/5_1",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/5_1/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "sharing.mfotl",
+         "path": "debug/5_1/WhyMon/sharing.mfotl",
+         "kind": "file",
+         "size": 227,
+         "hosting": "inline"
+        },
+        {
+         "name": "sharing.mfotl.in",
+         "path": "debug/5_1/WhyMon/sharing.mfotl.in",
+         "kind": "file",
+         "size": 227,
+         "hosting": "inline"
+        },
+        {
+         "name": "sharing.mfotl.out",
+         "path": "debug/5_1/WhyMon/sharing.mfotl.out",
+         "kind": "file",
+         "size": 227,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/5_1/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 834,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2",
+     "path": "debug/5_2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/5_2/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "sharing.mfotl",
+         "path": "debug/5_2/WhyMon/sharing.mfotl",
+         "kind": "file",
+         "size": 227,
+         "hosting": "inline"
+        },
+        {
+         "name": "sharing.mfotl.in",
+         "path": "debug/5_2/WhyMon/sharing.mfotl.in",
+         "kind": "file",
+         "size": 227,
+         "hosting": "inline"
+        },
+        {
+         "name": "sharing.mfotl.out",
+         "path": "debug/5_2/WhyMon/sharing.mfotl.out",
+         "kind": "file",
+         "size": 227,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/5_2/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 834,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "6_0",
+     "path": "debug/6_0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/6_0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "gdpr.mfotl",
+         "path": "debug/6_0/WhyMon/gdpr.mfotl",
+         "kind": "file",
+         "size": 725,
+         "hosting": "inline"
+        },
+        {
+         "name": "gdpr.mfotl.in",
+         "path": "debug/6_0/WhyMon/gdpr.mfotl.in",
+         "kind": "file",
+         "size": 725,
+         "hosting": "inline"
+        },
+        {
+         "name": "gdpr.mfotl.out",
+         "path": "debug/6_0/WhyMon/gdpr.mfotl.out",
+         "kind": "file",
+         "size": 725,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/6_0/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 831,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "6_1",
+     "path": "debug/6_1",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/6_1/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "gdpr.mfotl",
+         "path": "debug/6_1/WhyMon/gdpr.mfotl",
+         "kind": "file",
+         "size": 725,
+         "hosting": "inline"
+        },
+        {
+         "name": "gdpr.mfotl.in",
+         "path": "debug/6_1/WhyMon/gdpr.mfotl.in",
+         "kind": "file",
+         "size": 725,
+         "hosting": "inline"
+        },
+        {
+         "name": "gdpr.mfotl.out",
+         "path": "debug/6_1/WhyMon/gdpr.mfotl.out",
+         "kind": "file",
+         "size": 725,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/6_1/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 831,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "6_2",
+     "path": "debug/6_2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "debug/6_2/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "gdpr.mfotl",
+         "path": "debug/6_2/WhyMon/gdpr.mfotl",
+         "kind": "file",
+         "size": 725,
+         "hosting": "inline"
+        },
+        {
+         "name": "gdpr.mfotl.in",
+         "path": "debug/6_2/WhyMon/gdpr.mfotl.in",
+         "kind": "file",
+         "size": 725,
+         "hosting": "inline"
+        },
+        {
+         "name": "gdpr.mfotl.out",
+         "path": "debug/6_2/WhyMon/gdpr.mfotl.out",
+         "kind": "file",
+         "size": 725,
+         "hosting": "inline"
+        },
+        {
+         "name": "stats.txt",
+         "path": "debug/6_2/WhyMon/stats.txt",
+         "kind": "file",
+         "size": 831,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fingerprint",
+   "path": "fingerprint",
+   "kind": "file",
+   "size": 123,
+   "hosting": "inline"
+  },
+  {
+   "name": "instructions.txt",
+   "path": "instructions.txt",
+   "kind": "file",
+   "size": 592,
+   "hosting": "inline"
+  },
+  {
+   "name": "provenance",
+   "path": "provenance",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "0",
+     "path": "provenance/0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "provenance/0/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/0/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 186,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/0/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2117,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "1",
+     "path": "provenance/1",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "provenance/1/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/1/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 147,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/1/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2121,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "2",
+     "path": "provenance/2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "provenance/2/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/2/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 136,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/2/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2133,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "3",
+     "path": "provenance/3",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "provenance/3/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/3/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 148,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/3/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2129,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "4",
+     "path": "provenance/4",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "provenance/4/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/4/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 135,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/4/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2129,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5",
+     "path": "provenance/5",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "provenance/5/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/5/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 221,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/5/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2117,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "6",
+     "path": "provenance/6",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "WhyMon",
+       "path": "provenance/6/WhyMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "policy.negated-mfotl",
+         "path": "provenance/6/WhyMon/policy.negated-mfotl",
+         "kind": "file",
+         "size": 701,
+         "hosting": "inline"
+        },
+        {
+         "name": "provenance.json",
+         "path": "provenance/6/WhyMon/provenance.json",
+         "kind": "file",
+         "size": 2105,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

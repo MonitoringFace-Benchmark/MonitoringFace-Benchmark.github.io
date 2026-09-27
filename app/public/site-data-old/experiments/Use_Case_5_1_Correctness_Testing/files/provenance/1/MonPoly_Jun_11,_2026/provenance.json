@@ -1,0 +1,66 @@
+{
+ "schema_version": 1,
+ "experiment_fingerprint": {
+  "fingerprint_experiment": "Correctness",
+  "fingerprint_data": "8abca099074700116365abeaaeae2b627fb19f49f1e92dbd98438a1c01828727"
+ },
+ "framework_commit": "064b11f5438c42c0d1df9986ad43c51118277d9c",
+ "tool": {
+  "name": "MonPoly Jun 11, 2026",
+  "identifier": "MonPoly",
+  "params": {
+   "folder": "<project>/Infrastructure/experiments/correctness_monpoly/data",
+   "path_to_project": "<project>",
+   "policy": "Formula/bug2.mfotl",
+   "signature": "Signature/bug.sig",
+   "trace": "Trace/bug2.log",
+   "trace_target_format": "InputOutputTraceFormats.MONPOLY"
+  }
+ },
+ "setting_key": "1",
+ "captures": 1,
+ "tool_invocation": [
+  "-sig",
+  "Signature/bug.sig",
+  "-formula",
+  "Formula/bug2.mfotl",
+  "-log",
+  "Trace/bug2.log"
+ ],
+ "input_unchanged_after_run": true,
+ "entries": [
+  {
+   "kind": "trace",
+   "source": {
+    "file": "data/Trace/bug2.log",
+    "format": "monpoly",
+    "sha256": "f8839da451c9ccffb0b12d470c628e5a1d6482fdca43eef5d9c168121ca585a5"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "Trace/bug2.log"
+  },
+  {
+   "kind": "policy",
+   "source": {
+    "file": "data/Formula/bug2.mfotl",
+    "format": "mfotl",
+    "sha256": "a97449b3caec3ed9cc112b78a266e1375274cb1e0bb5147058b4d72713afff14"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "Formula/bug2.mfotl"
+  },
+  {
+   "kind": "signature",
+   "source": {
+    "file": "data/Signature/bug.sig",
+    "format": "sig",
+    "sha256": "641e693fb5ff865b1cd6442b8cf65dd36baa79c7b9b46503424a074b91a5a6e6"
+   },
+   "steps": [],
+   "stored": null,
+   "as_seen_by_tool": "Signature/bug.sig"
+  }
+ ]
+}

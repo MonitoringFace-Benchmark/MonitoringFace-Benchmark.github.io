@@ -2,11 +2,11 @@
  "schema_version": 1,
  "id": "Use_Case_5.4_Parameter_Tuning",
  "name": "Use Case 5.4: Parameter Tuning",
- "source_experiment": "timely_parameter_tuning",
- "run_timestamp": null,
+ "source_experiment": "use_case_5_4_parameter_tuning",
+ "run_timestamp": "2026-09-23T17:05:19",
  "runtime_setting": "offline",
  "timeout_s": null,
- "config_file": "benchmark_paper/timely_parameter_tuning.yaml",
+ "config_file": "benchmark_paper/use_case_5_4_parameter_tuning.yaml",
  "monitors": [
   {
    "name": "TimelyMon 1 S1",
@@ -3053,5 +3053,102 @@
    "stored_kinds": []
   }
  ],
- "suite": null
+ "suite": null,
+ "components": {
+  "schema_version": 1,
+  "requested_pins": {
+   "SignatureGenerator": {
+    "branch": null,
+    "commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672"
+   },
+   "MfotlPolicyGenerator": {
+    "branch": null,
+    "commit": "fef5f8f5551a36dac4aa45cc7c48bef09964a265"
+   }
+  },
+  "components": {
+   "data_source": {
+    "component": "SignatureGenerator",
+    "pin_branch": null,
+    "pin_commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672",
+    "branch": "main",
+    "resolved_version": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672",
+    "image": "gen_data_datagenerators_d8442ab1473ea8f0a9c49836d3bf56bfd0b60672_mf_image"
+   },
+   "policy_source": {
+    "component": "MfotlPolicyGenerator",
+    "pin_branch": null,
+    "pin_commit": "fef5f8f5551a36dac4aa45cc7c48bef09964a265",
+    "branch": "main",
+    "resolved_version": "fef5f8f5551a36dac4aa45cc7c48bef09964a265",
+    "image": "mfotlpolicygenerator_policygenerators_fef5f8f5551a36dac4aa45cc7c48bef09964a265_mf_image"
+   }
+  },
+  "monitors": {
+   "TimelyMon 1 S1": {
+    "identifier": "TimelyMon",
+    "branch": null,
+    "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+    "resolved_version": null,
+    "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image"
+   },
+   "TimelyMon 1 S1000": {
+    "identifier": "TimelyMon",
+    "branch": null,
+    "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+    "resolved_version": null,
+    "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image"
+   },
+   "TimelyMon 1 S10000": {
+    "identifier": "TimelyMon",
+    "branch": null,
+    "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+    "resolved_version": null,
+    "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image"
+   },
+   "TimelyMon 3 S1": {
+    "identifier": "TimelyMon",
+    "branch": null,
+    "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+    "resolved_version": null,
+    "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image"
+   },
+   "TimelyMon 3 S1000": {
+    "identifier": "TimelyMon",
+    "branch": null,
+    "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+    "resolved_version": null,
+    "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image"
+   },
+   "TimelyMon 3 S10000": {
+    "identifier": "TimelyMon",
+    "branch": null,
+    "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+    "resolved_version": null,
+    "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image"
+   },
+   "TimelyMon 6 S1": {
+    "identifier": "TimelyMon",
+    "branch": null,
+    "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+    "resolved_version": null,
+    "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image"
+   },
+   "TimelyMon 6 S1000": {
+    "identifier": "TimelyMon",
+    "branch": null,
+    "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+    "resolved_version": null,
+    "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image"
+   },
+   "TimelyMon 6 S10000": {
+    "identifier": "TimelyMon",
+    "branch": null,
+    "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+    "resolved_version": null,
+    "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image"
+   }
+  },
+  "framework_commit": "79471683d2633c717542e0ed78420c062f51c88b"
+ }
 }

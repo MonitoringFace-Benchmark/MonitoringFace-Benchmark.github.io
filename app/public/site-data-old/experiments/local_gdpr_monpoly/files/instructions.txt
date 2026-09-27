@@ -1,0 +1,8 @@
+Trace, Policy, Signature
+Trace/log.log: monpoly, Formula/consent.mfotl: mfotl, Signature/sig.sig
+Trace/log.log: monpoly, Formula/deletion.mfotl: mfotl, Signature/sig.sig
+Trace/log.log: monpoly, Formula/information.mfotl: mfotl, Signature/sig.sig
+Trace/log.log: monpoly, Formula/lawfulness.mfotl: mfotl, Signature/sig.sig
+Trace/log.log: monpoly, Formula/limitation.mfotl: mfotl, Signature/sig.sig
+Trace/log.log: monpoly, Formula/sharing.mfotl: mfotl, Signature/sig.sig
+Trace/log.log: monpoly, Formula/gdpr.mfotl: mfotl, Signature/sig.sig

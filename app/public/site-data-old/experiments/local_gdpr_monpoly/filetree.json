@@ -1,0 +1,664 @@
+{
+ "name": "local_gdpr_monpoly",
+ "path": "",
+ "kind": "dir",
+ "children": [
+  {
+   "name": "data",
+   "path": "data",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "Formula",
+     "path": "data/Formula",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "consent.mfotl",
+       "path": "data/Formula/consent.mfotl",
+       "kind": "file",
+       "size": 159,
+       "hosting": "inline"
+      },
+      {
+       "name": "deletion.mfotl",
+       "path": "data/Formula/deletion.mfotl",
+       "kind": "file",
+       "size": 124,
+       "hosting": "inline"
+      },
+      {
+       "name": "gdpr.mfotl",
+       "path": "data/Formula/gdpr.mfotl",
+       "kind": "file",
+       "size": 594,
+       "hosting": "inline"
+      },
+      {
+       "name": "information.mfotl",
+       "path": "data/Formula/information.mfotl",
+       "kind": "file",
+       "size": 103,
+       "hosting": "inline"
+      },
+      {
+       "name": "lawfulness.mfotl",
+       "path": "data/Formula/lawfulness.mfotl",
+       "kind": "file",
+       "size": 117,
+       "hosting": "inline"
+      },
+      {
+       "name": "limitation.mfotl",
+       "path": "data/Formula/limitation.mfotl",
+       "kind": "file",
+       "size": 112,
+       "hosting": "inline"
+      },
+      {
+       "name": "sharing.mfotl",
+       "path": "data/Formula/sharing.mfotl",
+       "kind": "file",
+       "size": 188,
+       "hosting": "inline"
+      }
+     ]
+    },
+    {
+     "name": "Signature",
+     "path": "data/Signature",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "sig.sig",
+       "path": "data/Signature/sig.sig",
+       "kind": "file",
+       "size": 632,
+       "hosting": "inline"
+      }
+     ]
+    },
+    {
+     "name": "Trace",
+     "path": "data/Trace",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "log.log",
+       "path": "data/Trace/log.log",
+       "kind": "file",
+       "size": 223988,
+       "hosting": "inline"
+      }
+     ]
+    },
+    {
+     "name": "result",
+     "path": "data/result",
+     "kind": "dir",
+     "children": []
+    }
+   ]
+  },
+  {
+   "name": "fingerprint",
+   "path": "fingerprint",
+   "kind": "file",
+   "size": 124,
+   "hosting": "inline"
+  },
+  {
+   "name": "instructions.txt",
+   "path": "instructions.txt",
+   "kind": "file",
+   "size": 536,
+   "hosting": "inline"
+  },
+  {
+   "name": "provenance",
+   "path": "provenance",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "0",
+     "path": "provenance/0",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly",
+       "path": "provenance/0/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/0/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 1648,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/0/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/0/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 2283,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/0/TimelyMon_1/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/0/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/0/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 2283,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/0/TimelyMon_6/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/0/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/0/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 1663,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "1",
+     "path": "provenance/1",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly",
+       "path": "provenance/1/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/1/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 1652,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/1/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/1/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 2287,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/1/TimelyMon_1/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/1/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/1/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 2287,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/1/TimelyMon_6/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/1/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/1/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 1667,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "2",
+     "path": "provenance/2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly",
+       "path": "provenance/2/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/2/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 1664,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/2/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/2/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 2299,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/2/TimelyMon_1/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/2/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/2/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 2299,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/2/TimelyMon_6/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/2/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/2/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 1679,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "3",
+     "path": "provenance/3",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly",
+       "path": "provenance/3/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/3/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 1660,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/3/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/3/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 2295,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/3/TimelyMon_1/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/3/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/3/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 2295,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/3/TimelyMon_6/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/3/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/3/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 1675,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "4",
+     "path": "provenance/4",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly",
+       "path": "provenance/4/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/4/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 1660,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/4/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/4/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 2295,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/4/TimelyMon_1/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/4/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/4/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 2295,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/4/TimelyMon_6/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/4/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/4/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 1675,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5",
+     "path": "provenance/5",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly",
+       "path": "provenance/5/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 1648,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/5/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 2283,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/5/TimelyMon_1/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/5/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 2283,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/5/TimelyMon_6/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/5/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 1663,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "6",
+     "path": "provenance/6",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "MonPoly",
+       "path": "provenance/6/MonPoly",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/6/MonPoly/provenance.json",
+         "kind": "file",
+         "size": 1636,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1",
+       "path": "provenance/6/TimelyMon_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/6/TimelyMon_1/provenance.json",
+         "kind": "file",
+         "size": 2271,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/6/TimelyMon_1/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6",
+       "path": "provenance/6/TimelyMon_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/6/TimelyMon_6/provenance.json",
+         "kind": "file",
+         "size": 2271,
+         "hosting": "inline"
+        },
+        {
+         "name": "trace.csv",
+         "path": "provenance/6/TimelyMon_6/trace.csv",
+         "kind": "file",
+         "size": 336649,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "VeriMon",
+       "path": "provenance/6/VeriMon",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/6/VeriMon/provenance.json",
+         "kind": "file",
+         "size": 1651,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

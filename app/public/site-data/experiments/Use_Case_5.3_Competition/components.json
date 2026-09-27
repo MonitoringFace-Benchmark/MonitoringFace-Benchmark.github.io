@@ -1,0 +1,105 @@
+{
+ "schema_version": 1,
+ "requested_pins": {
+  "SignatureGenerator": {
+   "branch": null,
+   "commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672"
+  },
+  "MfotlPolicyGenerator": {
+   "branch": null,
+   "commit": "fef5f8f5551a36dac4aa45cc7c48bef09964a265"
+  },
+  "ReplayerConverter": {
+   "branch": null,
+   "commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672"
+  },
+  "QTLConverter": {
+   "branch": null,
+   "commit": "9fa865a5db71e1d46f1d7b48b281f609ce36ac43"
+  }
+ },
+ "components": {
+  "data_source": {
+   "component": "SignatureGenerator",
+   "pin_branch": null,
+   "pin_commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672",
+   "branch": "main",
+   "resolved_version": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672",
+   "image": "gen_data_datagenerators_d8442ab1473ea8f0a9c49836d3bf56bfd0b60672_mf_image"
+  },
+  "policy_source": {
+   "component": "MfotlPolicyGenerator",
+   "pin_branch": null,
+   "pin_commit": "fef5f8f5551a36dac4aa45cc7c48bef09964a265",
+   "branch": "main",
+   "resolved_version": "fef5f8f5551a36dac4aa45cc7c48bef09964a265",
+   "image": "mfotlpolicygenerator_policygenerators_fef5f8f5551a36dac4aa45cc7c48bef09964a265_mf_image"
+  }
+ },
+ "monitors": {
+  "TimelyMon 1": {
+   "identifier": "TimelyMon",
+   "branch": null,
+   "commit": "f6e7e6d1255b86abb3c31e00d1a8398eb4f2a4e3",
+   "resolved_version": null,
+   "image": "timelymon_f6e7e6d1255b86abb3c31e00d1a8398eb4f2a4e3_offline_mf_image"
+  },
+  "TimelyMon 6": {
+   "identifier": "TimelyMon",
+   "branch": null,
+   "commit": "f6e7e6d1255b86abb3c31e00d1a8398eb4f2a4e3",
+   "resolved_version": null,
+   "image": "timelymon_f6e7e6d1255b86abb3c31e00d1a8398eb4f2a4e3_offline_mf_image"
+  },
+  "VeriMon": {
+   "identifier": "VeriMon",
+   "branch": null,
+   "commit": "bc752d37f1d4560b5667eddac9dd1670451b758e",
+   "resolved_version": null,
+   "image": "monpoly_bc752d37f1d4560b5667eddac9dd1670451b758e_offline_mf_image"
+  },
+  "MonPoly": {
+   "identifier": "MonPoly",
+   "branch": null,
+   "commit": "bc752d37f1d4560b5667eddac9dd1670451b758e",
+   "resolved_version": null,
+   "image": "monpoly_bc752d37f1d4560b5667eddac9dd1670451b758e_offline_mf_image"
+  },
+  "WhyMon": {
+   "identifier": "WhyMon",
+   "branch": null,
+   "commit": "86684beecbfc14ed3367eb5c042f610ca8a60119",
+   "resolved_version": null,
+   "image": "whymon_86684beecbfc14ed3367eb5c042f610ca8a60119_offline_mf_image"
+  },
+  "DejaVu": {
+   "identifier": "DejaVu",
+   "branch": null,
+   "commit": "2b5052d89e3a961de7344a2bdcb7adf1308f2bca",
+   "resolved_version": null,
+   "image": "dejavu_2b5052d89e3a961de7344a2bdcb7adf1308f2bca_offline_mf_image"
+  },
+  "EnfGuard": {
+   "identifier": "EnfGuard",
+   "branch": null,
+   "commit": "9e6ec02c04dbcf8fa43b9e3223cad882a6d462f3",
+   "resolved_version": null,
+   "image": "enfguard_9e6ec02c04dbcf8fa43b9e3223cad882a6d462f3_offline_mf_image"
+  },
+  "TeSSLa": {
+   "identifier": "TeSSLa",
+   "branch": null,
+   "commit": "b1964bd445286832bd2cb120ca7586858e941ceb",
+   "resolved_version": null,
+   "image": "tessla_b1964bd445286832bd2cb120ca7586858e941ceb_offline_mf_image"
+  },
+  "TeSSLa Rust": {
+   "identifier": "TeSSLa",
+   "branch": null,
+   "commit": "b1964bd445286832bd2cb120ca7586858e941ceb",
+   "resolved_version": null,
+   "image": "tessla_b1964bd445286832bd2cb120ca7586858e941ceb_offline_mf_image"
+  }
+ },
+ "framework_commit": "eac6d48dd2e7a05c11eb145d04e73ab3b2482c56-dirty"
+}

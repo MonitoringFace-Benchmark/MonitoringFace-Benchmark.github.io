@@ -1,0 +1,4403 @@
+{
+ "name": "timely_parameter_tuning",
+ "path": "",
+ "kind": "dir",
+ "children": [
+  {
+   "name": "operators_5",
+   "path": "operators_5",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "free_vars_2",
+     "path": "operators_5/free_vars_2",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "num_0",
+       "path": "operators_5/free_vars_2/num_0",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_0/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_0/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_0/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_0/data_50.csv",
+         "kind": "file",
+         "size": 1356085,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_0/policy.policy",
+         "kind": "file",
+         "size": 89,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_0/signature.sig",
+         "kind": "file",
+         "size": 53,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_1",
+       "path": "operators_5/free_vars_2/num_1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_1/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_1/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_1/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_1/data_50.csv",
+         "kind": "file",
+         "size": 1526180,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_1/policy.policy",
+         "kind": "file",
+         "size": 93,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_1/signature.sig",
+         "kind": "file",
+         "size": 61,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_10",
+       "path": "operators_5/free_vars_2/num_10",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_10/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_10/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_10/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_10/data_50.csv",
+         "kind": "file",
+         "size": 1350470,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_10/policy.policy",
+         "kind": "file",
+         "size": 97,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_10/signature.sig",
+         "kind": "file",
+         "size": 51,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_11",
+       "path": "operators_5/free_vars_2/num_11",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_11/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_11/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_11/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_11/data_50.csv",
+         "kind": "file",
+         "size": 1003684,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_11/policy.policy",
+         "kind": "file",
+         "size": 64,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_11/signature.sig",
+         "kind": "file",
+         "size": 39,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_12",
+       "path": "operators_5/free_vars_2/num_12",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_12/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_12/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_12/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_12/data_50.csv",
+         "kind": "file",
+         "size": 1700032,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_12/policy.policy",
+         "kind": "file",
+         "size": 98,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_12/signature.sig",
+         "kind": "file",
+         "size": 67,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_13",
+       "path": "operators_5/free_vars_2/num_13",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_13/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_13/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_13/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_13/data_50.csv",
+         "kind": "file",
+         "size": 1873609,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_13/policy.policy",
+         "kind": "file",
+         "size": 83,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_13/signature.sig",
+         "kind": "file",
+         "size": 73,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_14",
+       "path": "operators_5/free_vars_2/num_14",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_14/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_14/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_14/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_14/data_50.csv",
+         "kind": "file",
+         "size": 1702178,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_14/policy.policy",
+         "kind": "file",
+         "size": 94,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_14/signature.sig",
+         "kind": "file",
+         "size": 67,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_15",
+       "path": "operators_5/free_vars_2/num_15",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_15/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_15/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_15/Seeds/policy.seed",
+           "kind": "file",
+           "size": 4,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_15/data_50.csv",
+         "kind": "file",
+         "size": 1525121,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_15/policy.policy",
+         "kind": "file",
+         "size": 95,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_15/signature.sig",
+         "kind": "file",
+         "size": 61,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_16",
+       "path": "operators_5/free_vars_2/num_16",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_16/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_16/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_16/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_16/data_50.csv",
+         "kind": "file",
+         "size": 1699501,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_16/policy.policy",
+         "kind": "file",
+         "size": 93,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_16/signature.sig",
+         "kind": "file",
+         "size": 67,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_17",
+       "path": "operators_5/free_vars_2/num_17",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_17/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_17/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_17/Seeds/policy.seed",
+           "kind": "file",
+           "size": 4,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_17/data_50.csv",
+         "kind": "file",
+         "size": 1875371,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_17/policy.policy",
+         "kind": "file",
+         "size": 84,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_17/signature.sig",
+         "kind": "file",
+         "size": 73,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_18",
+       "path": "operators_5/free_vars_2/num_18",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_18/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_18/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_18/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_18/data_50.csv",
+         "kind": "file",
+         "size": 1693391,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_18/policy.policy",
+         "kind": "file",
+         "size": 109,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_18/signature.sig",
+         "kind": "file",
+         "size": 67,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_19",
+       "path": "operators_5/free_vars_2/num_19",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_19/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_19/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_19/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_19/data_50.csv",
+         "kind": "file",
+         "size": 1350470,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_19/policy.policy",
+         "kind": "file",
+         "size": 77,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_19/signature.sig",
+         "kind": "file",
+         "size": 51,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_2",
+       "path": "operators_5/free_vars_2/num_2",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_2/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_2/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_2/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_2/data_50.csv",
+         "kind": "file",
+         "size": 2219601,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_2/policy.policy",
+         "kind": "file",
+         "size": 104,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_2/signature.sig",
+         "kind": "file",
+         "size": 89,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_20",
+       "path": "operators_5/free_vars_2/num_20",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_20/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_20/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_20/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_20/data_50.csv",
+         "kind": "file",
+         "size": 1351216,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_20/policy.policy",
+         "kind": "file",
+         "size": 98,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_20/signature.sig",
+         "kind": "file",
+         "size": 51,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_21",
+       "path": "operators_5/free_vars_2/num_21",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_21/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_21/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_21/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_21/data_50.csv",
+         "kind": "file",
+         "size": 2219601,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_21/policy.policy",
+         "kind": "file",
+         "size": 107,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_21/signature.sig",
+         "kind": "file",
+         "size": 89,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_22",
+       "path": "operators_5/free_vars_2/num_22",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_22/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_22/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_22/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_22/data_50.csv",
+         "kind": "file",
+         "size": 1524485,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_22/policy.policy",
+         "kind": "file",
+         "size": 97,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_22/signature.sig",
+         "kind": "file",
+         "size": 59,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_23",
+       "path": "operators_5/free_vars_2/num_23",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_23/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_23/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_23/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_23/data_50.csv",
+         "kind": "file",
+         "size": 1700826,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_23/policy.policy",
+         "kind": "file",
+         "size": 94,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_23/signature.sig",
+         "kind": "file",
+         "size": 67,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_3",
+       "path": "operators_5/free_vars_2/num_3",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_3/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_3/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_3/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_3/data_50.csv",
+         "kind": "file",
+         "size": 1348863,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_3/policy.policy",
+         "kind": "file",
+         "size": 85,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_3/signature.sig",
+         "kind": "file",
+         "size": 53,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_4",
+       "path": "operators_5/free_vars_2/num_4",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_4/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_4/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_4/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_4/data_50.csv",
+         "kind": "file",
+         "size": 1522775,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_4/policy.policy",
+         "kind": "file",
+         "size": 107,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_4/signature.sig",
+         "kind": "file",
+         "size": 61,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_5",
+       "path": "operators_5/free_vars_2/num_5",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_5/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_5/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_5/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_5/data_50.csv",
+         "kind": "file",
+         "size": 1870126,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_5/policy.policy",
+         "kind": "file",
+         "size": 90,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_5/signature.sig",
+         "kind": "file",
+         "size": 73,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_6",
+       "path": "operators_5/free_vars_2/num_6",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_6/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_6/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_6/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_6/data_50.csv",
+         "kind": "file",
+         "size": 1348863,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_6/policy.policy",
+         "kind": "file",
+         "size": 84,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_6/signature.sig",
+         "kind": "file",
+         "size": 53,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_7",
+       "path": "operators_5/free_vars_2/num_7",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_7/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_7/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_7/Seeds/policy.seed",
+           "kind": "file",
+           "size": 4,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_7/data_50.csv",
+         "kind": "file",
+         "size": 1701285,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_7/policy.policy",
+         "kind": "file",
+         "size": 85,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_7/signature.sig",
+         "kind": "file",
+         "size": 67,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_8",
+       "path": "operators_5/free_vars_2/num_8",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_8/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_8/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_8/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_8/data_50.csv",
+         "kind": "file",
+         "size": 1525086,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_8/policy.policy",
+         "kind": "file",
+         "size": 114,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_8/signature.sig",
+         "kind": "file",
+         "size": 57,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "num_9",
+       "path": "operators_5/free_vars_2/num_9",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "Seeds",
+         "path": "operators_5/free_vars_2/num_9/Seeds",
+         "kind": "dir",
+         "children": [
+          {
+           "name": "generator.seed",
+           "path": "operators_5/free_vars_2/num_9/Seeds/generator.seed",
+           "kind": "file",
+           "size": 9,
+           "hosting": "inline"
+          },
+          {
+           "name": "policy.seed",
+           "path": "operators_5/free_vars_2/num_9/Seeds/policy.seed",
+           "kind": "file",
+           "size": 5,
+           "hosting": "inline"
+          }
+         ]
+        },
+        {
+         "name": "data_50.csv",
+         "path": "operators_5/free_vars_2/num_9/data_50.csv",
+         "kind": "file",
+         "size": 2046126,
+         "hosting": "inline"
+        },
+        {
+         "name": "policy.policy",
+         "path": "operators_5/free_vars_2/num_9/policy.policy",
+         "kind": "file",
+         "size": 95,
+         "hosting": "inline"
+        },
+        {
+         "name": "signature.sig",
+         "path": "operators_5/free_vars_2/num_9/signature.sig",
+         "kind": "file",
+         "size": 81,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fingerprint",
+   "path": "fingerprint",
+   "kind": "file",
+   "size": 254,
+   "hosting": "inline"
+  },
+  {
+   "name": "provenance",
+   "path": "provenance",
+   "kind": "dir",
+   "children": [
+    {
+     "name": "5_2_0_50",
+     "path": "provenance/5_2_0_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_0_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_0_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_0_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_0_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_0_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_0_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_0_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_0_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_0_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_0_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_10_50",
+     "path": "provenance/5_2_10_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_10_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_10_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_10_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_10_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_10_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_10_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_10_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_10_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_10_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_10_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_10_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_10_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_10_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_10_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_10_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_10_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_10_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_10_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_11_50",
+     "path": "provenance/5_2_11_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_11_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_11_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_11_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_11_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_11_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_11_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_11_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_11_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_11_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_11_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_11_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_11_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_11_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_11_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_11_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_11_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_11_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_11_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_12_50",
+     "path": "provenance/5_2_12_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_12_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_12_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_12_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_12_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_12_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_12_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_12_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_12_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_12_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_12_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_12_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_12_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_12_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_12_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_12_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_12_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_12_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_12_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_13_50",
+     "path": "provenance/5_2_13_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_13_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_13_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_13_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_13_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_13_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_13_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_13_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_13_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_13_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_13_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_13_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_13_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_13_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_13_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_13_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_13_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_13_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_13_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_14_50",
+     "path": "provenance/5_2_14_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_14_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_14_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_14_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_14_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_14_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_14_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_14_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_14_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_14_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_14_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_14_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_14_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_14_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_14_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_14_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_14_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_14_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_14_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_15_50",
+     "path": "provenance/5_2_15_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_15_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_15_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_15_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_15_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_15_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_15_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_15_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_15_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_15_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_15_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_15_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_15_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_15_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_15_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_15_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_15_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_15_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_15_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_16_50",
+     "path": "provenance/5_2_16_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_16_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_16_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_16_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_16_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_16_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_16_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_16_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_16_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_16_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_16_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_16_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_16_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_16_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_16_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_16_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_16_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_16_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_16_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_17_50",
+     "path": "provenance/5_2_17_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_17_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_17_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_17_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_17_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_17_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_17_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_17_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_17_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_17_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_17_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_17_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_17_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_17_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_17_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_17_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_17_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_17_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_17_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_18_50",
+     "path": "provenance/5_2_18_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_18_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_18_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_18_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_18_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_18_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_18_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_18_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_18_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_18_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_18_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_18_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_18_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_18_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_18_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_18_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_18_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_18_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_18_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_19_50",
+     "path": "provenance/5_2_19_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_19_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_19_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_19_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_19_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_19_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_19_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_19_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_19_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_19_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_19_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_19_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_19_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_19_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_19_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_19_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_19_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_19_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_19_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_1_50",
+     "path": "provenance/5_2_1_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_1_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_1_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_1_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_1_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_1_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_1_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_1_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_1_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_1_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_1_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_20_50",
+     "path": "provenance/5_2_20_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_20_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_20_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_20_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_20_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_20_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_20_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_20_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_20_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_20_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_20_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_20_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_20_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_20_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_20_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_20_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_20_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_20_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_20_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_21_50",
+     "path": "provenance/5_2_21_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_21_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_21_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_21_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_21_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_21_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_21_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_21_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_21_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_21_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_21_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_21_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_21_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_21_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_21_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_21_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_21_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_21_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_21_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_22_50",
+     "path": "provenance/5_2_22_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_22_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_22_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_22_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_22_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_22_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_22_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_22_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_22_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_22_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_22_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_22_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_22_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_22_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_22_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_22_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_22_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_22_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_22_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_23_50",
+     "path": "provenance/5_2_23_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_23_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_23_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_23_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_23_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_23_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_23_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_23_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_23_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_23_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_23_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_23_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_23_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_23_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_23_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1930,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_23_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_23_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1939,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_23_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_23_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1942,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_2_50",
+     "path": "provenance/5_2_2_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_2_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_2_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_2_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_2_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_2_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_2_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_2_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_2_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_2_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_2_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_3_50",
+     "path": "provenance/5_2_3_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_3_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_3_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_3_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_3_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_3_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_3_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_3_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_3_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_3_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_3_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_4_50",
+     "path": "provenance/5_2_4_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_4_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_4_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_4_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_4_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_4_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_4_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_4_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_4_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_4_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_4_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_5_50",
+     "path": "provenance/5_2_5_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_5_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_5_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_5_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_5_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_5_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_5_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_5_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_5_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_5_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_5_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_6_50",
+     "path": "provenance/5_2_6_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_6_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_6_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_6_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_6_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_6_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_6_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_6_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_6_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_6_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_6_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_7_50",
+     "path": "provenance/5_2_7_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_7_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_7_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_7_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_7_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_7_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_7_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_7_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_7_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_7_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_7_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_8_50",
+     "path": "provenance/5_2_8_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_8_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_8_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_8_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_8_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_8_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_8_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_8_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_8_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_8_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_8_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "5_2_9_50",
+     "path": "provenance/5_2_9_50",
+     "kind": "dir",
+     "children": [
+      {
+       "name": "TimelyMon_1_S1",
+       "path": "provenance/5_2_9_50/TimelyMon_1_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/TimelyMon_1_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S1000",
+       "path": "provenance/5_2_9_50/TimelyMon_1_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/TimelyMon_1_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_1_S10000",
+       "path": "provenance/5_2_9_50/TimelyMon_1_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/TimelyMon_1_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1",
+       "path": "provenance/5_2_9_50/TimelyMon_3_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/TimelyMon_3_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S1000",
+       "path": "provenance/5_2_9_50/TimelyMon_3_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/TimelyMon_3_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_3_S10000",
+       "path": "provenance/5_2_9_50/TimelyMon_3_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/TimelyMon_3_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1",
+       "path": "provenance/5_2_9_50/TimelyMon_6_S1",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/TimelyMon_6_S1/provenance.json",
+         "kind": "file",
+         "size": 1925,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S1000",
+       "path": "provenance/5_2_9_50/TimelyMon_6_S1000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/TimelyMon_6_S1000/provenance.json",
+         "kind": "file",
+         "size": 1934,
+         "hosting": "inline"
+        }
+       ]
+      },
+      {
+       "name": "TimelyMon_6_S10000",
+       "path": "provenance/5_2_9_50/TimelyMon_6_S10000",
+       "kind": "dir",
+       "children": [
+        {
+         "name": "provenance.json",
+         "path": "provenance/5_2_9_50/TimelyMon_6_S10000/provenance.json",
+         "kind": "file",
+         "size": 1937,
+         "hosting": "inline"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

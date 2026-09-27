@@ -1,0 +1,1 @@
+(EXISTS y1. ((ONCE[4,5] ((ONCE[2,19] ((EVENTUALLY[2,23] (((ONCE[1,13] ((ONCE[2,*) (P2(y1))))) AND ((NOT ((ONCE[1,27] ((ONCE[5,18] (P3(y1,y1,y1,y1)))))))))))))))))

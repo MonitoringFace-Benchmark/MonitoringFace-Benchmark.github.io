@@ -1,0 +1,667 @@
+{
+ "schema_version": 1,
+ "id": "tessla_demo",
+ "name": "tessla demo",
+ "run_timestamp": "2026-08-27T09:30:14",
+ "runtime_setting": "offline",
+ "timeout_s": 30,
+ "config_file": "develop/tessla_demo.yaml",
+ "monitors": [
+  {
+   "name": "TeSSLa",
+   "identifier": "TeSSLa",
+   "commit": "b1964bd445286832bd2cb120ca7586858e941ceb",
+   "branch": null,
+   "params": {}
+  },
+  {
+   "name": "TeSSLa Rust",
+   "identifier": "TeSSLa",
+   "commit": "b1964bd445286832bd2cb120ca7586858e941ceb",
+   "branch": null,
+   "params": {
+    "backend": "rust"
+   }
+  },
+  {
+   "name": "MonPoly",
+   "identifier": "MonPoly",
+   "commit": null,
+   "branch": "master",
+   "params": {}
+  },
+  {
+   "name": "VeriMon",
+   "identifier": "VeriMon",
+   "commit": null,
+   "branch": "master",
+   "params": {}
+  },
+  {
+   "name": "WhyMon",
+   "identifier": "WhyMon",
+   "commit": null,
+   "branch": "main",
+   "params": {
+    "mode": "light"
+   }
+  },
+  {
+   "name": "TimelyMon",
+   "identifier": "TimelyMon",
+   "commit": null,
+   "branch": "development",
+   "params": {
+    "worker": 1,
+    "output_mode": 1
+   }
+  }
+ ],
+ "oracles": [
+  {
+   "identifier": "VeriMonOracle",
+   "name": "VeriMonOracle",
+   "monitor_name": "VeriMon"
+  }
+ ],
+ "status_files": {
+  "timeout": 1,
+  "valid": 35
+ },
+ "n_runs": 36,
+ "setting_schema": {
+  "kind": "offline_synthetic",
+  "dir_template": "operators_{num_operators}/free_vars_{num_fvs}/num_{num_setting}"
+ },
+ "fingerprint": {
+  "fingerprint_experiment": "c477245e66f01cc46e6d60feb981068c16f816d90037553e8ef3dd075d337423",
+  "fingerprint_data": "0272d00be71dfc9e880a81aaf5ec7ce20a7f5a5e1081ef6e6aabc0d201deecd3",
+  "fingerprint_policy": "052165615e218c6110f382dea898ecc97796f881e0182b599a5e200e65d6c809"
+ },
+ "has_filetree": true,
+ "seeds": {
+  "[5, 2, 0]": [
+   314159265,
+   87006
+  ],
+  "[5, 2, 3]": [
+   314159265,
+   16519
+  ],
+  "[5, 2, 9]": [
+   314159265,
+   53326
+  ]
+ },
+ "data_setup": {
+  "type": "SignatureContract",
+  "SignatureContract": {
+   "trace_length": 1000,
+   "event_rate": 1000
+  }
+ },
+ "policy_setup": {
+  "type": "MfotlPolicyContract",
+  "MfotlPolicyContract": {
+   "num_preds": 4,
+   "prob_eand": 0,
+   "prob_rand": 0,
+   "prob_let": 0,
+   "prob_matchF": 0,
+   "prob_matchP": 0,
+   "prob_next": 0,
+   "prob_eventually": 0,
+   "prob_until": 0,
+   "ub": 0,
+   "unbounded": true
+  }
+ },
+ "provenance": [
+  {
+   "setting_key": "5_2_0_10",
+   "tool": "MonPoly",
+   "dir": "provenance/5_2_0_10/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_10",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_0_10/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_10",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_0_10/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_10",
+   "tool": "TimelyMon",
+   "dir": "provenance/5_2_0_10/TimelyMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_0_10",
+   "tool": "VeriMon",
+   "dir": "provenance/5_2_0_10/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_10",
+   "tool": "WhyMon",
+   "dir": "provenance/5_2_0_10/WhyMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "MonPoly",
+   "dir": "provenance/5_2_0_50/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_0_50/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_0_50/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "TimelyMon",
+   "dir": "provenance/5_2_0_50/TimelyMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "VeriMon",
+   "dir": "provenance/5_2_0_50/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_0_50",
+   "tool": "WhyMon",
+   "dir": "provenance/5_2_0_50/WhyMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_10",
+   "tool": "MonPoly",
+   "dir": "provenance/5_2_3_10/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_10",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_3_10/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_10",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_3_10/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_10",
+   "tool": "TimelyMon",
+   "dir": "provenance/5_2_3_10/TimelyMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_3_10",
+   "tool": "VeriMon",
+   "dir": "provenance/5_2_3_10/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_10",
+   "tool": "WhyMon",
+   "dir": "provenance/5_2_3_10/WhyMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "MonPoly",
+   "dir": "provenance/5_2_3_50/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_3_50/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_3_50/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "TimelyMon",
+   "dir": "provenance/5_2_3_50/TimelyMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "VeriMon",
+   "dir": "provenance/5_2_3_50/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_3_50",
+   "tool": "WhyMon",
+   "dir": "provenance/5_2_3_50/WhyMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_10",
+   "tool": "MonPoly",
+   "dir": "provenance/5_2_9_10/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_10",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_9_10/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_10",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_9_10/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_10",
+   "tool": "TimelyMon",
+   "dir": "provenance/5_2_9_10/TimelyMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_9_10",
+   "tool": "VeriMon",
+   "dir": "provenance/5_2_9_10/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_10",
+   "tool": "WhyMon",
+   "dir": "provenance/5_2_9_10/WhyMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "MonPoly",
+   "dir": "provenance/5_2_9_50/MonPoly",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "TeSSLa",
+   "dir": "provenance/5_2_9_50/TeSSLa",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "TeSSLa Rust",
+   "dir": "provenance/5_2_9_50/TeSSLa_Rust",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "TimelyMon",
+   "dir": "provenance/5_2_9_50/TimelyMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": []
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "VeriMon",
+   "dir": "provenance/5_2_9_50/VeriMon",
+   "input_unchanged_after_run": true,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace"
+   ]
+  },
+  {
+   "setting_key": "5_2_9_50",
+   "tool": "WhyMon",
+   "dir": "provenance/5_2_9_50/WhyMon",
+   "input_unchanged_after_run": null,
+   "captures": 1,
+   "kinds": [
+    "trace",
+    "policy",
+    "signature"
+   ],
+   "stored_kinds": [
+    "trace",
+    "policy"
+   ]
+  }
+ ]
+}

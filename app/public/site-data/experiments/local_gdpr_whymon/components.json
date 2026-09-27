@@ -1,0 +1,29 @@
+{
+ "schema_version": 1,
+ "requested_pins": {
+  "ReplayerConverter": {
+   "branch": null,
+   "commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672"
+  }
+ },
+ "components": {
+  "generator": {
+   "component": "CaseStudyCopyGenerator",
+   "pin_branch": null,
+   "pin_commit": null,
+   "branch": null,
+   "resolved_version": null,
+   "image": null
+  }
+ },
+ "monitors": {
+  "WhyMon": {
+   "identifier": "WhyMon",
+   "branch": null,
+   "commit": "86684beecbfc14ed3367eb5c042f610ca8a60119",
+   "resolved_version": null,
+   "image": "whymon_86684beecbfc14ed3367eb5c042f610ca8a60119_offline_mf_image"
+  }
+ },
+ "framework_commit": "79471683d2633c717542e0ed78420c062f51c88b"
+}

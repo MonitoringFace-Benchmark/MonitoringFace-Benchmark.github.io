@@ -1,0 +1,1 @@
+((P3(x1,x2) SINCE[0,*) (P3(x2,x1))) AND ((EXISTS y1. ((PREVIOUS[0,*) (P3(y1,x1)))))))

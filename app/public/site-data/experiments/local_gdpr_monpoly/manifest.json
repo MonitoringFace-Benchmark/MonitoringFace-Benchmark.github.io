@@ -3,7 +3,7 @@
  "id": "local_gdpr_monpoly",
  "name": "local gdpr monpoly",
  "source_experiment": "local_gdpr_monpoly",
- "run_timestamp": null,
+ "run_timestamp": "2026-09-23T16:53:24",
  "runtime_setting": "offline",
  "timeout_s": 30,
  "config_file": "benchmark_paper/local_gdpr_monpoly.yaml",
@@ -463,5 +463,55 @@
   "id": "Use_Case_5.3_GDPR",
   "name": "Use Case 5.3: GDPR",
   "description": ""
+ },
+ "components": {
+  "schema_version": 1,
+  "requested_pins": {
+   "ReplayerConverter": {
+    "branch": null,
+    "commit": "d8442ab1473ea8f0a9c49836d3bf56bfd0b60672"
+   }
+  },
+  "components": {
+   "generator": {
+    "component": "CaseStudyCopyGenerator",
+    "pin_branch": null,
+    "pin_commit": null,
+    "branch": null,
+    "resolved_version": null,
+    "image": null
+   }
+  },
+  "monitors": {
+   "TimelyMon 1": {
+    "identifier": "TimelyMon",
+    "branch": null,
+    "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+    "resolved_version": null,
+    "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image"
+   },
+   "TimelyMon 6": {
+    "identifier": "TimelyMon",
+    "branch": null,
+    "commit": "3ff38d25fba09eb7810793faf6eddfcbe5648b99",
+    "resolved_version": null,
+    "image": "timelymon_3ff38d25fba09eb7810793faf6eddfcbe5648b99_offline_mf_image"
+   },
+   "MonPoly": {
+    "identifier": "MonPoly",
+    "branch": null,
+    "commit": "bc752d37f1d4560b5667eddac9dd1670451b758e",
+    "resolved_version": null,
+    "image": "monpoly_bc752d37f1d4560b5667eddac9dd1670451b758e_offline_mf_image"
+   },
+   "VeriMon": {
+    "identifier": "VeriMon",
+    "branch": null,
+    "commit": "bc752d37f1d4560b5667eddac9dd1670451b758e",
+    "resolved_version": null,
+    "image": "monpoly_bc752d37f1d4560b5667eddac9dd1670451b758e_offline_mf_image"
+   }
+  },
+  "framework_commit": "79471683d2633c717542e0ed78420c062f51c88b"
  }
 }
