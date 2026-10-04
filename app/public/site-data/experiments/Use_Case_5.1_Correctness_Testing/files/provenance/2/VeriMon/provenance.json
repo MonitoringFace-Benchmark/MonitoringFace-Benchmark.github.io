@@ -5,7 +5,7 @@
   "fingerprint_data": "8abca099074700116365abeaaeae2b627fb19f49f1e92dbd98438a1c01828727",
   "fingerprint_components": "9b226373b358803ff889486a170776fddd89b2e21eafb1b671799062e8c304b3"
  },
- "framework_commit": "79471683d2633c717542e0ed78420c062f51c88b-dirty",
+ "framework_commit": "13cbe59d793cf029a2538f5dd0af976078ae98c5-dirty",
  "tool": {
   "name": "VeriMon",
   "identifier": "VeriMon",

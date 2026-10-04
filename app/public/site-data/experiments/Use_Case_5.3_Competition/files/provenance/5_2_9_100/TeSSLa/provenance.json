@@ -6,7 +6,7 @@
   "fingerprint_policy": "62528f4cb80a0c2f163218282c5076d1fdfc7b951384a825724fd7c9ada68523",
   "fingerprint_components": "1fb55dfe849df191af63e91e935768ec40ae9f86fe6d13768bf602dd68eb5831"
  },
- "framework_commit": "eac6d48dd2e7a05c11eb145d04e73ab3b2482c56-dirty",
+ "framework_commit": "5fb8eb19483d7842b246bc192203dc55a64ba5f2-dirty",
  "tool": {
   "name": "TeSSLa",
   "identifier": "TeSSLa",
